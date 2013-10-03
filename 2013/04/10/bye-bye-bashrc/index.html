@@ -1,0 +1,241 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "
+http://www.w3.org/TR/html4/strict.dtd">
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7 ie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8 ie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9 ie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>收拾 Bashrc | Mind on Mind</title>
+	<meta name="author" content="mindonmind">
+	<link href='/assets/themes/the-minimum/css/style.css' rel="stylesheet" media="all">
+	<link href="http://feeds.feedburner.com/mindonmind" rel="alternate" title="收拾 Bashrc" type="application/atom+xml">
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.0.6/modernizr.min.js"></script>
+</head>
+<body>
+
+<div id="page" class="hentry">
+	<header class="the-header">
+		<div class="unit-head">
+			<div class="unit-inner unit-head-inner">
+				<p class="logo"><a href="/">Mind on Mind</a></p>
+				<nav class="nav-global">
+					<ul>
+						<li class="homepage"><a href="/blog.html">blog</a></li>
+						<li class="category"><a href="/categories.html">cats</a></li>
+			<!--			<li class="tag"><a href="/tags.html">tags</a></li>  -->
+                        <li class="notes"><a href="/notes">notes</a></li>
+                        <li class="links"><a href="/links.html">links</a></li>
+						<li class="feed"><a href="http://feeds.feedburner.com/mindonmind">feed</a></li>
+                      <!--  <li class="about"><a href="/intro.html">intro</a></li> -->
+					</ul>
+				</nav>
+			</div><!-- unit-inner -->
+		</div><!-- unit-head -->
+	</header>
+	<div class="body" role="main">
+		<div class="unit-body">
+			<div class="unit-inner unit-body-inner">
+				<div class="entry-content">
+					
+<article class="unit-article layout-post">
+	<div class="unit-inner unit-article-inner">
+		<div class="content">
+			<header>
+				<div class="unit-head">
+					<div class="unit-inner unit-head-inner">
+						<h1 class="h2 entry-title">收拾 Bashrc</h1>
+					</div><!-- unit-inner -->
+				</div><!-- unit-head -->
+			</header>
+
+			<div class="bd">
+				<div class="entry-content">
+					<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+</head>
+<body>
+<p>Bash，大多数 linux 用户接触到的第一个 linux 软件，那象征着财富的提示符早已将它的霸气侧漏无疑。被钦定为 linux 默认登陆 shell 程序的它，借助自身某些还不错的有点，一家独大地垄断着与 linux 用户交互的市场。</p>
+<p>不论是初尝 linux 没多久的欣欣菜鸟还是久经折腾的高端极客，相信不少人都和我一样对 bash 有着复杂的情感。多少次，你被一行行的陌生命令挡在门外，又多少次，你因配置成功欣喜若狂。这些苦痛与欢乐的背后，是 bash 默默地担起扫地僧角色，兢兢业业地跑过一句句命令行。因此，bash 绝对是名至实归，不愧于它在 shell 中头把交椅的地位。</p>
+<p>如果没有那一次误入歧途安装 arch，或许我永远不会离开 bash，毕竟我那时候还不曾知道它让我白白敲击了多少次 <code>cd</code> 和 <code>Tab</code> 。可是 arch，这个安装时把 root 用户的 shell 都设为 zsh 的怪才，让我第一次见识了 z 宝宝超级补全的威力。令人费解的是，arch 装好后 shell 竟然还是默认为 bash。我对 arch 的这种做法很不满——谁都知道，在用过 zsh 后，bash 的用户体验几乎让人无法忍受。</p>
+<p>虽然我从此弃暗投明，但由于有很多配置写在了 <code>.bashrc</code> 中，在未认清 zsh 本真前不敢压上全部老本，所以想先坚守 <code>bashrc</code> 。既然要继续使用之前的配置，就不能直接将登陆 shell 切换成 zsh。我用了个折中的办法，即在 <code>bashrc</code> 文件的最后加入</p>
+<pre><code>exec zsh</code></pre>
+<p>这句。</p>
+<p>这样原先的设置就可以直接再 zsh 中使用，美好 linux 生活从此开始。</p>
+<p>可是，一个问题看似解决，其实又带来了新的问题，比如：</p>
+<ol style="list-style-type: decimal">
+<li>在用服务器上 zsh 之后，竟然无法从本机 sftp, scp, rsync 到服务器上了！</li>
+<li>需要新增加某些配置的时候，有些还需写在原本的 <code>bashrc</code> 中，而有些又顺手写到了 <code>zsh</code> 中，十分混乱。</li>
+</ol>
+<p>上面这第一个问题曾困扰了我很久，因为在本地和服务器间传送文件是十分频繁的操作。查了很久，最后发现原来那句 <code>exec zsh</code> 是罪魁祸首，它貌似替换了登陆进来的远程连接。今天再次需要传文件时，正值艳阳高照心情好，于是决定彻底跟 <code>bashrc</code> 告别。</p>
+<p>首先，删掉那句 <code>exec zsh</code>。然后将 <code>.bash_profile</code>, <code>.bashrc</code> 中的内容分别移植到 <code>.zprofile</code>, <code>.zshrc</code> 中。之后执行修改命令 <code>chsh</code>，期间需要输用户密码及希望设置的 shell 位置（记住这个位置必须事先就已记录在 <code>/etc/shells</code> 中）。如果是在使用了 NIS 的服务器上，首先需要在主控机上用 <code>chsh</code> 修改，之后再在任意客户机上用 <code>ypchsh</code> 修改。</p>
+<p>这样， bash 就被彻底收拾到抽屉里去了。</p>
+</body>
+</html>
+
+					<div class="meta">
+						<p class="date-publish">
+							Published: 
+							<date class="date-pub" title="2013-04-10T05:33:00+08:00" datetime="2013-04-10T05:33:00+08:00" pubdate>
+							<span class="month"><abbr>April</abbr></span>
+							<span class="day">10</span>
+							<span class="year">2013 @ </span>
+                            <span class="time">05:33 </span>
+							</date>
+						</p>
+						<ul class="list-category list-linear">
+							<li class="list-head">category: </li>
+							
+							
+
+
+  
+     
+    	<li><a href="/categories.html#Better Work In Linux-ref">
+    		Better Work In Linux <span>11</span>
+    	</a></li>
+    
+  
+
+
+						</ul>
+						<ul class="list-tag list-linear">
+							<li class="list-head">tags: </li>
+							
+							
+
+
+  
+     
+    	<li><a href="/tags.html#bash-ref">bash <span>1</span></a></li>
+     
+    	<li><a href="/tags.html#zsh-ref">zsh <span>1</span></a></li>
+     
+    	<li><a href="/tags.html#rc-ref">rc <span>1</span></a></li>
+     
+    	<li><a href="/tags.html#linux-ref">linux <span>4</span></a></li>
+    
+  
+
+
+
+						</ul>
+					</div><!-- meta -->
+				</div><!-- entry-content -->
+				<div class="misc-content">
+					<div class="social">
+						<ul class="list-linear">
+							<li><div class="twitter-tweet"><a href="https://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="" data-lang="en">Tweet</a></div></li>
+							<li><div class="twitter-follow"><a href="https://twitter.com/" class="twitter-follow-button" data-show-count="false" data-lang="en"></a></div></li>
+						</ul>
+					</div>
+					
+					
+
+
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_developer = 1;
+    var disqus_shortname = 'yangzetian'; // required: replace example with your forum shortname
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+
+				</div><!-- misc-content -->
+				
+			</div><!-- bd -->
+			<footer class="unit-foot">
+				<div class="unit-inner unit-foot-inner">
+					<nav class="pagination">
+						<ul>
+							
+							<li class="prev"><a class="internal" rel="prev"  href="/2013/03/26/the-first-of-python-year" title="View 蛇年初记">&laquo; 蛇年初记</a></li>
+							
+							
+							<li class="pipe"> | </li>
+							
+							
+							<li class="next"><a class="internal" rel="next"  href="/2013/05/05/a-vim-pythoners-survivor-book-plugins" title="View 一个 Python 程序员的 Vim 生存手册：移动篇">一个 Python 程序员的 Vim 生存手册：移动篇 &raquo;</a></li>
+							
+						</ul>
+					</nav>
+					<p class="gotop">
+						<a href="#page">Back to Top</a>
+					</p>
+				</div>
+			</footer>
+
+		</div><!-- content -->
+	</div><!-- unit-inner -->
+</article>
+
+
+				</div>
+			</div><!-- unit-inner -->
+		</div><!-- unit-body -->
+
+	</div><!-- body -->
+	<footer class="the-footer">
+		<div class="unit-foot">
+			<div class="unit-inner unit-foot-inner">
+				<div class="misc vcard">
+					<h4>about</h4>
+					<ul>
+			<!--			<li class="contact"><address><span class="author fn n">mindonmind</span></address></li> -->
+                        <li class="about"><a href="http://www.scholarpedia.org/article/Cognitive_psychology">Mind</a></li>
+                        <li class="about"><a href="http://en.wikipedia.org/wiki/Learning">on</a>on</li>
+						<li class="about"><a href="http://www.scholarpedia.org/article/Neuron" rel="me">Mind</a></li>
+					</ul>
+				</div><!-- misc -->
+				<p class="licence">
+                Powered by <a href="https://github.com/mojombo/jekyll">Jekyll</a> and <a href="http://johnmacfarlane.net/pandoc">Pandoc</a> <br/>
+                Theme: <a href="http://themes.jekyllbootstrap.com/preview/the-minimum/pages.html#page">The Minimum</a>.
+				</p>
+			</div><!-- unit-foot-inner -->
+		</div><!-- unit-foot -->
+	</footer>
+</div><!-- page -->
+<script>
+/*! A fix for the iOS orientationchange zoom bug.Script by @scottjehl, rebound by @wilto. MIT License.*/
+(function(j){var i=j.document;if(!i.querySelectorAll){return}var l=i.querySelectorAll("meta[name=viewport]")[0],a=l&&l.getAttribute("content"),h=a+", maximum-scale=1.0",d=a+", maximum-scale=10.0",g=true,c=j.orientation,k=0;if(!l){return}function f(){l.setAttribute("content",d);g=true}function b(){l.setAttribute("content",h);g=false}function e(m){c=Math.abs(j.orientation);k=Math.abs(m.gamma);if(k>8&&c===0){if(g){b()}}else{if(!g){f()}}}j.addEventListener("orientationchange",f,false);j.addEventListener("deviceorientation",e,false)})(this);
+</script>
+
+  
+
+
+  <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-30928812-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+
+
+</body>
+</html>
+
