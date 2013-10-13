@@ -10,6 +10,7 @@ http://mindonmind.github.io/sitemap.txt
 http://mindonmind.github.io/categories.html
 http://mindonmind.github.io/blog.html
 
+http://mindonmind.github.io/2013/10/13/sin-and-punish
 http://mindonmind.github.io/2013/09/25/a-trajectory-on-the-lorenz-butterfly
 http://mindonmind.github.io/2013/09/06/from-a-to-b
 http://mindonmind.github.io/2013/07/21/change-as-you-like
