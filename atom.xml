@@ -4,13 +4,501 @@
  <title>Mind on Mind</title>
  <link href="http://mindonmind.github.io/atom.xml" rel="self"/>
  <link href="http://mindonmind.github.io"/>
- <updated>2013-10-14T09:25:23+08:00</updated>
+ <updated>2013-12-28T23:49:33+08:00</updated>
  <id>http://mindonmind.github.io</id>
  <author>
    <name>mindonmind</name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>从 B 到 C：半自觉</title>
+   <link href="http://mindonmind.github.io/2013/12/28/semi-awareness"/>
+   <updated>2013-12-28T23:49:00+08:00</updated>
+   <id>hhttp://mindonmind.github.io/2013/12/28/semi-awareness</id>
+   <content type="html">&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;
+&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;
+&lt;head&gt;
+  &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot; /&gt;
+  &lt;meta http-equiv=&quot;Content-Style-Type&quot; content=&quot;text/css&quot; /&gt;
+  &lt;meta name=&quot;generator&quot; content=&quot;pandoc&quot; /&gt;
+  &lt;title&gt;&lt;/title&gt;
+  &lt;style type=&quot;text/css&quot;&gt;code{white-space: pre;}&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;p&gt;十二月份，读了两本好书：《文学回忆录》和《禅与摩托车维修技术》。&lt;br/&gt; 这两本书是一起读的，所以才更有收获。&lt;br/&gt; 木心说，青春是不自觉的，浪漫的，浅薄的，空洞的。&lt;br/&gt; 由丑小鸭到天鹅，就是一个从不自觉，到半自觉，再到全然自觉的过程——自觉到自己原来是只天鹅，不是鸡鸭狗，也不是孔雀，是天鹅。&lt;br/&gt; 想要出东西，自觉很重要，要自己做自己的老师，不断地自我教育。&lt;br/&gt;&lt;/p&gt;
+&lt;p&gt;确立观点，摸索方法。&lt;br/&gt; 有些东西，不去想，不去碰，不是好办法。&lt;br/&gt; 想要不断追求更高的境界，或者想要活得清楚明白，逃不过，躲不过的。&lt;br/&gt; 难得糊涂难得糊涂，说这句话的人，心里比谁都清楚哩！&lt;br/&gt; 以后有些东西不再公开说，弄明白，写下来自己看，一说出来，太俗。&lt;br/&gt;&lt;/p&gt;
+&lt;p&gt;人活着为了什么？&lt;br/&gt; 想清楚了，看清路了，走去吧，要有耐性、虚心，等彻悟后还要再任点性。&lt;br/&gt;&lt;/p&gt;
+&lt;p&gt;由误解开始，由理解结束，当作诀别。&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>[Notes: Real Number 1.1] Basic Definitions: Set, Group, Ring and Field</title>
+   <link href="http://mindonmind.github.io/2013/11/12/notes-real-number-basic-definitions"/>
+   <updated>2013-11-12T01:37:00+08:00</updated>
+   <id>hhttp://mindonmind.github.io/2013/11/12/notes-real-number-basic-definitions</id>
+   <content type="html">&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;
+&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;
+&lt;head&gt;
+  &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot; /&gt;
+  &lt;meta http-equiv=&quot;Content-Style-Type&quot; content=&quot;text/css&quot; /&gt;
+  &lt;meta name=&quot;generator&quot; content=&quot;pandoc&quot; /&gt;
+  &lt;title&gt;&lt;/title&gt;
+  &lt;style type=&quot;text/css&quot;&gt;code{white-space: pre;}&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.math.nus.edu.sg/~urops/Projects/RealNumbers.pdf&quot;&gt;&lt;em&gt;Construction of the Real Number System&lt;/em&gt;&lt;/a&gt; p7-p16&lt;/p&gt;
+&lt;p&gt;There are some basic definitions for the construction of the real number system. In fact, they are also very useful and fundamental mathematical concept when dealing with many math subject. These are &lt;strong&gt;set&lt;/strong&gt;, &lt;strong&gt;relation&lt;/strong&gt;, &lt;strong&gt;equivalance relation&lt;/strong&gt;, &lt;strong&gt;partial order&lt;/strong&gt;, &lt;strong&gt;total order&lt;/strong&gt;, &lt;strong&gt;infimum&lt;/strong&gt;, &lt;strong&gt;supremum&lt;/strong&gt;, &lt;strong&gt;maximum&lt;/strong&gt;, &lt;strong&gt;minimum&lt;/strong&gt;, &lt;strong&gt;well-ordered set&lt;/strong&gt;, &lt;strong&gt;order completeness&lt;/strong&gt;, &lt;strong&gt;function&lt;/strong&gt; and its classification, &lt;strong&gt;infinite set&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img  src=&quot;/assets/images/relation.svg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/function.svg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Then based on these basic concepts, we can get some familiar definition in algebra and analysis, such as: &lt;strong&gt;binary operation&lt;/strong&gt; and its classification, &lt;strong&gt;semi-groups&lt;/strong&gt;, &lt;strong&gt;groups&lt;/strong&gt;, &lt;strong&gt;rings&lt;/strong&gt;, &lt;strong&gt;integral domain&lt;/strong&gt;, &lt;strong&gt;ordered integral domain&lt;/strong&gt;, &lt;strong&gt;fileds&lt;/strong&gt;, &lt;strong&gt;isomorphism&lt;/strong&gt;, &lt;strong&gt;sequences&lt;/strong&gt;, &lt;strong&gt;limit&lt;/strong&gt;, &lt;strong&gt;Cauchy sequecne&lt;/strong&gt; and &lt;strong&gt;Cauchy complete&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/group_ring_field.svg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/sequence.svg&quot;&gt;&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>[Notes: Analysis 2.10] 极值与条件极值</title>
+   <link href="http://mindonmind.github.io/2013/11/10/notes-analysis-extrema-and-conditional-extrema"/>
+   <updated>2013-11-10T22:47:00+08:00</updated>
+   <id>hhttp://mindonmind.github.io/2013/11/10/notes-analysis-extrema-and-conditional-extrema</id>
+   <content type="html">&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;
+&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;
+&lt;head&gt;
+  &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot; /&gt;
+  &lt;meta http-equiv=&quot;Content-Style-Type&quot; content=&quot;text/css&quot; /&gt;
+  &lt;meta name=&quot;generator&quot; content=&quot;pandoc&quot; /&gt;
+  &lt;title&gt;&lt;/title&gt;
+  &lt;style type=&quot;text/css&quot;&gt;code{white-space: pre;}&lt;/style&gt;
+  &lt;script src=&quot;http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML,https://raw.github.com/mindonmind/MathJax/master/config/local/local.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;p&gt;&lt;a href=&quot;http://book.douban.com/subject/1237679/&quot;&gt;&lt;em&gt;数学分析教程 下&lt;/em&gt;&lt;/a&gt; p.158 - p.175&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;极值&lt;/strong&gt;点和&lt;strong&gt;绝对极值&lt;/strong&gt;点分别指函数在某点邻域内大于（小于）等于或严格大于（小于）等于其周围点值的点。关于任意极值，如果 &lt;span class=&quot;math&quot;&gt;\(Jf(\boldsymbol{p}_0)\)&lt;/span&gt; 存在，那么 &lt;span class=&quot;math&quot;&gt;\(Jf(\boldsymbol{p}_0) = \boldsymbol{0}\)&lt;/span&gt;，反之则不一定成立。所有 &lt;span class=&quot;math&quot;&gt;\(Jf(\boldsymbol{p})=0\)&lt;/span&gt; 的点称为&lt;strong&gt;驻点&lt;/strong&gt;。判断驻点是否为极值点，有如下定理：设 &lt;span class=&quot;math&quot;&gt;\(\boldsymbol{x}_0\)&lt;/span&gt; 是函数 &lt;span class=&quot;math&quot;&gt;\(f\)&lt;/span&gt; 的一个驻点，函数 &lt;span class=&quot;math&quot;&gt;\(f\)&lt;/span&gt; 在 &lt;span class=&quot;math&quot;&gt;\(\boldsymbol{x}_0\)&lt;/span&gt; 的某一邻域有连续的二阶偏导数，那么如果 &lt;span class=&quot;math&quot;&gt;\(Hf(\boldsymbol{x}_0)\)&lt;/span&gt; 正（负）定，那么 &lt;span class=&quot;math&quot;&gt;\(\boldsymbol{x}_0\)&lt;/span&gt; 是 &lt;span class=&quot;math&quot;&gt;\(f\)&lt;/span&gt; 的一个严格极小（大）值点；如果 &lt;span class=&quot;math&quot;&gt;\(Hf(\boldsymbol{x}_0)\)&lt;/span&gt; 不定，那么 &lt;span class=&quot;math&quot;&gt;\(x_0\)&lt;/span&gt; 不是 &lt;span class=&quot;math&quot;&gt;\(f\)&lt;/span&gt; 的极值点；如果 &lt;span class=&quot;math&quot;&gt;\(Hf(\boldsymbol{x}_0)\)&lt;/span&gt; 半正（负）定，那么不能确定 &lt;span class=&quot;math&quot;&gt;\(x_0\)&lt;/span&gt; 是否是 &lt;span class=&quot;math&quot;&gt;\(f\)&lt;/span&gt; 的一个极值点。&lt;/p&gt;
+&lt;p&gt;如果在求解极值的同时要求变量之间满足一定的关系，比如 &lt;span class=&quot;math&quot;&gt;\(f(x_1, \dots, x_n, y_1, \dots, y_m)\)&lt;/span&gt; 是一个多元函数，且变量 &lt;span class=&quot;math&quot;&gt;\(x_1, \dots, x_n, y_1, \dots, y_m\)&lt;/span&gt; 间满足下面的约束： &lt;span class=&quot;math&quot;&gt;\[\begin{equation}
+\begin{array}{rl}
+        &amp;amp;\Phi_1(x1,\dots,x_n, y_1,\dots,y_n) =0,\\
+        &amp;amp;\Phi_2(x_1,\dots,x_n, y_1, \dots, y_n) = 0,\\
+        &amp;amp;\ldots \\
+        &amp;amp;\Phi_n(x_1, \dots, x_n, y_1, \dots, y_n) = 0
+    \end{array}
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;那么这样求得的极值便称为&lt;strong&gt;条件极值&lt;/strong&gt;。如果把上式中的约束看作 &lt;span class=&quot;math&quot;&gt;\(R^{n+m}\)&lt;/span&gt; 维空间中的某个曲面（曲线），那么条件极值便是在这个曲面（曲线）上求 &lt;span class=&quot;math&quot;&gt;\(f\)&lt;/span&gt; 的极值点。&lt;/p&gt;
+&lt;p&gt;关于条件极值，有如下定理，它是 &lt;strong&gt;Lagrange 数乘法&lt;/strong&gt; 的理论基础。设 &lt;span class=&quot;math&quot;&gt;\(D\subset \boldsymbol{R}^{n+m}\)&lt;/span&gt;，函数 &lt;span class=&quot;math&quot;&gt;\(f: D\to \boldsymbol{R}\)&lt;/span&gt;，映射 &lt;span class=&quot;math&quot;&gt;\(\boldsymbol{\Phi} D\to \boldsymbol{R}^m\)&lt;/span&gt;，它们满足如下条件：&lt;br/&gt; 1) &lt;span class=&quot;math&quot;&gt;\(f, \boldsymbol{\Phi}\)&lt;/span&gt; 在 &lt;span class=&quot;math&quot;&gt;\(D\)&lt;/span&gt; 上连续可微&lt;br/&gt; 2) 存在 &lt;span class=&quot;math&quot;&gt;\(\boldsymbol{z} \in D\)&lt;/span&gt; 使得 &lt;span class=&quot;math&quot;&gt;\(\boldsymbol{\Phi}(\boldsymbol{z})=\boldsymbol{0}\)&lt;/span&gt;&lt;br/&gt; 3) &lt;span class=&quot;math&quot;&gt;\(\mathrm{det} J_y\Phi(z_0) \neq 0\)&lt;/span&gt;&lt;br/&gt; 那么如果 &lt;span class=&quot;math&quot;&gt;\(\boldsymbol{z}_0\)&lt;/span&gt; 是满足 &lt;span class=&quot;math&quot;&gt;\(\boldsymbol{\Phi}(z) = 0\)&lt;/span&gt; 条件下的极值点，那么存在 &lt;span class=&quot;math&quot;&gt;\(\boldsymbol{\lambda} \in \boldsymbol{R}^{1\times m}\)&lt;/span&gt;，使得： &lt;span class=&quot;math&quot;&gt;\[Jf(\boldsymbol{z}_0) + \boldsymbol{\lambda} J\boldsymbol{\Phi}(\boldsymbol{z}_0) = \boldsymbol{0}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;此外还有判断条件极值的充分条件：如果 &lt;span class=&quot;math&quot;&gt;\(z_0\)&lt;/span&gt; 是辅助函数： &lt;span class=&quot;math&quot;&gt;\[F(\boldsymbol{z}) = f(\boldsymbol{z}) + \sum_{i=1}^{m}\lambda_i\Phi_i(\boldsymbol{z})\]&lt;/span&gt; 的驻点，&lt;span class=&quot;math&quot;&gt;\(\boldsymbol{z} = (x_1, \dots, x_n, y_1, \dots, y_m)\)&lt;/span&gt;，记： &lt;span class=&quot;math&quot;&gt;\[HF(\boldsymbol{z}_0) = \bigg(\frac{\partial^2 F}{\partial z_j \partial z_k}(\boldsymbol{z}_0)\bigg)_{1 \leq j,k \leq m+n}\]&lt;/span&gt; 那么，如果 &lt;span class=&quot;math&quot;&gt;\(HF(\boldsymbol{z}_0)\)&lt;/span&gt; 正定，那么 &lt;span class=&quot;math&quot;&gt;\(f\)&lt;/span&gt; 在 &lt;span class=&quot;math&quot;&gt;\(\boldsymbol{z}_0\)&lt;/span&gt; 取严格的条件极小值，如果&lt;span class=&quot;math&quot;&gt;\(HF(\boldsymbol{z}_0)\)&lt;/span&gt; 负定，那么 &lt;span class=&quot;math&quot;&gt;\(f\)&lt;/span&gt; 在 &lt;span class=&quot;math&quot;&gt;\(\boldsymbol{z}_0\)&lt;/span&gt; 取严格的条件极大值，如果&lt;span class=&quot;math&quot;&gt;\(HF(\boldsymbol{z}_0)\)&lt;/span&gt; 不定或者半定，均无法确定 &lt;span class=&quot;math&quot;&gt;\(\boldsymbol{z}_0\)&lt;/span&gt; 是否为条件极值。&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>[Notes Analysis 2.9] 高阶偏导数与泰勒定理</title>
+   <link href="http://mindonmind.github.io/2013/11/10/notes-analysis-high-order-derivative-and-taylor-theorem"/>
+   <updated>2013-11-10T19:06:00+08:00</updated>
+   <id>hhttp://mindonmind.github.io/2013/11/10/notes-analysis-high-order-derivative-and-taylor-theorem</id>
+   <content type="html">&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;
+&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;
+&lt;head&gt;
+  &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot; /&gt;
+  &lt;meta http-equiv=&quot;Content-Style-Type&quot; content=&quot;text/css&quot; /&gt;
+  &lt;meta name=&quot;generator&quot; content=&quot;pandoc&quot; /&gt;
+  &lt;title&gt;&lt;/title&gt;
+  &lt;style type=&quot;text/css&quot;&gt;code{white-space: pre;}&lt;/style&gt;
+  &lt;script src=&quot;http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML,https://raw.github.com/mindonmind/MathJax/master/config/local/local.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;p&gt;&lt;a href=&quot;http://book.douban.com/subject/1237679/&quot;&gt;&lt;em&gt;数学分析教程 下&lt;/em&gt;&lt;/a&gt; p.148 - p.158&lt;/p&gt;
+&lt;h2 id=&quot;高阶偏导数&quot;&gt;高阶偏导数&lt;/h2&gt;
+&lt;p&gt;对于一个多元函数，它的任意一个偏导数 &lt;span class=&quot;math&quot;&gt;\(\frac{\partial f}{\partial x_i}\)&lt;/span&gt; 仍是一个多元函数，因此假设对这个多元函数继续求偏，便可以得到二阶的偏导数。对于一个 &lt;span class=&quot;math&quot;&gt;\(n\)&lt;/span&gt; 元函数，它有 &lt;span class=&quot;math&quot;&gt;\(n^k\)&lt;/span&gt; 个 &lt;span class=&quot;math&quot;&gt;\(k\)&lt;/span&gt; 阶偏导，对于这些同阶的偏导，如果它们求导的各变元次数相同，且这些偏导都在 &lt;span class=&quot;math&quot;&gt;\(x_0\)&lt;/span&gt; 处存在并连续，那么这些偏导便全部相等。&lt;/p&gt;
+&lt;h2 id=&quot;泰勒定理&quot;&gt;泰勒定理&lt;/h2&gt;
+&lt;p&gt;为了介绍泰勒定理在多元函数上的推广，首先有： &lt;span class=&quot;math&quot;&gt;\[(x_1 + \dots + x_n)^k = \sum_{a_1+\dots+a_n=k} \frac{k!}{a_1!\cdots a_n!} x_1^{a_1}\cdots x_n^{a_n}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;而多元函数的泰勒定理讲得是，在凸域 &lt;span class=&quot;math&quot;&gt;\(D \subset \boldsymbol{R}^n\)&lt;/span&gt; 上的 &lt;span class=&quot;math&quot;&gt;\(m+1\)&lt;/span&gt; 阶连续可微函数 &lt;span class=&quot;math&quot;&gt;\(f: D\to R\)&lt;/span&gt;， &lt;span class=&quot;math&quot;&gt;\(\boldsymbol{a} = (a_1, a_2, \dots, a_n)\)&lt;/span&gt; 和 &lt;span class=&quot;math&quot;&gt;\(\boldsymbol{a}+\boldsymbol{h}\)&lt;/span&gt;，那么存在 &lt;span class=&quot;math&quot;&gt;\(\theta \in (0,1)\)&lt;/span&gt;，使得： &lt;span class=&quot;math&quot;&gt;\[f(\boldsymbol{a}+\boldsymbol{h}) = f(\boldsymbol{a}) + \sum_{k=1}^{m}\sum_{|a|=k}\frac{D^\alpha f(\boldsymbol{a})}{\alpha !}\boldsymbol{h}^\alpha + R_m \\
+R_m = \sum_{|\alpha| = m+1} \frac{D^{\alpha}f(\boldsymbol{a} + \theta \boldsymbol{h})}{\alpha !}\boldsymbol{h}^\alpha\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;或者写成： &lt;span class=&quot;math&quot;&gt;\[f(\boldsymbol{a}+\boldsymbol{h}) = f(\boldsymbol{a}) + \frac{1}{k!}\sum_{k=1}^{m} (\frac{\partial f}{\partial x_1}h_1+ \frac{\partial f}{\partial x_2}h_2+ \dots+ \frac{\partial f}{\partial x_n}h_n)^k(\boldsymbol{a}) + R_m \\
+R_m = \frac{1}{(k+1)!}(\frac{\partial f}{\partial x_1}h_1+ \frac{\partial f}{\partial x_2}h_2+ \dots+\frac{\partial f}{\partial x_n}h_n)^{k+1}(\boldsymbol{a}+\theta \boldsymbol{h})\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;上面这个式子用算子运算的形式来表达泰勒公式。在应用中我们最常用到的其实是多元函数的一阶或二阶泰勒展开，记： &lt;span class=&quot;math&quot;&gt;\[\boldsymbol{H} = \begin{pmatrix}
+\frac{\partial^2 f}{\partial x_1^2}  &amp;amp; \frac{\partial^2 f}{\partial x_1x_2}  &amp;amp; \cdots  &amp;amp; \frac{\partial^2 f}{\partial x_1x_n}\\
+\vdots &amp;amp; \vdots &amp;amp; \vdots &amp;amp;\vdots \\
+\frac{\partial^2 f}{\partial x_nx_1} &amp;amp; \frac{\partial^2 f}{\partial x_nx_2} &amp;amp; \cdots &amp;amp; \frac{\partial^2 f}{\partial x_n^2}\end{pmatrix}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;称为 &lt;span class=&quot;math&quot;&gt;\(f\)&lt;/span&gt; 的&lt;strong&gt;Heissen 阵&lt;/strong&gt;，那么如果将泰勒公式展开到二阶项，便有： &lt;span class=&quot;math&quot;&gt;\[f(\boldsymbol{a}+\boldsymbol{h}) = f(\boldsymbol{a}) + \sum_{i=1}^{n}\frac{\partial f}{\partial x_i}(\boldsymbol{a}) + \frac{1}{2} \boldsymbol{h}^{T} \boldsymbol{H}(\boldsymbol{a}) \boldsymbol{h} + \frac{1}{3!}(\frac{\partial f}{\partial x_1}h_1+\dots+\frac{\partial f}{\partial x_n}h_n)^3(\boldsymbol{a}+ \theta \boldsymbol{h})\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;其中 &lt;span class=&quot;math&quot;&gt;\(\theta \in (0,1)\)&lt;/span&gt;。&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>[Notes: Analysis 2.8] 隐映射与逆映射定理</title>
+   <link href="http://mindonmind.github.io/2013/11/09/notes-analysis-theorem-implicit"/>
+   <updated>2013-11-09T19:58:00+08:00</updated>
+   <id>hhttp://mindonmind.github.io/2013/11/09/notes-analysis-theorem-implicit</id>
+   <content type="html">&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;
+&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;
+&lt;head&gt;
+  &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot; /&gt;
+  &lt;meta http-equiv=&quot;Content-Style-Type&quot; content=&quot;text/css&quot; /&gt;
+  &lt;meta name=&quot;generator&quot; content=&quot;pandoc&quot; /&gt;
+  &lt;title&gt;&lt;/title&gt;
+  &lt;style type=&quot;text/css&quot;&gt;code{white-space: pre;}&lt;/style&gt;
+  &lt;script src=&quot;http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML,https://raw.github.com/mindonmind/MathJax/master/config/local/local.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;p&gt;&lt;a href=&quot;http://book.douban.com/subject/1237679/&quot;&gt;&lt;em&gt;数学分析教程 下&lt;/em&gt;&lt;/a&gt; p.127 - p.147&lt;/p&gt;
+&lt;h2 id=&quot;隐函数定理我们常常会遇到通过隐式表达-fxy-0-这种方式来表达曲线曲面的情形在何种情况下存在着这样方程的唯一解-yfx-或-xgy隐函数定理可以用于解答这个问题如果二元函数-fdto-r-dsubset-r2-满足&quot;&gt;隐函数定理我们常常会遇到通过隐式表达 &lt;span class=&quot;math&quot;&gt;\(F(x,y) = 0\)&lt;/span&gt; 这种方式来表达曲线/曲面的情形，在何种情况下存在着这样方程的唯一解 &lt;span class=&quot;math&quot;&gt;\(y=f(x)\)&lt;/span&gt; 或 &lt;span class=&quot;math&quot;&gt;\(x=g(y)\)&lt;/span&gt;？&lt;strong&gt;隐函数定理&lt;/strong&gt;可以用于解答这个问题。如果二元函数 &lt;span class=&quot;math&quot;&gt;\(F:D\to R, D\subset R^2\)&lt;/span&gt; 满足：&lt;br/&gt;&lt;/h2&gt;
+&lt;ol style=&quot;list-style-type: decimal&quot;&gt;
+&lt;li&gt;&lt;span class=&quot;math&quot;&gt;\(F\)&lt;/span&gt; 在 &lt;span class=&quot;math&quot;&gt;\(D\)&lt;/span&gt; 上连续可微；&lt;br/&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&quot;math&quot;&gt;\(F(x_0, y_0)=0\)&lt;/span&gt;；&lt;br/&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&quot;math&quot;&gt;\(\frac{\partial F(x_0,y_0)}{\partial y} \neq 0\)&lt;/span&gt;，&lt;br/&gt; 那么存在一个包含 &lt;span class=&quot;math&quot;&gt;\((x_0, y_0)\)&lt;/span&gt; 的开矩形 &lt;span class=&quot;math&quot;&gt;\(I\times J\subset D\)&lt;/span&gt; 使得：&lt;br/&gt;&lt;/li&gt;
+&lt;li&gt;对任意 &lt;span class=&quot;math&quot;&gt;\(x \in I\)&lt;/span&gt;，存在唯一的 &lt;span class=&quot;math&quot;&gt;\(y\in J\)&lt;/span&gt;，记为 &lt;span class=&quot;math&quot;&gt;\(f(x)\)&lt;/span&gt; 使得 &lt;span class=&quot;math&quot;&gt;\(F(x,y) = 0\)&lt;/span&gt; 成立；&lt;br/&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&quot;math&quot;&gt;\(y_0 = f(x_0)\)&lt;/span&gt;；&lt;br/&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&quot;math&quot;&gt;\(f\)&lt;/span&gt; 在 &lt;span class=&quot;math&quot;&gt;\(I\)&lt;/span&gt; 上连续可微；&lt;br/&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&quot;math&quot;&gt;\(f&amp;#39;(x) = \frac{\frac{\partial F}{\partial x}(x,y)}{\frac{\partial F}{\partial y}(x,y)}\)&lt;/span&gt;。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;从直观上讲，这个定理讲述的是 &lt;span class=&quot;math&quot;&gt;\(F\)&lt;/span&gt; 在三维空间中的图形与 &lt;span class=&quot;math&quot;&gt;\(z\)&lt;/span&gt; 平面相交所得到的曲线，在什么养的条件下能表达成 &lt;span class=&quot;math&quot;&gt;\(y=f(x)\)&lt;/span&gt; 的形式。它的证明思路是利用导数和函数的连续性，构造出一个长方体使得在该体内 &lt;span class=&quot;math&quot;&gt;\(\frac{\partial F(x,y)}{\partial y} \neq 0\)&lt;/span&gt;，长方体横轴上每一点 &lt;span class=&quot;math&quot;&gt;\(x_m\)&lt;/span&gt; 在纵轴上两端点出的函数值 &lt;span class=&quot;math&quot;&gt;\(F(x_m,a)\)&lt;/span&gt;，&lt;span class=&quot;math&quot;&gt;\(F(x_m,b)\)&lt;/span&gt; 异号，那么由 &lt;span class=&quot;math&quot;&gt;\(\varphi(y) = F(x_m,y)\)&lt;/span&gt; 的单调性及连续性可知在 &lt;span class=&quot;math&quot;&gt;\((a,b)\)&lt;/span&gt; 中存在唯一一点使得 &lt;span class=&quot;math&quot;&gt;\(F(x_m, y_m)=0\)&lt;/span&gt;。所有这些点对 &lt;span class=&quot;math&quot;&gt;\((x_m, y_m)\)&lt;/span&gt; 即构成了我们的函数 &lt;span class=&quot;math&quot;&gt;\(y_m = f(x_m)\)&lt;/span&gt;。由&lt;span class=&quot;math&quot;&gt;\(y_m\)&lt;/span&gt;的唯一性，可知 &lt;span class=&quot;math&quot;&gt;\(y_0 = f(x_0)\)&lt;/span&gt;，再由于长方体可以取道任意小，知 &lt;span class=&quot;math&quot;&gt;\(f(x)\)&lt;/span&gt; 连续。&lt;/p&gt;
+&lt;p&gt;再证明 &lt;span class=&quot;math&quot;&gt;\(f(x)\)&lt;/span&gt; 可导，由 &lt;span class=&quot;math&quot;&gt;\(F(x+h, f(x+h)) - F(x,f(x)) = 0\)&lt;/span&gt; 得 &lt;span class=&quot;math&quot;&gt;\(\frac{\partial F(x,f(x))}{\partial x}h + \frac{\partial F(x, f(x))}{\partial y}(f(x+h) - f(x)) + \epsilon(1)h + \epsilon(1)&amp;#39;(f(x+h) - f(x))\)&lt;/span&gt;，故： &lt;span class=&quot;math&quot;&gt;\[\lim\limits_{h\to 0} \frac{f(x+h) - f(x)}{h} = -\frac{\frac{\partial F}{\partial x}(x,y)}{\frac{\partial F}{\partial y}(x,y)}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;根据这个方程在某一点范围内确定的函数（即 &lt;span class=&quot;math&quot;&gt;\((x,y)\)&lt;/span&gt; 的对应关系），称为&lt;strong&gt;隐函数&lt;/strong&gt;，我们往往只知道它的存在，却很难解析的表达出来。&lt;/p&gt;
+&lt;p&gt;隐函数定理还可以推广到更多元的函数 &lt;span class=&quot;math&quot;&gt;\(F: D\to R, D\subset R^{n+1}\)&lt;/span&gt; 上。这时，定理的条件和结论变为如果 &lt;span class=&quot;math&quot;&gt;\(F\)&lt;/span&gt; 满足: &lt;br/&gt; 1) &lt;span class=&quot;math&quot;&gt;\(F\)&lt;/span&gt; 在 &lt;span class=&quot;math&quot;&gt;\(D\)&lt;/span&gt; 上连续可微 &lt;br/&gt; 2) &lt;span class=&quot;math&quot;&gt;\(F(\boldsymbol{x}_0, y_0) = 0, \boldsymbol{x}_0 \in \boldsymbol{R}^n, y_0 \in \boldsymbol{R}\)&lt;/span&gt; 3) &lt;span class=&quot;math&quot;&gt;\(\frac{\partial F(\boldsymbol{x}_0, y)}{\partial y} \neq 0\)&lt;/span&gt; 那么，存在 &lt;span class=&quot;math&quot;&gt;\((\boldsymbol{x}_0, y_0)\)&lt;/span&gt; 的一个邻域 &lt;span class=&quot;math&quot;&gt;\(G\times J\)&lt;/span&gt; 其中 &lt;span class=&quot;math&quot;&gt;\(\boldsymbol{x}_0 \in G, y_0\in J\)&lt;/span&gt; 使得：&lt;br/&gt; 1) 对于每一个 &lt;span class=&quot;math&quot;&gt;\(\boldsymbol{x}\in G\)&lt;/span&gt;，存在唯一的 &lt;span class=&quot;math&quot;&gt;\(f(\boldsymbol{x}) \in J\)&lt;/span&gt;，使得 &lt;span class=&quot;math&quot;&gt;\(F(\boldsymbol{x}, f(\boldsymbol{x})) = 0\)&lt;/span&gt; 成立。 &lt;br/&gt; 2) y_0 = f(x_0) &lt;br/&gt; 3) &lt;span class=&quot;math&quot;&gt;\(f\)&lt;/span&gt; 在 &lt;span class=&quot;math&quot;&gt;\(D\)&lt;/span&gt; 上连续可微 &lt;br/&gt; 4) &lt;span class=&quot;math&quot;&gt;\(\frac{\partial f(\boldsymbol{x})}{\partial x_i} = \frac{\frac{\partial F(\boldsymbol{x}, y)}{\partial x_i}}{\frac{\partial F(\boldsymbol{x}, y)}{\partial y}}\)&lt;/span&gt;&lt;/p&gt;
+&lt;h2 id=&quot;隐映射定理&quot;&gt;隐映射定理&lt;/h2&gt;
+&lt;p&gt;隐函数定理讲的是由一个隐方程来得到某一个变量与其他所有剩余变量的函数关系，并得到这个函数的一些性质（连续可导），而对于受到一组隐式方程组约束的变量组间的关系，我们有&lt;strong&gt;隐映射定理&lt;/strong&gt;：设 &lt;span class=&quot;math&quot;&gt;\(D \subset \boldsymbol{R}^{n+m}\)&lt;/span&gt;，&lt;span class=&quot;math&quot;&gt;\(F: D\to R^m\)&lt;/span&gt; 满足 &lt;br/&gt; 1) &lt;span class=&quot;math&quot;&gt;\(F\)&lt;/span&gt; 在 &lt;span class=&quot;math&quot;&gt;\(D\)&lt;/span&gt; 上连续可微 &lt;br/&gt; 2) &lt;span class=&quot;math&quot;&gt;\(F(\boldsymbol{x}_0, \boldsymbol{y}_0) = \boldsymbol{0}\)&lt;/span&gt; &lt;br/&gt; 3) &lt;span class=&quot;math&quot;&gt;\(\mathrm{det} \boldsymbol{J}\boldsymbol{F}_{\boldsymbol{y}} (\boldsymbol{x}_0, \boldsymbol{y}_0) \neq  0\)&lt;/span&gt; &lt;br/&gt; 则存在 &lt;span class=&quot;math&quot;&gt;\((\boldsymbol{x}_0, \boldsymbol{y}_0)\)&lt;/span&gt; 的一个邻域 &lt;span class=&quot;math&quot;&gt;\(G \times H\)&lt;/span&gt;，使得 1) 对每一个 &lt;span class=&quot;math&quot;&gt;\(\boldsymbol{x} \in G\)&lt;/span&gt;，存在唯一的 &lt;span class=&quot;math&quot;&gt;\(\boldsymbol{y} \in H\)&lt;/span&gt;，记为 &lt;span class=&quot;math&quot;&gt;\(\boldsymbol{f}(\boldsymbol{x})\)&lt;/span&gt;，使得 &lt;span class=&quot;math&quot;&gt;\(\boldsymbol{F}(\boldsymbol{x}, \boldsymbol{y}) = \boldsymbol{0}\)&lt;/span&gt; &lt;br/&gt; 2) y_0 = f(x_0)&lt;br/&gt; 3) &lt;span class=&quot;math&quot;&gt;\(\boldsymbol{f}\)&lt;/span&gt; 连续可微 &lt;br/&gt; 4) &lt;span class=&quot;math&quot;&gt;\(\boldsymbol{J}\boldsymbol{f}(\boldsymbol{x}) = -(\boldsymbol{J}_{\boldsymbol{y}}\boldsymbol{F}(\boldsymbol{x}, \boldsymbol{y}))^{-1}\boldsymbol{J}_{\boldsymbol{x}}\boldsymbol{F}(\boldsymbol{x}, \boldsymbol{y})\)&lt;/span&gt;&lt;/p&gt;
+&lt;h2 id=&quot;逆映射定理&quot;&gt;逆映射定理&lt;/h2&gt;
+&lt;p&gt;利用隐映射定理，我们可以得到如下&lt;strong&gt;逆映射定理&lt;/strong&gt;：设开集 &lt;span class=&quot;math&quot;&gt;\(D\subset \boldsymbol{R}^n\)&lt;/span&gt;，&lt;span class=&quot;math&quot;&gt;\(\boldsymbol{f}: D\to \boldsymbol{R}^n\)&lt;/span&gt;，如果：&lt;br/&gt; 1) &lt;span class=&quot;math&quot;&gt;\(\boldsymbol{f}\)&lt;/span&gt; 连续可微&lt;br/&gt; 2) 对每一 &lt;span class=&quot;math&quot;&gt;\(x\in D\)&lt;/span&gt;，&lt;span class=&quot;math&quot;&gt;\(\mathrm{det} \boldsymbol{J} \boldsymbol{f}(x) \neq 0\)&lt;/span&gt; &lt;br/&gt; 3) &lt;span class=&quot;math&quot;&gt;\(\boldsymbol{f}\)&lt;/span&gt; 是单射那么 &lt;span class=&quot;math&quot;&gt;\(f\)&lt;/span&gt; 有逆映射 &lt;span class=&quot;math&quot;&gt;\(\boldsymbol{f}^{-1}\)&lt;/span&gt;，且 &lt;span class=&quot;math&quot;&gt;\(\boldsymbol{J}\boldsymbol{f}^{-1} = (\boldsymbol{J}\boldsymbol{f}(\boldsymbol{x}))^{-1}\)&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;上面的这种映射也被成为是&lt;strong&gt;正则映射&lt;/strong&gt;，如果记： &lt;span class=&quot;math&quot;&gt;\[\frac{\partial (y_1, \dots, y_n)}{\partial (x_1, \dots, x_n)} = \mathrm{det} \boldsymbol{J}\boldsymbol{f}(\boldsymbol{x})\]&lt;/span&gt; 那么，由逆映射定理便得： &lt;span class=&quot;math&quot;&gt;\[\frac{\partial (y_1, \dots, y_n)}{\partial (x_1, \dots, x_n)} = \frac{1}{\frac{\partial (x_1, \dots, x_n)}{\partial (y_1, \dots, y_n)}}\]&lt;/span&gt;&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>[Notes: Analysis 2.7] 复合求导与拟微分平均值定理</title>
+   <link href="http://mindonmind.github.io/2013/11/08/notes-analysis-chain-rule-and-mean-mean-value-theomrem"/>
+   <updated>2013-11-08T00:05:00+08:00</updated>
+   <id>hhttp://mindonmind.github.io/2013/11/08/notes-analysis-chain-rule-and-mean-mean-value-theomrem</id>
+   <content type="html">&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;
+&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;
+&lt;head&gt;
+  &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot; /&gt;
+  &lt;meta http-equiv=&quot;Content-Style-Type&quot; content=&quot;text/css&quot; /&gt;
+  &lt;meta name=&quot;generator&quot; content=&quot;pandoc&quot; /&gt;
+  &lt;title&gt;&lt;/title&gt;
+  &lt;style type=&quot;text/css&quot;&gt;code{white-space: pre;}&lt;/style&gt;
+  &lt;script src=&quot;http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML,https://raw.github.com/mindonmind/MathJax/master/config/local/local.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;h2 id=&quot;复合求导&quot;&gt;复合求导&lt;/h2&gt;
+&lt;p&gt;与一元函数类似，多元映射也存在这复合求导法则，即设 &lt;span class=&quot;math&quot;&gt;\(\boldsymbol{f}:D\to \boldsymbol{R}^m\)&lt;/span&gt;，&lt;span class=&quot;math&quot;&gt;\(\boldsymbol{f}\)&lt;/span&gt; 在 &lt;span class=&quot;math&quot;&gt;\(\boldsymbol{x}_0\)&lt;/span&gt; 上可微，再设 &lt;span class=&quot;math&quot;&gt;\(\boldsymbol{g}: \boldsymbol{R}^m \to \boldsymbol{R}^l\)&lt;/span&gt; 且 &lt;span class=&quot;math&quot;&gt;\(\boldsymbol{g}\)&lt;/span&gt; 在 &lt;span class=&quot;math&quot;&gt;\(\boldsymbol{f}(\boldsymbol{x}_0)\)&lt;/span&gt; 处可微，那么 &lt;span class=&quot;math&quot;&gt;\(J(\boldsymbol{g} \circ \boldsymbol{f})(\boldsymbol{x}_0) = J\boldsymbol{g}(\boldsymbol{f}(\boldsymbol{x}_0))J\boldsymbol{f}(\boldsymbol{x}_0)\)&lt;/span&gt; 。下面我们来证明这个定理，首先，记 &lt;span class=&quot;math&quot;&gt;\(\boldsymbol{y}_0 = \boldsymbol{f}(\boldsymbol{x}_0), \boldsymbol{A}_{m, n} = \boldsymbol{J}\boldsymbol{f}(\boldsymbol{x}_0), \boldsymbol{B}_{l,m} = \boldsymbol{J}\boldsymbol{g}(\boldsymbol{y}_0) = \boldsymbol{J}\boldsymbol{g}(\boldsymbol{f}(\boldsymbol{x}_0))\)&lt;/span&gt;，那么我们有： &lt;span class=&quot;math&quot;&gt;\[ \boldsymbol{f}(\boldsymbol{x}_0 + \boldsymbol{h}) - f(\boldsymbol{x}_0) = \boldsymbol{A}\boldsymbol{h} + \boldsymbol{r}(\boldsymbol{h}) \\
+\boldsymbol{g}(\boldsymbol{y}_0 + \boldsymbol{k}) - g(\boldsymbol{y}_0 + \boldsymbol{k}) = \boldsymbol{B}\boldsymbol{k} + \boldsymbol{v}(\boldsymbol{k})\]&lt;/span&gt; 故: &lt;span class=&quot;math&quot;&gt;\[\begin{align*}
+\boldsymbol{g}(\boldsymbol{f}(\boldsymbol{x}_0 + \boldsymbol{h})) - \boldsymbol{g}(\boldsymbol{f}(\boldsymbol{x}_0)) - \boldsymbol{B}\boldsymbol{A}\boldsymbol{h} &amp;amp;= \boldsymbol{g}(\boldsymbol{y}_0 + \boldsymbol{k}) - \boldsymbol{g}(\boldsymbol{y}_0) - \boldsymbol{B}\boldsymbol{A}\boldsymbol{h}\\
+&amp;amp;= \boldsymbol{B}\boldsymbol{k} + \boldsymbol{v}(\boldsymbol{k}) - \boldsymbol{B} \boldsymbol{A}\boldsymbol{h}\\
+&amp;amp;= \boldsymbol{B}(\boldsymbol{f}(\boldsymbol{x}_0+\boldsymbol{h}) - \boldsymbol{f}(\boldsymbol{x}_0)) +\boldsymbol{v}(\boldsymbol{k}) - \boldsymbol{B} \boldsymbol{A}\boldsymbol{h}\\
+&amp;amp;= \boldsymbol{B}(\boldsymbol{A}\boldsymbol{h}+\boldsymbol{r}(\boldsymbol{h})) +\boldsymbol{v}(\boldsymbol{k}) - \boldsymbol{B}\boldsymbol{A}\boldsymbol{h}\\
+&amp;amp;= \boldsymbol{B}\boldsymbol{A}\boldsymbol{h} + \boldsymbol{B}\boldsymbol{r}(\boldsymbol{h}) +\boldsymbol{v}(\boldsymbol{k}) - \boldsymbol{B}\boldsymbol{A}\boldsymbol{h}\\
+\end{align*}\]&lt;/span&gt; 而： &lt;span class=&quot;math&quot;&gt;\[\begin{align*}
+\boldsymbol{v}(\boldsymbol{k}) &amp;amp;= \varepsilon(\boldsymbol{k})\boldsymbol{k} \\
+&amp;amp;= \varepsilon(\boldsymbol{k})(\boldsymbol{A}\boldsymbol{h} + \boldsymbol{r}(\boldsymbol{h})) \\
+&amp;amp;= \varepsilon(\boldsymbol{k})(\boldsymbol{A}\boldsymbol{h} + \varepsilon(\boldsymbol{h})\boldsymbol{h}) \\
+&amp;amp;= \varepsilon(\boldsymbol{k})(\boldsymbol{A}+\varepsilon(\boldsymbol{h}))\boldsymbol{h}
+\end{align*}\]&lt;/span&gt; 所以： &lt;span class=&quot;math&quot;&gt;\[\begin{align*}
+\|\boldsymbol{g}(\boldsymbol{f}(\boldsymbol{x}_0 + \boldsymbol{h})) - \boldsymbol{g}(\boldsymbol{f}(\boldsymbol{x}_0)) - \boldsymbol{B}\boldsymbol{A}\boldsymbol{h}\| &amp;amp;= \boldsymbol{B}\boldsymbol{r}(\boldsymbol{h}) + \boldsymbol{v}\boldsymbol{(}k) \\
+&amp;amp;=\|\boldsymbol{B}(\varepsilon(\boldsymbol{h}) \boldsymbol{h}) + \varepsilon(\boldsymbol{k})(\boldsymbol{A}\boldsymbol{h}+\varepsilon(\boldsymbol{h})\boldsymbol{h})\| \\
+&amp;amp;\leq \|\boldsymbol{B}\|\varepsilon(\boldsymbol{h})\|\boldsymbol{h}\| + \varepsilon(\boldsymbol{k})(\|\boldsymbol{A}\|\|\boldsymbol{h}\| + \varepsilon(\boldsymbol{h})\|\boldsymbol{h}\|)\end{align*}\]&lt;/span&gt; 即 &lt;span class=&quot;math&quot;&gt;\(\|\boldsymbol{g}(\boldsymbol{f}(\boldsymbol{x}_0 + \boldsymbol{h})) - \boldsymbol{g}(\boldsymbol{f}(\boldsymbol{x}_0)) - \boldsymbol{B}\boldsymbol{A}\boldsymbol{h}\|\)&lt;/span&gt; 的范数是 &lt;span class=&quot;math&quot;&gt;\(\|\boldsymbol{h}\|\)&lt;/span&gt; 的高阶无穷小，因此 &lt;span class=&quot;math&quot;&gt;\(\boldsymbol{g}\circ\boldsymbol{f}\)&lt;/span&gt; 在 &lt;span class=&quot;math&quot;&gt;\(\boldsymbol{x}_0\)&lt;/span&gt; 处可微。&lt;/p&gt;
+&lt;p&gt;由这个公式，我们可以很容易地得到下面一个非常有用的结论：设 &lt;span class=&quot;math&quot;&gt;\(f(x_1,x_2,\dots,x_n)\)&lt;/span&gt; 连续可微，其中每个 &lt;span class=&quot;math&quot;&gt;\(x_i(t) \)&lt;/span&gt; 是 &lt;span class=&quot;math&quot;&gt;\(t\)&lt;/span&gt; 的连续可导函数，那么便有： &lt;span class=&quot;math&quot;&gt;\[\frac{\mathrm{d}f}{\rm d t} = (\frac{\partial f}{\partial x_1}, \frac{\partial f}{\partial x_2}, \dots, \frac{\partial f}{\partial x_n})
+\begin{pmatrix}
+\frac{\mathrm{d} x_1}{\mathrm{d} t}\\
+\frac{\mathrm{d} x_2}{\mathrm{d} t} \\
+\vdots\\
+\frac{\mathrm{d} x_n}{\mathrm{d} t}
+\end{pmatrix}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;由此，我们可以得到上一个笔记中关于方向导数与偏导数关系的公式。在三维空间中，任意一个方向可以用方向余弦 &lt;span class=&quot;math&quot;&gt;\((\cos \alpha, \cos \beta, \cos \gamma)\)&lt;/span&gt; 来表示，其中 &lt;span class=&quot;math&quot;&gt;\(\cos^2 \alpha + \cos^2 \beta + \cos^2 \gamma = 1 \)&lt;/span&gt;，那么这个方向的方向导数即为： &lt;span class=&quot;math&quot;&gt;\[\frac{\partial f}{\partial \boldsymbol{u}} = \frac{\partial f}{\partial x_1}\cos \alpha + \frac{\partial f}{\partial x_2}\cos \beta + \frac{\partial f}{\partial x_3}\cos \gamma\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;而通过 Cauchy-Schwarz 不等式可以证明，上式的范数当且仅当&lt;span class=&quot;math&quot;&gt;\((\cos \alpha \cos \beta \cos \gamma) = \lambda(\frac{\partial f}{\partial x_1}, \frac{\partial f}{\partial x_2}, \frac{\partial f}{\partial x_3})\)&lt;/span&gt; 时取到最大值，也就是说梯度指向的方向是函数方向导数范数最大，或者说，函数变化最为剧烈的方向。&lt;/p&gt;
+&lt;h2 id=&quot;拟微分平均值定理&quot;&gt;拟微分平均值定理&lt;/h2&gt;
+&lt;p&gt;对应一元函数的微分中值定理，多元函数一样有类似的定理，即 &lt;span class=&quot;math&quot;&gt;\(f:D\to \boldsymbol{R}^n\)&lt;/span&gt; 可微，如果 &lt;span class=&quot;math&quot;&gt;\(\boldsymbol{a}, \boldsymbol{b} \in D\)&lt;/span&gt;，那么在 &lt;span class=&quot;math&quot;&gt;\(\boldsymbol{a}\)&lt;/span&gt; 与 &lt;span class=&quot;math&quot;&gt;\(\boldsymbol{b}\)&lt;/span&gt; 之间的线段上必存在一点 &lt;span class=&quot;math&quot;&gt;\(\boldsymbol{\xi}\)&lt;/span&gt;，使得 &lt;span class=&quot;math&quot;&gt;\(f(\boldsymbol{b}) - f(\boldsymbol{a}) = \boldsymbol{J}\boldsymbol{f}(\boldsymbol{\xi})(\boldsymbol{b} - \boldsymbol{a})\)&lt;/span&gt;。由于涉及两点间线段，这里要求 &lt;span class=&quot;math&quot;&gt;\(D\)&lt;/span&gt; 必须是&lt;strong&gt;凸域&lt;/strong&gt;。证明思路是构造一元函数，并利用一元函数的微分中值定理以及复合求导法则。&lt;/p&gt;
+&lt;p&gt;而对于多元映射，存在拟微分平均值定理，它主要是将函数值差的范数限定在线段上某点的 Jaccobian 范数同自变量变化差范数的乘积之内，即在 &lt;span class=&quot;math&quot;&gt;\(\boldsymbol{a}\)&lt;/span&gt; 与 &lt;span class=&quot;math&quot;&gt;\(\boldsymbol{b}\)&lt;/span&gt; 之间的线段上存在一点 &lt;span class=&quot;math&quot;&gt;\(\boldsymbol{\xi}\)&lt;/span&gt;，使得 &lt;span class=&quot;math&quot;&gt;\(\|\boldsymbol{f}(\boldsymbol{b}) - \boldsymbol{f}(\boldsymbol{a})\| = \|\boldsymbol{J}\boldsymbol{f}(\boldsymbol{\xi})\|\|(\boldsymbol{b} - \boldsymbol{a})\|\)&lt;/span&gt;。证明思路仍是转化为一元映射问题。&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>[Notes: Analysis 2.6] 多元导数与微分</title>
+   <link href="http://mindonmind.github.io/2013/11/05/notes-analysis-multivariate-derivative-and-differential"/>
+   <updated>2013-11-05T23:50:00+08:00</updated>
+   <id>hhttp://mindonmind.github.io/2013/11/05/notes-analysis-multivariate-derivative-and-differential</id>
+   <content type="html">&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;
+&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;
+&lt;head&gt;
+  &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot; /&gt;
+  &lt;meta http-equiv=&quot;Content-Style-Type&quot; content=&quot;text/css&quot; /&gt;
+  &lt;meta name=&quot;generator&quot; content=&quot;pandoc&quot; /&gt;
+  &lt;title&gt;&lt;/title&gt;
+  &lt;style type=&quot;text/css&quot;&gt;code{white-space: pre;}&lt;/style&gt;
+  &lt;script src=&quot;http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML,https://raw.github.com/mindonmind/MathJax/master/config/local/local.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;p&gt;&lt;a href=&quot;http://book.douban.com/subject/1237679/&quot;&gt;&lt;em&gt;数学分析教程 下&lt;/em&gt;&lt;/a&gt; p.107 - p.119&lt;/p&gt;
+&lt;p&gt;在引入多元函数的导数时会遇到几个概念，分别为方向导数，偏导数与微分。它们之间有所区别但也相互存在着内在的联系。&lt;/p&gt;
+&lt;h2 id=&quot;方向导数与偏导数&quot;&gt;方向导数与偏导数&lt;/h2&gt;
+&lt;p&gt;首先多元函数的&lt;strong&gt;方向导数&lt;/strong&gt;是指，函数按着某个方向趋向与某一点时的变化率，定义为 &lt;span class=&quot;math&quot;&gt;\(\lim\limits_{t\to 0} \frac{f(\boldsymbol{x}_0 +t \boldsymbol{u}) - f(\boldsymbol{x}_0)}{t}\)&lt;/span&gt;，其中 &lt;span class=&quot;math&quot;&gt;\(\boldsymbol{u}\)&lt;/span&gt; 是一个单位向量，它代表了函数趋向于某点的方向。称这个极限为 &lt;span class=&quot;math&quot;&gt;\(f\)&lt;/span&gt; 在 &lt;span class=&quot;math&quot;&gt;\(\boldsymbol{x}_0\)&lt;/span&gt; 处沿方向 &lt;span class=&quot;math&quot;&gt;\(\boldsymbol{u}\)&lt;/span&gt; 的方向导数，记为 &lt;span class=&quot;math&quot;&gt;\(\frac{\partial f}{\partial \boldsymbol{u}}(\boldsymbol{x}_0)\)&lt;/span&gt;。这其实是一个一元导数，如果我们定义 &lt;span class=&quot;math&quot;&gt;\(\varphi(t) = f(\boldsymbol{x}_0+ t\boldsymbol{u})\)&lt;/span&gt;，那么有 &lt;span class=&quot;math&quot;&gt;\(\frac{\partial f}{\partial \boldsymbol{u}}(\boldsymbol{x}_0) = \varphi^{&amp;#39;}(0)\)&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;在方向导数中如果我们取单位坐标向量 &lt;span class=&quot;math&quot;&gt;\(\boldsymbol{e}_i = (0,\dots, 1,\dots,0)\)&lt;/span&gt;，那么称 &lt;span class=&quot;math&quot;&gt;\(\frac{\partial f}{\partial \boldsymbol{e}_i}\)&lt;/span&gt; 为 &lt;span class=&quot;math&quot;&gt;\(f\)&lt;/span&gt; 的一个&lt;strong&gt;偏导数 (partial derivative)&lt;/strong&gt;，记为 &lt;span class=&quot;math&quot;&gt;\(\frac{\partial f}{\partial x_i}(\boldsymbol{x}_0)\)&lt;/span&gt; 或 &lt;span class=&quot;math&quot;&gt;\(D_i f(\boldsymbol{x}_0)\)&lt;/span&gt;。根据方向导数的公式我们可以发现，每一个方向上的偏导数其实都是将其他变量看作常量后所得到的一元函数导数。从几何上讲，每个方向上的偏导数都可以看成函数图像平面上将所有其他变量值固定后所得到的一条曲线在某点处的切线斜率。&lt;/p&gt;
+&lt;p&gt;直接计算偏导数十分容易，方向导数却有困难，但我们有如下定理： &lt;span class=&quot;math&quot;&gt;\[\frac{\partial f}{\partial \boldsymbol{u}}(\boldsymbol{x}) = \frac{\mathrm{d} f(\boldsymbol{x}+t\boldsymbol{u})}{\mathrm{d} t} = \frac{\partial f}{\partial x_1}(\boldsymbol{x})u_1 + \cdots + \frac{\partial f}{\partial x_n}(\boldsymbol{x})u_n\]&lt;/span&gt; 这其实是复合映射微分的一个应用。&lt;/p&gt;
+&lt;h2 id=&quot;多元函数微分&quot;&gt;多元函数微分&lt;/h2&gt;
+&lt;p&gt;下一个重要的概念是多元函数&lt;strong&gt;微分 (differential)&lt;/strong&gt;，与一元函数一样，多元函数微分仍是自变量变化量的一个线性函数。函数可微的意思便是说 &lt;span class=&quot;math&quot;&gt;\(f\)&lt;/span&gt; 在某点 &lt;span class=&quot;math&quot;&gt;\(\boldsymbol{x}_0\)&lt;/span&gt; 附近的变化量可以写成它的微分 &lt;span class=&quot;math&quot;&gt;\(\mathrm{d}f(\boldsymbol{x}_0)\)&lt;/span&gt; 加上一个自变量变化量范数的一阶无穷小。即: &lt;span class=&quot;math&quot;&gt;\[f(\boldsymbol{x}_0+\boldsymbol{h}) - f(\boldsymbol{x}_0) = {\mathrm{d}}f(\boldsymbol{x}_0) + o(\|\boldsymbol{h}\|)\]&lt;/span&gt; 其中 &lt;span class=&quot;math&quot;&gt;\({\mathrm{d}}f(\boldsymbol{x}_0) = \sum\limits_{i=1}^{n}\lambda_i h_i\)&lt;/span&gt;，&lt;span class=&quot;math&quot;&gt;\(\lambda_i\)&lt;/span&gt; 为与 &lt;span class=&quot;math&quot;&gt;\(\boldsymbol{h}\)&lt;/span&gt; 无关的常数。&lt;/p&gt;
+&lt;p&gt;如果函数可微，那么由偏导数的定义便可以得到 &lt;span class=&quot;math&quot;&gt;\[\begin{align*}\frac{\partial f}{\partial x_i}(\boldsymbol{x}_0) &amp;amp; = \lim\limits_{h_i\to 0} \frac{f(x_1, \dots, x_i+h_i, \dots, x_n) - f(x_1,\dots,x_i, \dots, x_n)}{h_i} \\
+&amp;amp; = \lim\limits_{h_i\to 0} \lambda_i + o(1) \\
+&amp;amp; = \lambda_i\end{align*}\]&lt;/span&gt; 因此如果函数可微，那么有 &lt;span class=&quot;math&quot;&gt;\(\mathrm{d}f(\boldsymbol{x}_0) = \sum\limits_{i=1}^{n} \frac{\partial f}{\partial x_i}(\boldsymbol{x}_0)h_i = \boldsymbol{J}f(\boldsymbol{x}_0)\boldsymbol{h}\)&lt;/span&gt;，其中 &lt;span class=&quot;math&quot;&gt;\(\boldsymbol{J}f(\boldsymbol{x}_0) = (\frac{\partial f}{\partial x_1}(\boldsymbol{x}_0), \frac{\partial f}{\partial x_2}(\boldsymbol{x}_0),\dots,\frac{\partial f}{\partial x_n}(\boldsymbol{x}_0))\)&lt;/span&gt; 称为 &lt;span class=&quot;math&quot;&gt;\(f\)&lt;/span&gt; 在 &lt;span class=&quot;math&quot;&gt;\(\boldsymbol{x}_0\)&lt;/span&gt; 处的&lt;strong&gt;Jacobian&lt;/strong&gt;，或称 &lt;span class=&quot;math&quot;&gt;\(f\)&lt;/span&gt; 在 &lt;span class=&quot;math&quot;&gt;\(\boldsymbol{x}_0\)&lt;/span&gt; 处的梯度 &lt;span class=&quot;math&quot;&gt;\(\mathrm{grad} f\)&lt;/span&gt; 或 &lt;span class=&quot;math&quot;&gt;\(\bigtriangledown f\)&lt;/span&gt;。&lt;/p&gt;
+&lt;p&gt;如果函数可微，那么它必连续，因为 &lt;span class=&quot;math&quot;&gt;\(\mathrm{d}f\)&lt;/span&gt; 和 &lt;span class=&quot;math&quot;&gt;\(o(\|\boldsymbol{h}\|)\)&lt;/span&gt; 都可以随着 &lt;span class=&quot;math&quot;&gt;\(\boldsymbol{h}\)&lt;/span&gt; 的变小而任意趋向 &lt;span class=&quot;math&quot;&gt;\(0\)&lt;/span&gt;。此外，我们也知道函数可微说明它的各偏导数存在，相反，各偏导数的存在并不说明函数可微。但是如果各偏导数连续，那么函数必可微。具体来说，设包含 &lt;span class=&quot;math&quot;&gt;\(\boldsymbol{x}_0\)&lt;/span&gt; 的任意开集为 &lt;span class=&quot;math&quot;&gt;\(x_0\)&lt;/span&gt; 的一个&lt;strong&gt;邻域&lt;/strong&gt;。如果 &lt;span class=&quot;math&quot;&gt;\(\frac{\partial f}{\partial x_i}(\boldsymbol{x}_0)\)&lt;/span&gt; 在 &lt;span class=&quot;math&quot;&gt;\(\boldsymbol{x}_0\)&lt;/span&gt; 的某个邻域内连续，那么 &lt;span class=&quot;math&quot;&gt;\(f\)&lt;/span&gt; 在 &lt;span class=&quot;math&quot;&gt;\(\boldsymbol{x}_0\)&lt;/span&gt; 处可微。该定理证明的思路是固定所有其他变量而只变动一个变量，并利用一元函数的微分中值定理，计算这一变量上变化所引起的函数值变化，根据偏导数连续，可以确定这个函数值的变化和多元微分项中对应分量的变化之间误差可以任意小，故证明函数可微。&lt;/p&gt;
+&lt;p&gt;综上，我们有如下关系，函数可微说明它各个偏导数存在，因而各方向导数存在，并且函数连续，但是函数各偏（方向）导存在不能说明函数可微，甚至不能说明函数连续，当函数各方向偏导连续时，函数可微。&lt;/p&gt;
+&lt;p&gt;最后，记 &lt;span class=&quot;math&quot;&gt;\(D\)&lt;/span&gt; 为 &lt;span class=&quot;math&quot;&gt;\(\boldsymbol{R}^n\)&lt;/span&gt; 中的区域（连通开集），如果 &lt;span class=&quot;math&quot;&gt;\(f\)&lt;/span&gt; 在 &lt;span class=&quot;math&quot;&gt;\(D\)&lt;/span&gt; 上各偏导数连续，那么称 &lt;span class=&quot;math&quot;&gt;\(f\)&lt;/span&gt; &lt;strong&gt;连续可微&lt;/strong&gt;，记 &lt;span class=&quot;math&quot;&gt;\(f\in C^1(D)\)&lt;/span&gt;，如果 &lt;span class=&quot;math&quot;&gt;\(f\)&lt;/span&gt; 在 &lt;span class=&quot;math&quot;&gt;\(D\)&lt;/span&gt; 上连续，记 &lt;span class=&quot;math&quot;&gt;\(f \in C^0(D)\)&lt;/span&gt;。&lt;/p&gt;
+&lt;h2 id=&quot;映射的微分&quot;&gt;映射的微分&lt;/h2&gt;
+&lt;p&gt;映射可微的定义与函数可微类似，不过 &lt;span class=&quot;math&quot;&gt;\(d\boldsymbol{f}(x_0) = \boldsymbol{A}\boldsymbol{h}\)&lt;/span&gt;，其中 &lt;span class=&quot;math&quot;&gt;\(A_{m,n}\)&lt;/span&gt; 是一个与 &lt;span class=&quot;math&quot;&gt;\(\boldsymbol{h}\)&lt;/span&gt; 无关的常数矩阵。也就是说，映射可微表示映射向量的变化量等于自变量变化量的线性映射加上一个向量余量，且该余量的范数是自变量变化量范数的高阶无穷小，即: &lt;span class=&quot;math&quot;&gt;\[\boldsymbol{f}(\boldsymbol{x}_0+\boldsymbol{h}) - \boldsymbol{f}(\boldsymbol{x}_0) = \mathrm{d}\boldsymbol{f}(\boldsymbol{x}_0) + \boldsymbol{r}(\boldsymbol{h})\]&lt;/span&gt; 其中，&lt;span class=&quot;math&quot;&gt;\(\lim\limits_{\boldsymbol{h} \to \boldsymbol{0}} \frac{\|\boldsymbol{r}(\boldsymbol{h})\|}{\|\boldsymbol{h}\|} = 0\)&lt;/span&gt;。&lt;/p&gt;
+&lt;p&gt;我们可以通过简单的运算得知，映射可微当且仅当它的各分量函数可微，且有 &lt;span class=&quot;math&quot;&gt;\[ \boldsymbol{A} =  \begin{pmatrix}
+  \frac{\partial f_1}{\partial x_1}(\boldsymbol{x}_0) &amp;amp; \cdots &amp;amp; \frac{\partial f_1}{\partial x_n}(\boldsymbol{x}_0) \\
+  \vdots  &amp;amp; \ddots &amp;amp; \vdots  \\
+  \frac{\partial f_m}{\partial x_1}(\boldsymbol{x}_0) &amp;amp; \cdots &amp;amp; \frac{\partial f_m}{\partial x_n}(\boldsymbol{x}_0)
+ \end{pmatrix} 
+\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;记 &lt;span class=&quot;math&quot;&gt;\(\boldsymbol{J}\boldsymbol{f}(\boldsymbol{x}_0) = A\)&lt;/span&gt;，称为 &lt;span class=&quot;math&quot;&gt;\(\boldsymbol{f}\)&lt;/span&gt; 在 &lt;span class=&quot;math&quot;&gt;\(\boldsymbol{x}_0\)&lt;/span&gt; 处的&lt;strong&gt;Jacobian&lt;/strong&gt;。而 &lt;span class=&quot;math&quot;&gt;\(\mathrm(d)\boldsymbol{f}(\boldsymbol{x}_0) = \boldsymbol{J}\boldsymbol{f}(x_0)\boldsymbol{h}\)&lt;/span&gt; 是改变量 &lt;span class=&quot;math&quot;&gt;\(\boldsymbol{h}\)&lt;/span&gt; 的一个线性映射。&lt;/p&gt;
+&lt;p&gt;与函数可微一样，映射可微也有一个充分条件，及 &lt;span class=&quot;math&quot;&gt;\(\boldsymbol{J}\boldsymbol{f}\)&lt;/span&gt; 的各元素在 &lt;span class=&quot;math&quot;&gt;\(\boldsymbol{x}_0\)&lt;/span&gt; 处连续。&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>[Notes: Analysis 2.5] 多元函数极限与连续性</title>
+   <link href="http://mindonmind.github.io/2013/11/04/notes-analysis-multivariate-funciton-limit-continuity"/>
+   <updated>2013-11-04T23:50:00+08:00</updated>
+   <id>hhttp://mindonmind.github.io/2013/11/04/notes-analysis-multivariate-funciton-limit-continuity</id>
+   <content type="html">&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;
+&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;
+&lt;head&gt;
+  &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot; /&gt;
+  &lt;meta http-equiv=&quot;Content-Style-Type&quot; content=&quot;text/css&quot; /&gt;
+  &lt;meta name=&quot;generator&quot; content=&quot;pandoc&quot; /&gt;
+  &lt;title&gt;&lt;/title&gt;
+  &lt;style type=&quot;text/css&quot;&gt;code{white-space: pre;}&lt;/style&gt;
+  &lt;script src=&quot;http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML,https://raw.github.com/mindonmind/MathJax/master/config/local/local.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;p&gt;&lt;a href=&quot;http://book.douban.com/subject/1237679/&quot;&gt;&lt;em&gt;数学分析教程 下&lt;/em&gt;&lt;/a&gt; p.91 - p.106&lt;/p&gt;
+&lt;h2 id=&quot;多元函数极限&quot;&gt;多元函数极限&lt;/h2&gt;
+&lt;p&gt;由于我们已经在欧几里得空间中定义了两点的距离，因此可以十分容易地将函数极限的概念推广到多元函数上，不同的地方只是将对单自变量的约束改为对多自变量约束即可。在多元函数上，极限仍是刻画自变量趋向某一点时函数值能随之无限接近某个数值，它刻画的是函数在某个点附近的属性。具体的，多元函数极限的定义如下：设 &lt;span class=&quot;math&quot;&gt;\(\boldsymbol{a}\)&lt;/span&gt; 是 &lt;span class=&quot;math&quot;&gt;\(f: D\to \boldsymbol{R}\)&lt;/span&gt; 的凝聚点，&lt;span class=&quot;math&quot;&gt;\(\forall \epsilon &amp;gt; 0\)&lt;/span&gt;，&lt;span class=&quot;math&quot;&gt;\(\exists \delta &amp;gt; 0\)&lt;/span&gt;，使得 &lt;span class=&quot;math&quot;&gt;\(\forall \boldsymbol{x} \in \boldsymbol{D}\)&lt;/span&gt;，且 &lt;span class=&quot;math&quot;&gt;\(0 &amp;lt; \|\boldsymbol{x} - \boldsymbol{a}\| &amp;lt; \delta\)&lt;/span&gt;，&lt;span class=&quot;math&quot;&gt;\(|f(\boldsymbol{x}) - l| &amp;lt; \epsilon\)&lt;/span&gt;，那么称 &lt;span class=&quot;math&quot;&gt;\(f\)&lt;/span&gt; 在 &lt;span class=&quot;math&quot;&gt;\(\boldsymbol{a}\)&lt;/span&gt; 有极限 &lt;span class=&quot;math&quot;&gt;\(l\)&lt;/span&gt; ，记为 &lt;span class=&quot;math&quot;&gt;\(\lim\limits_{\boldsymbol{x} \to \boldsymbol{a}}=l\)&lt;/span&gt;。&lt;/p&gt;
+&lt;p&gt;这个定义有两点需要注意，一个是 &lt;span class=&quot;math&quot;&gt;\(\boldsymbol{a}\)&lt;/span&gt; 必为 &lt;span class=&quot;math&quot;&gt;\(f\)&lt;/span&gt; 的凝聚点，这是因为凝聚点在其周围的空心球内具有稠密性，因而保证了函数在该点附近的无穷多点上有定义。第二是函数不一定需要在 &lt;span class=&quot;math&quot;&gt;\(\boldsymbol{a}\)&lt;/span&gt; 上有定义，因为凝聚点不一定属于集合本身，此外在 &lt;span class=&quot;math&quot;&gt;\(0 &amp;lt; \|\boldsymbol{x} - \boldsymbol{a}\| &amp;lt; \delta\)&lt;/span&gt; 上也能看出这点。&lt;/p&gt;
+&lt;p&gt;多元函数在 &lt;span class=&quot;math&quot;&gt;\(\boldsymbol{a} \in D&amp;#39;\)&lt;/span&gt; 极限为 &lt;span class=&quot;math&quot;&gt;\(l\)&lt;/span&gt; 有一个必要充分条件，即对所有趋向于 &lt;span class=&quot;math&quot;&gt;\(\boldsymbol{a}\)&lt;/span&gt; 的点列 &lt;span class=&quot;math&quot;&gt;\(\{\boldsymbol{x}_i:x_i \neq \boldsymbol{a}\}\)&lt;/span&gt;，有 &lt;span class=&quot;math&quot;&gt;\(f(\boldsymbol{x}_i) \to l\)&lt;/span&gt;。必要性十分显然，而充分性可以通过反正法构造一个趋向于 &lt;span class=&quot;math&quot;&gt;\(\boldsymbol{a}\)&lt;/span&gt; 的点列 &lt;span class=&quot;math&quot;&gt;\(\{x_i\}\)&lt;/span&gt;，但 &lt;span class=&quot;math&quot;&gt;\(f(\boldsymbol{x}_i) \not\to l\)&lt;/span&gt;。&lt;/p&gt;
+&lt;p&gt;与一元函数极限一样，多元函数的极限也具有加减乘除及复合函数极限存在且等于各函数极限的加减乘除与复合的性质。四则运算存在的证明比较简单，我们详细得看一下复合极限。复合极限讲得是一个多元函数 &lt;span class=&quot;math&quot;&gt;\(f\)&lt;/span&gt; 在某个空心球 &lt;span class=&quot;math&quot;&gt;\(B_r(\check{\boldsymbol{a}})\)&lt;/span&gt; 中有定义且 &lt;span class=&quot;math&quot;&gt;\(\lim\limits_{\boldsymbol{x}\to \boldsymbol{a}}f(\boldsymbol{x})=l\)&lt;/span&gt;，再有一元函数 &lt;span class=&quot;math&quot;&gt;\(\varphi\)&lt;/span&gt; 在 &lt;span class=&quot;math&quot;&gt;\(l\)&lt;/span&gt; 附近的空心球 &lt;span class=&quot;math&quot;&gt;\(U = \{x: 0&amp;lt;|x-l| &amp;lt; \delta\}\)&lt;/span&gt; 上有定义，且 &lt;span class=&quot;math&quot;&gt;\(\lim\limits_{x\to l} \varphi(x) = m\)&lt;/span&gt;，&lt;span class=&quot;math&quot;&gt;\(f(B-r(\check{\boldsymbol{a}}) \subset U\)&lt;/span&gt;。那么 &lt;span class=&quot;math&quot;&gt;\(\lim\limits_{\boldsymbol{x} \to \boldsymbol{a}} \varphi(f(\boldsymbol{x}) = m\)&lt;/span&gt;。&lt;/p&gt;
+&lt;p&gt;这段定义看似复杂，但其实说的就是如果一个多元函数在 &lt;span class=&quot;math&quot;&gt;\(\boldsymbol{a}\)&lt;/span&gt; 点有极限值，而另一个一元函数在该极限值附近又有极限值 &lt;span class=&quot;math&quot;&gt;\(m\)&lt;/span&gt;，那么这两个函数的复合函数在 &lt;span class=&quot;math&quot;&gt;\(\boldsymbol{a}\)&lt;/span&gt; 处也有极限值 &lt;span class=&quot;math&quot;&gt;\(m\)&lt;/span&gt; 。对这条性质的证明方法是在 &lt;span class=&quot;math&quot;&gt;\(B_r(\check{\boldsymbol{a}})\)&lt;/span&gt; 内任意取一个趋向于 &lt;span class=&quot;math&quot;&gt;\(\boldsymbol{a}\)&lt;/span&gt; 的点列 &lt;span class=&quot;math&quot;&gt;\({\boldsymbol{x}_i}\)&lt;/span&gt;，那么 &lt;span class=&quot;math&quot;&gt;\(f(\boldsymbol{x}_i) \in B_r(\check{\boldsymbol{a}}) \subset U\)&lt;/span&gt; 且 &lt;span class=&quot;math&quot;&gt;\(f(\boldsymbol{x}_i) \to l\)&lt;/span&gt;。由 &lt;span class=&quot;math&quot;&gt;\(\varphi\)&lt;/span&gt; 在 &lt;span class=&quot;math&quot;&gt;\(l\)&lt;/span&gt; 处极限存在可知，&lt;span class=&quot;math&quot;&gt;\(\varphi(f(\boldsymbol{x}_i)) \to m\)&lt;/span&gt;。因此，对任意 &lt;span class=&quot;math&quot;&gt;\(\{\boldsymbol{x}_i\} \to \boldsymbol{a}\)&lt;/span&gt;，我们有&lt;span class=&quot;math&quot;&gt;\(\varphi(f(\boldsymbol{x}_i)) \to m\)&lt;/span&gt;，因此 &lt;span class=&quot;math&quot;&gt;\(\lim\limits_{\boldsymbol{x} \to \boldsymbol{a}} \varphi(f(\boldsymbol{x})) = m\)&lt;/span&gt;。&lt;/p&gt;
+&lt;p&gt;除了任意函数值点列收敛这个充要条件，对于函数极限存在还有 Cauchy 收敛原理这个充要条件，它说的是函数极限存在，当且仅当对任意小的 &lt;span class=&quot;math&quot;&gt;\(\epsilon\)&lt;/span&gt;，都能找到一个 &lt;span class=&quot;math&quot;&gt;\(\delta &amp;gt; 0\)&lt;/span&gt;，使得任意在空心球 &lt;span class=&quot;math&quot;&gt;\(B_r(\check{\boldsymbol{a}})\)&lt;/span&gt; 内的两点 &lt;span class=&quot;math&quot;&gt;\(\boldsymbol{x}_1, \boldsymbol{x}_2\)&lt;/span&gt; 都有 &lt;span class=&quot;math&quot;&gt;\(|f(\boldsymbol{x}_1) - f(\boldsymbol{x}_2)| &amp;lt; \epsilon\)&lt;/span&gt;。&lt;/p&gt;
+&lt;p&gt;此外，除了可以定义函数在某点的极限，也可以定义函数趋向于无穷的极限 &lt;span class=&quot;math&quot;&gt;\(\lim\limits_{\boldsymbol{x} \to \infty}f(\boldsymbol{x})\)&lt;/span&gt;，它说的是对于任意小的 &lt;span class=&quot;math&quot;&gt;\(\epsilon\)&lt;/span&gt;，都能找到某个 &lt;span class=&quot;math&quot;&gt;\(K&amp;gt;0\)&lt;/span&gt;，使得所有 &lt;span class=&quot;math&quot;&gt;\(\|\boldsymbol{x}\|&amp;gt;K\)&lt;/span&gt;，都有 &lt;span class=&quot;math&quot;&gt;\(|f(\boldsymbol{x}) - l|&amp;lt; \epsilon\)&lt;/span&gt;。对于这类极限，上面提到的四则运算与复合性质也都成立。&lt;/p&gt;
+&lt;h2 id=&quot;多元函数连续性&quot;&gt;多元函数连续性&lt;/h2&gt;
+&lt;p&gt;函数连续的定义与函数极限的定义十分类似，但有几处不同，第一个是函数在 &lt;span class=&quot;math&quot;&gt;\(\boldsymbol{a}\)&lt;/span&gt; 处连续首先要求函数在 &lt;span class=&quot;math&quot;&gt;\(\boldsymbol{a}\)&lt;/span&gt; 处有定义，第二个是不要求 &lt;span class=&quot;math&quot;&gt;\(\boldsymbol{a}\)&lt;/span&gt; 为定义域的凝聚点，最后，对于 &lt;span class=&quot;math&quot;&gt;\(|f(\boldsymbol{x}) - f(\boldsymbol{a})| &amp;lt; \epsilon\)&lt;/span&gt; 的约束是加在以 &lt;span class=&quot;math&quot;&gt;\(\boldsymbol{a}\)&lt;/span&gt; 为球心的某个闭球上的，而不是函数极限中的开球。&lt;/p&gt;
+&lt;p&gt;与一元函数连续一样，多元函数连续强调的其实仍是随着自变量接近某点，函数也可以无限接近这点的函数值。根据定义，多元函数在其定义域中的每个孤立点处均连续，而对于其定义域中的凝聚点 &lt;span class=&quot;math&quot;&gt;\(\boldsymbol{a} \in D\cap D&amp;#39;\)&lt;/span&gt;，函数连续当且仅当 &lt;span class=&quot;math&quot;&gt;\(\lim\limits_{\boldsymbol{x} \to \boldsymbol{a}} f(\boldsymbol{x}) = f(\boldsymbol{a})\)&lt;/span&gt;。&lt;/p&gt;
+&lt;p&gt;函数连续性也具有加减乘除，复合函数仍连续的性质。此外，与一元函数相同，多元函数也有一致连续的概念。如果我们把函数的定义域限制在紧致集（列紧集/有界闭集）上，我们有：&lt;/p&gt;
+&lt;ol style=&quot;list-style-type: decimal&quot;&gt;
+&lt;li&gt;有界闭集/紧致集上的连续函数一致连续。&lt;/li&gt;
+&lt;li&gt;有界闭集/紧致集上的连续函数的值域仍为有界闭集/紧致集。&lt;/li&gt;
+&lt;li&gt;有界闭集/紧致集上的连续函数能在该紧致集上取到最大值与最小值。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;而如果我们限制函数的定义域为连通集，那么有：&lt;/p&gt;
+&lt;ol start=&quot;4&quot; style=&quot;list-style-type: decimal&quot;&gt;
+&lt;li&gt;连通集上的连续函数的值域仍为连通集。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;有了上面这个定理，就能很容易地证明多元函数的&lt;strong&gt;介值定理&lt;/strong&gt;：如果 &lt;span class=&quot;math&quot;&gt;\(f\)&lt;/span&gt; 在连通集 &lt;span class=&quot;math&quot;&gt;\(D \subset \boldsymbol{R}^n\)&lt;/span&gt; 上连续，且 &lt;span class=&quot;math&quot;&gt;\(\boldsymbol{a}, \boldsymbol{b} \in D\)&lt;/span&gt;，那么如果 &lt;span class=&quot;math&quot;&gt;\(f(\boldsymbol{a}) &amp;lt; r &amp;lt; f(\boldsymbol{b})\)&lt;/span&gt;，那么存在 &lt;span class=&quot;math&quot;&gt;\(\boldsymbol{c}\in D\)&lt;/span&gt; 使得 &lt;span class=&quot;math&quot;&gt;\(f(\boldsymbol{c}) =r\)&lt;/span&gt;。因为 &lt;span class=&quot;math&quot;&gt;\(f(D)\)&lt;/span&gt; 连通，所以它必定为区间，故 &lt;span class=&quot;math&quot;&gt;\(r \in f(D)\)&lt;/span&gt;，即存在 &lt;span class=&quot;math&quot;&gt;\(\boldsymbol{c}\)&lt;/span&gt; 使得 &lt;span class=&quot;math&quot;&gt;\(f(\boldsymbol{c}) = r\)&lt;/span&gt;。&lt;/p&gt;
+&lt;h2 id=&quot;映射的连续性&quot;&gt;映射的连续性&lt;/h2&gt;
+&lt;p&gt;前面的函数都是考察一个多维向量空间中的点与实数值的对应关系，我们也可以考察不同维欧式空间中点的关系，为了与函数相区别，称这种关系为映射 &lt;span class=&quot;math&quot;&gt;\(\boldsymbol{f}: \boldsymbol{R}^n \to \boldsymbol{R}^m\)&lt;/span&gt; ，它的每个分量都是一个多元函数 &lt;span class=&quot;math&quot;&gt;\(f: \boldsymbol{R}^n \to \boldsymbol{R}\)&lt;/span&gt;。&lt;/p&gt;
+&lt;p&gt;映射的极限、连续、一致连续概念与函数的完全类似，只需要将计算函数值距离的地方由绝对值换成对应的向量范数即可。&lt;/p&gt;
+&lt;p&gt;与点列极限类似，映射在 &lt;span class=&quot;math&quot;&gt;\(\boldsymbol{a}\)&lt;/span&gt; 处极限为 &lt;span class=&quot;math&quot;&gt;\(\boldsymbol{p}\)&lt;/span&gt;，当且仅当映射的每一个分量函数 &lt;span class=&quot;math&quot;&gt;\(f_i\)&lt;/span&gt; 在 &lt;span class=&quot;math&quot;&gt;\(\boldsymbol{a}\)&lt;/span&gt; 极限为 &lt;span class=&quot;math&quot;&gt;\(\boldsymbol{p}_i\)&lt;/span&gt;，而映射在某点连续，也当且仅当它的各个分量在该点处连续。&lt;/p&gt;
+&lt;p&gt;关于映射连续性，有一个重要的定理：设开集 &lt;span class=&quot;math&quot;&gt;\(D\subset \boldsymbol{R}^n\)&lt;/span&gt;，&lt;span class=&quot;math&quot;&gt;\(\boldsymbol{f}:D\to \boldsymbol{R}^m\)&lt;/span&gt; 连续的充要条件是，对于任意 &lt;span class=&quot;math&quot;&gt;\(\boldsymbol{R}^m\)&lt;/span&gt; 中的开集 &lt;span class=&quot;math&quot;&gt;\(G\)&lt;/span&gt;，&lt;span class=&quot;math&quot;&gt;\(\boldsymbol{f}^{-1}(G)\)&lt;/span&gt; 也是开集。也就是说，开集上的连续映射值空间内的任意开集的原像集也是开集。对于必要性，只需考虑 &lt;span class=&quot;math&quot;&gt;\(\boldsymbol{f}^{-1}(G)\)&lt;/span&gt; 是非空集的情形。如果 &lt;span class=&quot;math&quot;&gt;\(\boldsymbol{f}(\boldsymbol{a}) \in G\)&lt;/span&gt; 那么必然可以找到一个以 &lt;span class=&quot;math&quot;&gt;\(\boldsymbol{f}(\boldsymbol{a})\)&lt;/span&gt; 为球心的球仍属于 &lt;span class=&quot;math&quot;&gt;\(G\)&lt;/span&gt;。那么由于 &lt;span class=&quot;math&quot;&gt;\(\boldsymbol{f}\)&lt;/span&gt; 连续，所以可以在 &lt;span class=&quot;math&quot;&gt;\(\boldsymbol{a}\)&lt;/span&gt; 附近找到一个球，使得这个球上的所有函数值在 &lt;span class=&quot;math&quot;&gt;\(G\)&lt;/span&gt; 中，故 &lt;span class=&quot;math&quot;&gt;\(\boldsymbol{f}^{-1}\)&lt;/span&gt; 为开集。相反，取 &lt;span class=&quot;math&quot;&gt;\(D\)&lt;/span&gt; 中的任意一点 &lt;span class=&quot;math&quot;&gt;\(\boldsymbol{a}\)&lt;/span&gt;，构造 &lt;span class=&quot;math&quot;&gt;\(B_\epsilon(\boldsymbol{a})\)&lt;/span&gt;，它是开集，&lt;span class=&quot;math&quot;&gt;\(\boldsymbol{f}^{-1}(B_\epsilon(\boldsymbol{a}))\)&lt;/span&gt; 也是开集，易证 &lt;span class=&quot;math&quot;&gt;\(\boldsymbol{f}\)&lt;/span&gt; 在 &lt;span class=&quot;math&quot;&gt;\(\boldsymbol{a}\)&lt;/span&gt; 处连续。&lt;/p&gt;
+&lt;p&gt;此外连续映射在有界闭集或连通集上也有一些特殊的性质：&lt;/p&gt;
+&lt;ol style=&quot;list-style-type: decimal&quot;&gt;
+&lt;li&gt;有界闭集上的映射一致连续。&lt;/li&gt;
+&lt;li&gt;有界闭集上的映射的值域仍然是有界闭集。&lt;/li&gt;
+&lt;li&gt;连通集上的映射的值域仍然是连通集。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>[Notes: Analysis 2.4] 实数连续性定理及其在欧式空间中的推广</title>
+   <link href="http://mindonmind.github.io/2013/11/03/notes-analysis-theorems-of-continuity"/>
+   <updated>2013-11-03T23:32:00+08:00</updated>
+   <id>hhttp://mindonmind.github.io/2013/11/03/notes-analysis-theorems-of-continuity</id>
+   <content type="html">&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;
+&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;
+&lt;head&gt;
+  &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot; /&gt;
+  &lt;meta http-equiv=&quot;Content-Style-Type&quot; content=&quot;text/css&quot; /&gt;
+  &lt;meta name=&quot;generator&quot; content=&quot;pandoc&quot; /&gt;
+  &lt;title&gt;&lt;/title&gt;
+  &lt;style type=&quot;text/css&quot;&gt;code{white-space: pre;}&lt;/style&gt;
+  &lt;script src=&quot;http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML,https://raw.github.com/mindonmind/MathJax/master/config/local/local.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;p&gt;关于实数 &lt;span class=&quot;math&quot;&gt;\(R\)&lt;/span&gt;，我们有六个与连续相关的定理，分别为：&lt;/p&gt;
+&lt;ol style=&quot;list-style-type: decimal&quot;&gt;
+&lt;li&gt;单调有界数列必有极限。&lt;/li&gt;
+&lt;li&gt;闭区间套定理：闭区间套中有且只有唯一一点。&lt;/li&gt;
+&lt;li&gt;Bolzano-Weierstrass （列紧性）定理：任何有界数列中必能选出一收敛子列。&lt;/li&gt;
+&lt;li&gt;Cauchy 收敛原理：一个数列收敛的充分必要条件是它是基本列。&lt;/li&gt;
+&lt;li&gt;确界原理：非空有上界的集合必有上确界，非空有下界集合必有下确界。&lt;/li&gt;
+&lt;li&gt;Heine-Borel （有限覆盖）定理：从有界闭区间的开覆盖中能找出有限个开区间仍构成该闭区间的开覆盖。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;上述六个定理中从任意一个出发，都可以证明其他所有定理。它们一起构成了整个微积分的基础，在一元微积分中，所有涉及到连续性的证明，追根溯源都要回到这几个定理当中。&lt;/p&gt;
+&lt;p&gt;但到了 &lt;span class=&quot;math&quot;&gt;\(\boldsymbol{R}^n\)&lt;/span&gt;，情况有所不同。首先由于无法在 &lt;span class=&quot;math&quot;&gt;\(\boldsymbol{R}^n\)&lt;/span&gt; 上定义点与点之间的大小次序，故不存在单调、上下确界的概念，因此定理1和5不再成立。对于剩下的几个定理，我们则都可以在 &lt;span class=&quot;math&quot;&gt;\(\boldsymbol{R}^n\)&lt;/span&gt; 中找到它们的对应如下：&lt;/p&gt;
+&lt;ol start=&quot;2&quot; style=&quot;list-style-type: decimal&quot;&gt;
+&lt;li&gt;闭集套定理：闭集套中有且只有唯一一点。&lt;/li&gt;
+&lt;li&gt;Bolzano-Weierstrass 定理：任何有界点列中必能选出一收敛子列。&lt;/li&gt;
+&lt;li&gt;Cauchy 收敛原理：&lt;span class=&quot;math&quot;&gt;\(\boldsymbol{R}^n\)&lt;/span&gt; 中收敛点列的充分必要条件是它为基本点列。&lt;/li&gt;
+&lt;li&gt;紧致集的充分必要条件是它为有界闭集（有界闭区间）。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;下面我们来看看这些定理在 &lt;span class=&quot;math&quot;&gt;\(R\)&lt;/span&gt; 和 &lt;span class=&quot;math&quot;&gt;\(\boldsymbol{R}^n\)&lt;/span&gt; 上的证明思路，来具体考察它们的异同。首先是 Cauchy 收敛原理，一个收敛数列/点列显然满足基本列的条件，但相反一个基本列必定收敛却不是那么显然，其实这是集合的另一个拓扑性质，被称为&lt;strong&gt;完备性 (Completness)&lt;/strong&gt;。由于在 &lt;span class=&quot;math&quot;&gt;\(\boldsymbol{R}^n\)&lt;/span&gt; 中，点列收敛等价于点列按分量收敛，而基本点列的每一分量都是基本数列，因此利用 &lt;span class=&quot;math&quot;&gt;\(R\)&lt;/span&gt; 上的 Cauchy 原理，我们可以证明 &lt;span class=&quot;math&quot;&gt;\(\boldsymbol{R}^n\)&lt;/span&gt; 上的该原理。&lt;/p&gt;
+&lt;p&gt;与之类似的是 &lt;span class=&quot;math&quot;&gt;\(\boldsymbol{R}^n\)&lt;/span&gt; 上 Bolzano-Weierastrass 定理的证明，同样由于有界点列的每一分量均是有界数列，故 &lt;span class=&quot;math&quot;&gt;\(R\)&lt;/span&gt; 中的 Bolzano-Weierstrass 再次为 &lt;span class=&quot;math&quot;&gt;\(\boldsymbol{R}^n\)&lt;/span&gt; 上的拓展提供了方便。&lt;/p&gt;
+&lt;p&gt;然后是闭区间套和闭集套定理，这两个定理的证明思路都是希望找到一个收敛的数/点列，它的极限属于所有闭区间/集套。在 &lt;span class=&quot;math&quot;&gt;\(R\)&lt;/span&gt; 上，我们可以利用定理1轻易地找到这样的数列，而在&lt;span class=&quot;math&quot;&gt;\(\boldsymbol{R}^n\)&lt;/span&gt; 中，我们则可以利用 Cauchy 收敛原理加上闭集的性质进行证明。&lt;/p&gt;
+&lt;p&gt;最后是有限覆盖原理，在 &lt;span class=&quot;math&quot;&gt;\(\boldsymbol{R}^n\)&lt;/span&gt; 中，有界覆盖成了紧致集的定义，而紧致集与有界闭集等价又说明有界闭集也具有有限覆盖的性质。而有界闭区间/集所具有的紧致性则都是通过反证法构造一个闭区间/集套来证明。&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>[Notes: Analysis 2.3] 基础拓扑：列紧、紧致与连通性</title>
+   <link href="http://mindonmind.github.io/2013/11/02/notes-analysis-basic-topology-compact"/>
+   <updated>2013-11-02T23:01:00+08:00</updated>
+   <id>hhttp://mindonmind.github.io/2013/11/02/notes-analysis-basic-topology-compact</id>
+   <content type="html">&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;
+&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;
+&lt;head&gt;
+  &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot; /&gt;
+  &lt;meta http-equiv=&quot;Content-Style-Type&quot; content=&quot;text/css&quot; /&gt;
+  &lt;meta name=&quot;generator&quot; content=&quot;pandoc&quot; /&gt;
+  &lt;title&gt;&lt;/title&gt;
+  &lt;style type=&quot;text/css&quot;&gt;code{white-space: pre;}&lt;/style&gt;
+  &lt;script src=&quot;http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML,https://raw.github.com/mindonmind/MathJax/master/config/local/local.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;p&gt;&lt;a href=&quot;http://book.douban.com/subject/1237679/&quot;&gt;&lt;em&gt;数学分析教程 下&lt;/em&gt;&lt;/a&gt; p.84 - p.90&lt;/p&gt;
+&lt;p&gt;这部分主要介绍了欧式空间中的另一些拓扑属性及其相互之间的关系。&lt;/p&gt;
+&lt;p&gt;首先是&lt;strong&gt;列紧 (sequentially compactness)&lt;/strong&gt;和&lt;strong&gt;紧致 (compactness)&lt;/strong&gt;的概念。如果 &lt;span class=&quot;math&quot;&gt;\(\boldsymbol{R}^n\)&lt;/span&gt; 子集 &lt;span class=&quot;math&quot;&gt;\(E\)&lt;/span&gt; 中的任一点列都有一子列收敛于 &lt;span class=&quot;math&quot;&gt;\(E\)&lt;/span&gt; 中的某点，那么称 &lt;span class=&quot;math&quot;&gt;\(E\)&lt;/span&gt; 是列紧的。而如果从 &lt;span class=&quot;math&quot;&gt;\(E\)&lt;/span&gt; 的任意一个开覆盖中能选取出有限个开集，它们仍能构成 &lt;span class=&quot;math&quot;&gt;\(E\)&lt;/span&gt; 的开覆盖，就称 &lt;span class=&quot;math&quot;&gt;\(E\)&lt;/span&gt; 为紧致的。&lt;/p&gt;
+&lt;p&gt;关于列紧和紧致，有一个重要的定理，即它们的&lt;strong&gt;充分必要条件均是 &lt;span class=&quot;math&quot;&gt;\(E\)&lt;/span&gt; 为有界闭集&lt;/strong&gt;。首先来考察列紧。我们知道闭集有一个重要的判断方法，即它的导集属于自身（或者说它的凝聚点属于自己，它的任意收敛点列收敛至自己的一点）。这样，列紧集显然是闭集，再有它的每个点列中均有收敛子列知道它必须是有界的。相反，由 Bolzano-Weierstrass 定理可知，有界闭集中的任一点列均可找出一收敛子列，所以有界闭集也是列紧的。&lt;/p&gt;
+&lt;p&gt;再看紧致性，对于一个紧致集 &lt;span class=&quot;math&quot;&gt;\(E\)&lt;/span&gt; ，构造一系列以 &lt;span class=&quot;math&quot;&gt;\(\boldsymbol{0}\)&lt;/span&gt; 为球心，半径为 &lt;span class=&quot;math&quot;&gt;\(1,2,3,\dots\)&lt;/span&gt; 的球它们是 &lt;span class=&quot;math&quot;&gt;\(E\)&lt;/span&gt; 的开覆盖，从这当中必能选取出有限个球覆盖 &lt;span class=&quot;math&quot;&gt;\(E\)&lt;/span&gt;。那么这些球中半径最大的那个能包含 &lt;span class=&quot;math&quot;&gt;\(E\)&lt;/span&gt;，故 &lt;span class=&quot;math&quot;&gt;\(E\)&lt;/span&gt; 有界。再考察 &lt;span class=&quot;math&quot;&gt;\(E^c\)&lt;/span&gt;，从中选取一点 &lt;span class=&quot;math&quot;&gt;\(\boldsymbol{q}\)&lt;/span&gt;，再以 &lt;span class=&quot;math&quot;&gt;\(E\)&lt;/span&gt; 中每一点为球心构造半径为 &lt;span class=&quot;math&quot;&gt;\(r_1, r_2, \dots, r_q\)&lt;/span&gt; 的球 &lt;span class=&quot;math&quot;&gt;\(\{B_i\}\)&lt;/span&gt; ，使每个球都与 &lt;span class=&quot;math&quot;&gt;\(B_{r_i}(\boldsymbol{q})\)&lt;/span&gt; 不相交。&lt;span class=&quot;math&quot;&gt;\(\{B_i\}\)&lt;/span&gt; 是开覆盖，从中选取出有限个球覆盖 &lt;span class=&quot;math&quot;&gt;\(E\)&lt;/span&gt;，并求得最小的半径 &lt;span class=&quot;math&quot;&gt;\(r_m\)&lt;/span&gt;，那么 &lt;span class=&quot;math&quot;&gt;\(B_{r_m}(\boldsymbol{a})\)&lt;/span&gt; 不与这些球中的任意一个相交，也因此不与 &lt;span class=&quot;math&quot;&gt;\(E\)&lt;/span&gt; 相交，故 &lt;span class=&quot;math&quot;&gt;\(B_{r_m}(\boldsymbol{a}) \subset E^c\)&lt;/span&gt;，即 &lt;span class=&quot;math&quot;&gt;\(E^c\)&lt;/span&gt; 是开集。相反，如果 &lt;span class=&quot;math&quot;&gt;\(E\)&lt;/span&gt; 是有界闭集可以构造一列直径递减的长方体列 &lt;span class=&quot;math&quot;&gt;\(\{K_i\}\)&lt;/span&gt;，使得 &lt;span class=&quot;math&quot;&gt;\({\rm diam} K_i = \frac{1}{2} {\rm diam} K_{i-1}\)&lt;/span&gt;，且其中的每一个均无法被某个开覆盖中的有限个覆盖，由闭集套定理，知 &lt;span class=&quot;math&quot;&gt;\(\cap B_i\)&lt;/span&gt; 中存在唯一一点，该点必存在于上述开覆盖中的某一个开集，因此该点的某近邻 &lt;span class=&quot;math&quot;&gt;\(\xi\)&lt;/span&gt; 也属于该开集，有必定存在某一个 &lt;span class=&quot;math&quot;&gt;\(m\)&lt;/span&gt; 使得 &lt;span class=&quot;math&quot;&gt;\(K_m \subset \xi\)&lt;/span&gt;，从而 &lt;span class=&quot;math&quot;&gt;\(K_m\)&lt;/span&gt; 属于该开集，导致矛盾。&lt;/p&gt;
+&lt;p&gt;因此，列紧集、紧致集与有界闭集是相互等价的三个概念。而在证明过程中，Bolzano-Weierstrass 和闭集套定理起到了重要作用。&lt;/p&gt;
+&lt;p&gt;下面再看另一个重要的拓扑性质——&lt;strong&gt;连通性 (connectedness)&lt;/strong&gt;。所谓连通，即指将 &lt;span class=&quot;math&quot;&gt;\(E\)&lt;/span&gt; 分成两个不相交的非空子集时，至少有一个含有另一个的凝聚点。而我们知道，凝聚点反应了一种稠密性，即在它的周围总有无限多个收敛到它的点。如果一个集合含有另一个的凝聚点，也就是说这两个集合见不存在一段「空隙」，其中不含任一集合的点。&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;math&quot;&gt;\(\boldsymbol{R}^n\)&lt;/span&gt; 中连通的开集称为&lt;strong&gt;区域&lt;/strong&gt;，而连通的闭集称为&lt;strong&gt;闭区域&lt;/strong&gt;。而在 &lt;span class=&quot;math&quot;&gt;\(\boldsymbol{R}\)&lt;/span&gt; 上，我们有：一个集合连通当且仅当它是一个区间(p88 定理 13.16)。所以，区域和区间是相对的概念，它们都是指连通集。&lt;/p&gt;
+&lt;p&gt;最后，关于连通集有一个判定定理，即道路连通集必是连通集。这里的道路连通是指，在集合中任意两点 &lt;span class=&quot;math&quot;&gt;\(\boldsymbol{p}\)&lt;/span&gt; 和 &lt;span class=&quot;math&quot;&gt;\(\boldsymbol{q}\)&lt;/span&gt; 之间都存在一条连续的曲线将它们相连。该定理的证明主要是利用连续曲线的参数表达形式，将 &lt;span class=&quot;math&quot;&gt;\(\boldsymbol{R}^n\)&lt;/span&gt; 中的连通性转化为 &lt;span class=&quot;math&quot;&gt;\(\boldsymbol{R}^n\)&lt;/span&gt; 中区间的连通性来证明。&lt;/p&gt;
+&lt;p&gt;由上面这条定理可知，任意凸集均是连通集。&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>[Notes: Analysis 2.2] 基础拓扑：点列极限与开集闭集</title>
+   <link href="http://mindonmind.github.io/2013/11/01/notes-analysis-basic-topology-open-closed"/>
+   <updated>2013-11-01T23:31:00+08:00</updated>
+   <id>hhttp://mindonmind.github.io/2013/11/01/notes-analysis-basic-topology-open-closed</id>
+   <content type="html">&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;
+&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;
+&lt;head&gt;
+  &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot; /&gt;
+  &lt;meta http-equiv=&quot;Content-Style-Type&quot; content=&quot;text/css&quot; /&gt;
+  &lt;meta name=&quot;generator&quot; content=&quot;pandoc&quot; /&gt;
+  &lt;title&gt;&lt;/title&gt;
+  &lt;style type=&quot;text/css&quot;&gt;code{white-space: pre;}&lt;/style&gt;
+  &lt;script src=&quot;http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML,https://raw.github.com/mindonmind/MathJax/master/config/local/local.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;p&gt;&lt;a href=&quot;http://book.douban.com/subject/1237679/&quot;&gt;&lt;em&gt;数学分析教程 下&lt;/em&gt;&lt;/a&gt; p.74 - p.83&lt;/p&gt;
+&lt;p&gt;如果 &lt;span class=&quot;math&quot;&gt;\(\boldsymbol{x}_i \in \boldsymbol{R}^n, i=1,2,3,\dots\)&lt;/span&gt; ，称 &lt;span class=&quot;math&quot;&gt;\(\{\boldsymbol{x}_i\}\)&lt;/span&gt; 为 &lt;span class=&quot;math&quot;&gt;\(\boldsymbol{R}^n\)&lt;/span&gt; 中的&lt;strong&gt;点列&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;定义 2.2.1&lt;/strong&gt; &lt;span class=&quot;math&quot;&gt;\(\{\boldsymbol{x}_i\}\)&lt;/span&gt; 是点列，&lt;span class=&quot;math&quot;&gt;\(a\in \boldsymbol{R}^n\)&lt;/span&gt; ，如果对 &lt;span class=&quot;math&quot;&gt;\(\forall \epsilon &amp;gt; 0, \exists N \in \boldsymbol{N}_+\)&lt;/span&gt;, 使得 &lt;span class=&quot;math&quot;&gt;\(\forall i &amp;gt; N, \|\boldsymbol{x}_i - \boldsymbol{a}\| &amp;lt; \epsilon\)&lt;/span&gt;, 那么称 &lt;span class=&quot;math&quot;&gt;\(\boldsymbol{a}\)&lt;/span&gt; 为 &lt;span class=&quot;math&quot;&gt;\(\{\boldsymbol{x}_i\}\)&lt;/span&gt; 的&lt;strong&gt;极限&lt;/strong&gt;。记作: &lt;span class=&quot;math&quot;&gt;\[\lim_{i \to \infty} \boldsymbol{x}_i = \boldsymbol{a}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;定理 2.2.1&lt;/strong&gt; &lt;span class=&quot;math&quot;&gt;\(\lim\limits_{i \to \infty}\boldsymbol{x}_i = \boldsymbol{a}, \lim\limits_{i \to \infty}\boldsymbol{y}_i = \boldsymbol{b}\)&lt;/span&gt; ，那么: &lt;span class=&quot;math&quot;&gt;\[\lim_{i\to\infty}\boldsymbol{x}_i \pm \boldsymbol{y}_i = \boldsymbol{a}\pm\boldsymbol{b}\\
+\forall \lambda \in \boldsymbol{R}, \lim_{i\to\infty}\lambda \boldsymbol{x}_i = \lambda \boldsymbol{a}\\\]&lt;/span&gt; &lt;br/&gt; &lt;em&gt;证明&lt;/em&gt; 利用距离的性质。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;定义 2.2.2&lt;/strong&gt; &lt;span class=&quot;math&quot;&gt;\(\boldsymbol{x}_i = (x_1^{i}, x_2^{i}, \dots, x_n^{i})\)&lt;/span&gt; ，如果 &lt;span class=&quot;math&quot;&gt;\(\lim\limits_{i\to\infty}x_k^{i} = a_k\)&lt;/span&gt; 对 &lt;span class=&quot;math&quot;&gt;\(k=1,2,\dots,n\)&lt;/span&gt; 成立，称 &lt;span class=&quot;math&quot;&gt;\({\boldsymbol{x}_i}\)&lt;/span&gt; &lt;strong&gt;按分量收敛&lt;/strong&gt; 至 &lt;span class=&quot;math&quot;&gt;\(\boldsymbol{a}=(a_1,a_2,\dots,a_n)\)&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;定理 2.2.2&lt;/strong&gt; &lt;span class=&quot;math&quot;&gt;\(\lim\limits_{i\to\infty}\boldsymbol{x}_i = \boldsymbol{a}\)&lt;/span&gt; 当且仅当 &lt;span class=&quot;math&quot;&gt;\(\{\boldsymbol{x}_i\}\)&lt;/span&gt; 按分量收敛至 &lt;span class=&quot;math&quot;&gt;\(\boldsymbol{a}\)&lt;/span&gt; 。&lt;br/&gt; &lt;em&gt;证明&lt;/em&gt; 利用 &lt;span class=&quot;math&quot;&gt;\(|x_k| \leq \|\boldsymbol{x}\| \leq |x_1|+|x_2|+\dots+|x_n|\)&lt;/span&gt; 。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;定义 2.2.3&lt;/strong&gt; 如果对 &lt;span class=&quot;math&quot;&gt;\(\forall \epsilon &amp;gt; 0, \exists N \in \boldsymbol{N}_+\)&lt;/span&gt;，使得 &lt;span class=&quot;math&quot;&gt;\(\forall i,j &amp;gt; N, \|\boldsymbol{x}_i - \boldsymbol{x}_j\|&amp;lt;\epsilon\)&lt;/span&gt; ，称 &lt;span class=&quot;math&quot;&gt;\(\{\boldsymbol{x}_i\}\)&lt;/span&gt; 为&lt;strong&gt;基本列&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;定理 2.2.3&lt;/strong&gt; &lt;span class=&quot;math&quot;&gt;\(\{\boldsymbol{x}_i\}\)&lt;/span&gt; 收敛的充分必要条件是 &lt;span class=&quot;math&quot;&gt;\(\{\boldsymbol{x}_i\}\)&lt;/span&gt; 为基本列。&lt;br/&gt; &lt;em&gt;证明&lt;/em&gt; 必要性：距离性质。充分性：每个分量都是基本数列，从而每个分量收敛，因此 &lt;span class=&quot;math&quot;&gt;\(\{\boldsymbol{x}_i\}\)&lt;/span&gt; 收敛。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;定理 2.2.4 (Bolzano-Weierstrass)&lt;/strong&gt; 从任一有界点列中可以选取出收敛的子列。&lt;br/&gt; &lt;em&gt;证明&lt;/em&gt; 分量数列有界，从第一个分量中取出一个收敛子列，接着从该收敛子列所对应的点列中抽取第二个分量上的收敛子列，以此直至最后一个分量。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;定义 2.2.4&lt;/strong&gt; &lt;span class=&quot;math&quot;&gt;\(E \subset \boldsymbol{R}^n\)&lt;/span&gt;，&lt;span class=&quot;math&quot;&gt;\(a \in E\)&lt;/span&gt;，如果存在 &lt;span class=&quot;math&quot;&gt;\(r &amp;gt; 0\)&lt;/span&gt; 使 &lt;span class=&quot;math&quot;&gt;\(B_r(a) \subset E\)&lt;/span&gt; ，称 &lt;span class=&quot;math&quot;&gt;\(\boldsymbol{a}\)&lt;/span&gt; 为 &lt;span class=&quot;math&quot;&gt;\(E\)&lt;/span&gt; 的&lt;strong&gt;内点&lt;/strong&gt;。&lt;span class=&quot;math&quot;&gt;\(E\)&lt;/span&gt; 的全体内点集合记为 &lt;span class=&quot;math&quot;&gt;\(E^\circ\)&lt;/span&gt;，称为 &lt;span class=&quot;math&quot;&gt;\(E\)&lt;/span&gt; 的&lt;strong&gt;内部&lt;/strong&gt; 。如果 &lt;span class=&quot;math&quot;&gt;\(E = E^\circ\)&lt;/span&gt; ，称 &lt;span class=&quot;math&quot;&gt;\(E\)&lt;/span&gt; 为&lt;strong&gt;开集&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;空集与 &lt;span class=&quot;math&quot;&gt;\(\boldsymbol{R}^n\)&lt;/span&gt; 均是开集，此外如果 &lt;span class=&quot;math&quot;&gt;\(r&amp;gt;0\)&lt;/span&gt; 那么 &lt;span class=&quot;math&quot;&gt;\(B_r(\boldsymbol{a})\)&lt;/span&gt; 也是开集。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;定理 2.2.5&lt;/strong&gt; 任意集合 &lt;span class=&quot;math&quot;&gt;\(E\)&lt;/span&gt; 的内部 &lt;span class=&quot;math&quot;&gt;\(E^\circ\)&lt;/span&gt; 是开集。&lt;br/&gt; &lt;em&gt;证明&lt;/em&gt; 只讨论 &lt;span class=&quot;math&quot;&gt;\(E\)&lt;/span&gt; 是非空集的情形，&lt;span class=&quot;math&quot;&gt;\(E^\circ\)&lt;/span&gt; 中任一点 &lt;span class=&quot;math&quot;&gt;\(\boldsymbol{a}\)&lt;/span&gt; 有 &lt;span class=&quot;math&quot;&gt;\(B_r(\boldsymbol{a}) \subset E\)&lt;/span&gt;，&lt;span class=&quot;math&quot;&gt;\(r&amp;gt;0\)&lt;/span&gt;。&lt;span class=&quot;math&quot;&gt;\(B_r(\boldsymbol{a})\)&lt;/span&gt; 中任一点是 &lt;span class=&quot;math&quot;&gt;\(B_r(\boldsymbol{a})\)&lt;/span&gt; 的内点，所以也是 &lt;span class=&quot;math&quot;&gt;\(E\)&lt;/span&gt; 的内点，故 &lt;span class=&quot;math&quot;&gt;\(B_r(\boldsymbol{a}) \subset E^\circ\)&lt;/span&gt;。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;定理 2.2.6&lt;/strong&gt; 在空间 &lt;span class=&quot;math&quot;&gt;\(\boldsymbol{R}^n\)&lt;/span&gt; 内，有&lt;br /&gt;1). &lt;span class=&quot;math&quot;&gt;\(\boldsymbol{R}^n\)&lt;/span&gt;，&lt;span class=&quot;math&quot;&gt;\(\varnothing\)&lt;/span&gt; 均是开集。&lt;br /&gt;2). &lt;span class=&quot;math&quot;&gt;\(\{E_a\}\)&lt;/span&gt;，&lt;span class=&quot;math&quot;&gt;\(a \in I\)&lt;/span&gt; 是一个开集族，&lt;span class=&quot;math&quot;&gt;\(\bigcup\limits_{a\in I} E\)&lt;/span&gt; 也是开集。&lt;br /&gt;3). &lt;span class=&quot;math&quot;&gt;\(E_1\)&lt;/span&gt;，&lt;span class=&quot;math&quot;&gt;\(E_2\)&lt;/span&gt;，&lt;span class=&quot;math&quot;&gt;\(\dots\)&lt;/span&gt;，&lt;span class=&quot;math&quot;&gt;\(E_n\)&lt;/span&gt; 是有限个开集，则 &lt;span class=&quot;math&quot;&gt;\(\bigcap\limits_{i=1}^m E_i\)&lt;/span&gt; 也是开集。&lt;/p&gt;
+&lt;p&gt;上述定理是说，任意个开集的并是开集，有限个开集的交是开集，而由于无限个开集的交有可能只是一点，故可以不是开集。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;定义 2.2.5&lt;/strong&gt; 称 &lt;span class=&quot;math&quot;&gt;\(E^c=\boldsymbol{R}^n \setminus E\)&lt;/span&gt; 为 &lt;span class=&quot;math&quot;&gt;\(E\)&lt;/span&gt; 的&lt;strong&gt;补集&lt;/strong&gt;。如果 &lt;span class=&quot;math&quot;&gt;\(E^c\)&lt;/span&gt; 是开集，称 &lt;span class=&quot;math&quot;&gt;\(E\)&lt;/span&gt; 为&lt;strong&gt;闭集&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;注意，存在即是开集也是闭集的集合，也存在既不是开集也不是闭集的集合。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;定理 2.2.7 (de Morgan)&lt;/strong&gt; &lt;span class=&quot;math&quot;&gt;\[(\bigcup \limits_{a} E_a)^c = \bigcap \limits_{a} E_a^c \\
+(\bigcap \limits_{a} E_a)^c = \bigcup \limits_{a} E_a^c\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;定理 2.2.8&lt;/strong&gt; 在空间 &lt;span class=&quot;math&quot;&gt;\(\boldsymbol{R}^n\)&lt;/span&gt; 中，有&lt;br /&gt;1). &lt;span class=&quot;math&quot;&gt;\(\boldsymbol{R}^n\)&lt;/span&gt;，&lt;span class=&quot;math&quot;&gt;\(\varnothing\)&lt;/span&gt; 是闭集。&lt;br /&gt;2). &lt;span class=&quot;math&quot;&gt;\(\{E_a\}\)&lt;/span&gt;，&lt;span class=&quot;math&quot;&gt;\(a \in I\)&lt;/span&gt; 是一个闭集族，&lt;span class=&quot;math&quot;&gt;\(\bigcap \limits_{a \in I}E_a\)&lt;/span&gt; 是闭集。&lt;br /&gt;3). &lt;span class=&quot;math&quot;&gt;\(E_1\)&lt;/span&gt;，&lt;span class=&quot;math&quot;&gt;\(E_2\)&lt;/span&gt;，&lt;span class=&quot;math&quot;&gt;\(\dots\)&lt;/span&gt;，&lt;span class=&quot;math&quot;&gt;\(E_n\)&lt;/span&gt; 是开集，则 &lt;span class=&quot;math&quot;&gt;\(\bigcup \limits_{i} E_i\)&lt;/span&gt; 是闭集。&lt;/p&gt;
+&lt;p&gt;记 &lt;span class=&quot;math&quot;&gt;\(B_r(\check{\boldsymbol{a}})= \{\boldsymbol{x} \in \boldsymbol{R}^n: 0&amp;lt;\|\boldsymbol{x}-\boldsymbol{a}\|&amp;lt;r\}\)&lt;/span&gt;，称为 &lt;span class=&quot;math&quot;&gt;\(\boldsymbol{R}^n\)&lt;/span&gt; 中的空心球。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;定义 2.2.6&lt;/strong&gt; &lt;span class=&quot;math&quot;&gt;\(\boldsymbol{a} \in \boldsymbol{R}^n\)&lt;/span&gt;，&lt;span class=&quot;math&quot;&gt;\(E \subset \boldsymbol{R}^n\)&lt;/span&gt;，如果对任意 &lt;span class=&quot;math&quot;&gt;\(r&amp;gt;0\)&lt;/span&gt;，&lt;span class=&quot;math&quot;&gt;\(B_r(\check{\boldsymbol{a}})\)&lt;/span&gt; 中均有 &lt;span class=&quot;math&quot;&gt;\(E\)&lt;/span&gt; 中的点，则称 &lt;span class=&quot;math&quot;&gt;\(\boldsymbol{a}\)&lt;/span&gt; 为 &lt;span class=&quot;math&quot;&gt;\(E\)&lt;/span&gt; 的&lt;strong&gt;凝聚点&lt;/strong&gt;。&lt;span class=&quot;math&quot;&gt;\(E\)&lt;/span&gt; 中除凝聚点之外的点称为&lt;strong&gt;孤立点&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;定理 2.2.9&lt;/strong&gt; &lt;span class=&quot;math&quot;&gt;\(\boldsymbol{a}\)&lt;/span&gt; 是 &lt;span class=&quot;math&quot;&gt;\(E\)&lt;/span&gt; 的凝聚点，有下面两种充分必要条件：&lt;br /&gt;1) 以 &lt;span class=&quot;math&quot;&gt;\(\boldsymbol{a}\)&lt;/span&gt; 为球心的任意球中都包含 &lt;span class=&quot;math&quot;&gt;\(E\)&lt;/span&gt; 中的无限多个点。&lt;br /&gt;2) &lt;span class=&quot;math&quot;&gt;\(E\)&lt;/span&gt; 中可以找出一个互不相同的收敛点列 &lt;span class=&quot;math&quot;&gt;\(\{\boldsymbol{x}_i\}\)&lt;/span&gt; 收敛于 &lt;span class=&quot;math&quot;&gt;\(\boldsymbol{a}\)&lt;/span&gt;。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;定义 2.2.7&lt;/strong&gt; &lt;span class=&quot;math&quot;&gt;\(E\)&lt;/span&gt; 的全体凝聚点称为 &lt;span class=&quot;math&quot;&gt;\(E\)&lt;/span&gt; 的&lt;strong&gt;导集&lt;/strong&gt;，记作 &lt;span class=&quot;math&quot;&gt;\(E&amp;#39;\)&lt;/span&gt; 。&lt;span class=&quot;math&quot;&gt;\(\overline E = E\cup E&amp;#39;\)&lt;/span&gt; 称为 &lt;span class=&quot;math&quot;&gt;\(E\)&lt;/span&gt; 的&lt;strong&gt;闭包&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;定理 2.2.10&lt;/strong&gt; &lt;span class=&quot;math&quot;&gt;\(E\)&lt;/span&gt; 是闭集的充分必要条件是 &lt;span class=&quot;math&quot;&gt;\(E&amp;#39; \subset E\)&lt;/span&gt;。&lt;br/&gt; &lt;em&gt;证明&lt;/em&gt; 必要性：&lt;span class=&quot;math&quot;&gt;\(E^c\)&lt;/span&gt; 是开集，故 &lt;span class=&quot;math&quot;&gt;\(E^c\)&lt;/span&gt; 中的点均不可能是 &lt;span class=&quot;math&quot;&gt;\(E\)&lt;/span&gt; 的凝聚点。充分性：由&lt;span class=&quot;math&quot;&gt;\(E^c\)&lt;/span&gt; 的点均不是凝聚点，&lt;span class=&quot;math&quot;&gt;\(E^c\)&lt;/span&gt; 是开集。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;推论&lt;/strong&gt; &lt;span class=&quot;math&quot;&gt;\(E\)&lt;/span&gt; 是闭集的充分必要条件是 &lt;span class=&quot;math&quot;&gt;\(E\)&lt;/span&gt; 中任何收敛点列的极限均在 &lt;span class=&quot;math&quot;&gt;\(E\)&lt;/span&gt; 中。&lt;br/&gt; &lt;em&gt;证明&lt;/em&gt; 定理2.2.9 定理2.2.10。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;定理 2.2.11&lt;/strong&gt; &lt;span class=&quot;math&quot;&gt;\(E&amp;#39;\)&lt;/span&gt; 和 &lt;span class=&quot;math&quot;&gt;\(\overline E\)&lt;/span&gt; 均是闭集。&lt;br/&gt; &lt;em&gt;证明&lt;/em&gt; 1). &lt;span class=&quot;math&quot;&gt;\((E&amp;#39;)^c\)&lt;/span&gt; 是开集。2). 考察 &lt;span class=&quot;math&quot;&gt;\(E\cup E&amp;#39;\)&lt;/span&gt; 中的收敛点列，如果点列中有有限个点，那么其极限 &lt;span class=&quot;math&quot;&gt;\(\boldsymbol{a}\)&lt;/span&gt; 必 &lt;span class=&quot;math&quot;&gt;\(\in \overline E\)&lt;/span&gt;。否则，如果点列中有一个子列由 &lt;span class=&quot;math&quot;&gt;\(E\)&lt;/span&gt; 中的点构成，则 &lt;span class=&quot;math&quot;&gt;\(\boldsymbol{a} \in E&amp;#39; \subset \overline E\)&lt;/span&gt;；如果点列中有一个子列由 &lt;span class=&quot;math&quot;&gt;\(E&amp;#39;\)&lt;/span&gt; 中点构成，由 &lt;span class=&quot;math&quot;&gt;\(E&amp;#39;\)&lt;/span&gt; 是闭集知 &lt;span class=&quot;math&quot;&gt;\(\boldsymbol{a} \in E&amp;#39;\)&lt;/span&gt;。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;定理 2.2.12&lt;/strong&gt; &lt;span class=&quot;math&quot;&gt;\(E^\circ\)&lt;/span&gt; 是含于 &lt;span class=&quot;math&quot;&gt;\(E\)&lt;/span&gt; 内的最大开集，&lt;span class=&quot;math&quot;&gt;\(\overline E\)&lt;/span&gt; 是包含着 &lt;span class=&quot;math&quot;&gt;\(E\)&lt;/span&gt; 的最小闭集。&lt;br/&gt; &lt;em&gt;证明&lt;/em&gt; 开集略，闭集只需证明 &lt;span class=&quot;math&quot;&gt;\(E&amp;#39;\subset F\)&lt;/span&gt;，&lt;span class=&quot;math&quot;&gt;\(F\)&lt;/span&gt; 是包含 &lt;span class=&quot;math&quot;&gt;\(E\)&lt;/span&gt; 的任意闭集，利用定理2.2.10的推论可证。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;定义 2.2.8&lt;/strong&gt; &lt;span class=&quot;math&quot;&gt;\((E^c)^\circ\)&lt;/span&gt; 称为 &lt;span class=&quot;math&quot;&gt;\(E\)&lt;/span&gt; 的&lt;strong&gt;外部&lt;/strong&gt;，其中的点称为 &lt;span class=&quot;math&quot;&gt;\(E\)&lt;/span&gt; 的&lt;strong&gt;外点&lt;/strong&gt;。既非 &lt;span class=&quot;math&quot;&gt;\(E\)&lt;/span&gt; 外点也非 &lt;span class=&quot;math&quot;&gt;\(E\)&lt;/span&gt; 内点的点称为 &lt;span class=&quot;math&quot;&gt;\(E\)&lt;/span&gt; 的&lt;strong&gt;边界点&lt;/strong&gt;，全体边界点称为 &lt;span class=&quot;math&quot;&gt;\(E\)&lt;/span&gt; 的&lt;strong&gt;边界&lt;/strong&gt;，记为 &lt;span class=&quot;math&quot;&gt;\(\partial E\)&lt;/span&gt;。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;定理 2.2.13 (闭集套定理)&lt;/strong&gt; &lt;span class=&quot;math&quot;&gt;\({F_i}\)&lt;/span&gt; 是闭集列，&lt;span class=&quot;math&quot;&gt;\(F_i \neq \varnothing\)&lt;/span&gt;，且 &lt;span class=&quot;math&quot;&gt;\(F_1 \subset F_2 \subset F_3 \subset \cdots\)&lt;/span&gt;，此外还有 &lt;span class=&quot;math&quot;&gt;\(\lim\limits_{i\to\infty}\rm{diam}(F_i) = 0\)&lt;/span&gt;，那么 &lt;span class=&quot;math&quot;&gt;\(\bigcap \limits_{i=1}^\infty F_i\)&lt;/span&gt; 只含唯一的点。&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>[Notes: Analysis 2.1] 欧几里得空间</title>
+   <link href="http://mindonmind.github.io/2013/10/31/notes-analysis-euclid-space"/>
+   <updated>2013-10-31T02:03:00+08:00</updated>
+   <id>hhttp://mindonmind.github.io/2013/10/31/notes-analysis-euclid-space</id>
+   <content type="html">&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;
+&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;
+&lt;head&gt;
+  &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot; /&gt;
+  &lt;meta http-equiv=&quot;Content-Style-Type&quot; content=&quot;text/css&quot; /&gt;
+  &lt;meta name=&quot;generator&quot; content=&quot;pandoc&quot; /&gt;
+  &lt;title&gt;&lt;/title&gt;
+  &lt;style type=&quot;text/css&quot;&gt;code{white-space: pre;}&lt;/style&gt;
+  &lt;script src=&quot;http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML,https://raw.github.com/mindonmind/MathJax/master/config/local/local.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;p&gt;&lt;a href=&quot;http://book.douban.com/subject/1237679/&quot;&gt;&lt;em&gt;数学分析教程 下&lt;/em&gt;&lt;/a&gt; p.69 - p74.&lt;/p&gt;
+&lt;p&gt;首先，定义在多元分析中最基本的集合： &lt;span class=&quot;math&quot;&gt;\(\boldsymbol{R}^n = \{(x_1, x_2,\dots, x_n): x_i \in \boldsymbol{R}, i=1,2,\dots,n\}\)&lt;/span&gt; 。 &lt;span class=&quot;math&quot;&gt;\(\boldsymbol{R}^n\)&lt;/span&gt; 中的元素 &lt;span class=&quot;math&quot;&gt;\(\boldsymbol{x} = (x_1, x_2, \dots, x_i) \)&lt;/span&gt; 称为一个向量，或一个点，其中&lt;span class=&quot;math&quot;&gt;\(\boldsymbol{0} = (0, 0, \dots, 0)\)&lt;/span&gt; 称为零向量。可以定义向量的加法与数乘两种运算： &lt;span class=&quot;math&quot;&gt;\[x + y = (x_1+y_1, x_2+y_2, \dots, x_n+y_n) \\ \lambda \mathbf(x) = (\lambda x_1, \lambda x_2, \dots, \lambda x_n)\]&lt;/span&gt; 定义 &lt;span class=&quot;math&quot;&gt;\(- \boldsymbol{x} = (-x_1, -x_2, \dots, -x_n)\)&lt;/span&gt;，那么对于任意 &lt;span class=&quot;math&quot;&gt;\(\boldsymbol{x}, \boldsymbol{y}, \boldsymbol{z}\)&lt;/span&gt; 都有 &lt;span class=&quot;math&quot;&gt;\[\boldsymbol{0} + \boldsymbol{x} = \boldsymbol{x} + \boldsymbol{0} \\ 
+- \boldsymbol{x} + \boldsymbol{x} = \boldsymbol{0} \\
+\boldsymbol{x}+\boldsymbol{y} = \boldsymbol{y}+\boldsymbol{x} \\
+\boldsymbol{x} + (\boldsymbol{y} + \boldsymbol{z}) = (\boldsymbol{x}+\boldsymbol{y}) + \boldsymbol{z} \\
+\lambda (\boldsymbol{x} + \boldsymbol{y} ) = \lambda \boldsymbol{x} + \lambda \boldsymbol{y} \\ 
+( \lambda + \mu) \boldsymbol{x} = \lambda \boldsymbol{x} + \mu \boldsymbol{y} \\
+\lambda(\mu \boldsymbol{x} )=( \lambda\mu) \boldsymbol{x} \\
+1 \cdot \boldsymbol{x} = \boldsymbol{x} 
+\]&lt;/span&gt; 由此可见，定义了这些运算的 &lt;span class=&quot;math&quot;&gt;\(\boldsymbol{R}^n\)&lt;/span&gt; 是数域 &lt;span class=&quot;math&quot;&gt;\(\boldsymbol{R}\)&lt;/span&gt; 上的线性空间，也称 &lt;span class=&quot;math&quot;&gt;\(\boldsymbol{R}^n\)&lt;/span&gt; 为 &lt;span class=&quot;math&quot;&gt;\(\boldsymbol{n}\)&lt;/span&gt; 维向量空间。&lt;/p&gt;
+&lt;p&gt;在 &lt;span class=&quot;math&quot;&gt;\(\boldsymbol{R}^n\)&lt;/span&gt; 中引入&lt;strong&gt;内积&lt;/strong&gt;运算 &lt;span class=&quot;math&quot;&gt;\(\langle\boldsymbol{x} , \boldsymbol{y}\rangle = \sum x_iy_i\)&lt;/span&gt;， 该运算满足： &lt;span class=&quot;math&quot;&gt;\[\begin{aligned}
+&amp;amp; \langle\boldsymbol{x}, \boldsymbol{x} \rangle \geq 0 &amp;amp; \text{(正定性)}\\
+&amp;amp; \langle\boldsymbol{x} , \boldsymbol{y} \rangle = \langle\boldsymbol{y} , \boldsymbol{x} \rangle &amp;amp; \text{(对称性)})\\ 
+&amp;amp; \langle\boldsymbol{x} , \boldsymbol{y} +\boldsymbol{z} \rangle = \langle\boldsymbol{x} ,\boldsymbol{y} \rangle + \langle\boldsymbol{x} , \boldsymbol{z} \rangle &amp;amp; \text{(线性1)}\\
+&amp;amp; \forall \lambda \in \boldsymbol{R}, \; \langle\lambda \boldsymbol{x} , \boldsymbol{y} \rangle = \lambda\langle\boldsymbol{x} ,\boldsymbol{y} \rangle &amp;amp; \text{(线性2)}\end{aligned}\]&lt;/span&gt; 故该种定义方式符合线性代数中对于内积运算的要求。此外，根据上述性质可知 &lt;span class=&quot;math&quot;&gt;\[ \langle\lambda\boldsymbol{x} + \mu\boldsymbol{y} , \boldsymbol{z} \rangle = \lambda\langle\boldsymbol{x} , \boldsymbol{z} \rangle + \mu\langle\boldsymbol{y}, \boldsymbol{z}\rangle \]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;对于内积，有一个非常重要的定理：&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;定理 2.1.1 (Cauchy-Schwarz)&lt;/strong&gt; &lt;span class=&quot;math&quot;&gt;\[\langle \boldsymbol{x},\boldsymbol{x} \rangle ^2 \leq \langle \boldsymbol{x},\boldsymbol{x} \rangle \langle \boldsymbol{y},\boldsymbol{y} \rangle \]&lt;/span&gt; &lt;em&gt;证明&lt;/em&gt; 使用 &lt;span class=&quot;math&quot;&gt;\(\langle \boldsymbol{x}-t\boldsymbol{y}, \boldsymbol{x}-t\boldsymbol{y} \rangle \geq 0\)&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;在定义内积之后的 &lt;span class=&quot;math&quot;&gt;\(\boldsymbol{R}^n\)&lt;/span&gt; 称为 &lt;strong&gt; 维 Euclid 空间&lt;/strong&gt;，或简称&lt;strong&gt;欧式空间&lt;/strong&gt;。在内积的基础之上，可以定义向量的&lt;strong&gt;范数&lt;/strong&gt;，此处定义 &lt;span class=&quot;math&quot;&gt;\(\|\boldsymbol{x}  \|=\sqrt{\langle \boldsymbol{x} , \boldsymbol{x} \rangle}\)&lt;/span&gt;，它满足范数所要求的三条性质： &lt;span class=&quot;math&quot;&gt;\[\begin{aligned}
+&amp;amp;\|\boldsymbol{x} \| \geq \boldsymbol{0} \\
+&amp;amp;\forall \lambda \in \boldsymbol{R},\;  \|\lambda\boldsymbol{x} \| = |\lambda|\|\boldsymbol{x} \|\\
+&amp;amp;\|\boldsymbol{x} + \boldsymbol{y} \| \leq \|x\| + \|y\| \quad \text{(三角形不等式)}
+\end{aligned}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;上述三条性质中，第三条常常会被使用到，它的证明可以通过内积运算及定理2.1.1求得。此外其在一维空间上的形式即为 &lt;span class=&quot;math&quot;&gt;\(|x+y| \leq |x| + |y|\)&lt;/span&gt;　。&lt;/p&gt;
+&lt;p&gt;通过几何运算，我们可以在二维空间中得到两个向量之间夹角与其内积的关系： &lt;span class=&quot;math&quot;&gt;\[\text{cos}\theta = \frac{\langle \boldsymbol{x}, \boldsymbol{y} \rangle }{\|\boldsymbol{x}\|\|\boldsymbol{y}\|}\]&lt;/span&gt; 由定理2.2.1知上式右侧分子的绝对值总小于分母，故可以在 &lt;span class=&quot;math&quot;&gt;\(R^n\)&lt;/span&gt; 上定义两个向量的夹角:&lt;span class=&quot;math&quot;&gt;\[\text{cos}\theta = \frac{|\langle \boldsymbol{x}, \boldsymbol{y} \rangle|}{\|\boldsymbol{x}\|\|\boldsymbol{y}\|}\]&lt;/span&gt; 只要 &lt;span class=&quot;math&quot;&gt;\(\boldsymbol{x}, \boldsymbol{y}\)&lt;/span&gt; 不同时为 &lt;span class=&quot;math&quot;&gt;\(\boldsymbol{0}\)&lt;/span&gt; 上式就总是有定义的。&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;math&quot;&gt;\(R^n\)&lt;/span&gt; 中两个点的距离定义为: &lt;span class=&quot;math&quot;&gt;\(\|\boldsymbol{x}-\boldsymbol{y}\|\)&lt;/span&gt;，根据范数的三角形不等式，有&lt;strong&gt;距离的三角不等式&lt;/strong&gt;: &lt;span class=&quot;math&quot;&gt;\(\|\boldsymbol{x}-\boldsymbol{y}\| \leq \|\boldsymbol{x}-\boldsymbol{z}\| + \|\boldsymbol{y}-\boldsymbol{z}\|\)&lt;/span&gt;。&lt;/p&gt;
+&lt;p&gt;对任意 &lt;span class=&quot;math&quot;&gt;\(\boldsymbol{a}\in \boldsymbol{R}\)&lt;/span&gt; 记 &lt;span class=&quot;math&quot;&gt;\[B_r(a) = \{\boldsymbol{x} \in \boldsymbol{R}^n: \|\boldsymbol{x}-\boldsymbol{a}\| &amp;lt; r\}\\
+\overline{B_r}(a) = \{\boldsymbol{x} \in \boldsymbol{R}^n: \|\boldsymbol{x}-\boldsymbol{a}\| \leq r\}\]&lt;/span&gt; 分别成为以 &lt;span class=&quot;math&quot;&gt;\(\boldsymbol{a}\)&lt;/span&gt; 为中心， &lt;span class=&quot;math&quot;&gt;\(r\)&lt;/span&gt; 为半径的&lt;strong&gt;球&lt;/strong&gt;与&lt;strong&gt;半球&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;对 &lt;span class=&quot;math&quot;&gt;\(E \in \boldsymbol{R}^n\)&lt;/span&gt; 如果存在 &lt;span class=&quot;math&quot;&gt;\(r&amp;gt;0\)&lt;/span&gt; ，使得 &lt;span class=&quot;math&quot;&gt;\(E \subset B_r(\boldsymbol{0})\)&lt;/span&gt; ，那么称 &lt;span class=&quot;math&quot;&gt;\(E\)&lt;/span&gt; 为&lt;strong&gt;有界集&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;定义&lt;strong&gt;矩阵范数&lt;/strong&gt;: &lt;span class=&quot;math&quot;&gt;\(\|\boldsymbol{A}_{mn}\| = (\sum{\sum{a_{ij}^2}})^ {1/2}\)&lt;/span&gt; 。该定义将矩阵看作一个拉直的向量，它具有如下性质： &lt;span class=&quot;math&quot;&gt;\[\|\lambda\boldsymbol{A}\| = \lambda\|\boldsymbol{A}\|\\
+\|\boldsymbol{A}+\boldsymbol{B}\| \leq \|\boldsymbol{A}\| + \|\boldsymbol{B}\|\\
+\|\boldsymbol{A}\boldsymbol{B}\| \leq \|\boldsymbol{A}\|\|\boldsymbol{B}\|\]&lt;/span&gt;&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</content>
+ </entry>
  
  <entry>
    <title>罪与罚</title>
@@ -149,6 +637,28 @@
 &lt;p&gt;我想有些化学物质注定要流淌在我的血液中，当爷爷挑起每一担淤泥，当奶奶决定出逃，当他们夭折两个男孩后生出父亲，当父亲遇到母亲，当母亲割去自己的骨肉——我的哥哥或姐姐时，这些物质就注定在我的血液里永不停息地涌动。它们见证了种种生活的苛刻，见证了一次次顽强的选择。在这个家族，每一个存活下来的婴儿都将继承这些物质。我带着它们慢慢成长，不停体味着生命中需要去承受的一些苦痛与抉择。我有时会觉得生命并不完全属于自己，因为我活着的每分每刻，都在延续爷爷奶奶未走完的那段旅程。让我高兴的是，自己慢慢具有了选择以及改变的能力，这使得我有信心去走一条这个家族从未有人走过的路。每每想到这些，我便感到自由自在，内心充满了感激和喜悦。&lt;/p&gt;
 &lt;p&gt;今年奶奶九十岁，我在北京待了也有五年时间。从抵触到接受，越来越觉得和这个城市的关系就像一场恋爱——待久了觉得烦，分别一会儿却又心生想念。就像情侣们从相识、了解、信任、依赖到最后习惯，我在这座城市里曲折地思索着她向我昭示的或者倾诉的一切。现在我领悟到，没有改变是突然发生的，你与万事万物交织在一起，融成了一个光滑连续的世界。&lt;/p&gt;
 &lt;p&gt;这些就是我用五年时间弄明白的一点道理，而下一个五年，或许我需要投入可怕的精力才能学会如何运用它们去做出些有价值的创造。不过有奶奶的庇护和爷爷的赐福，我知道好运终会降临。&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Multiple Regression: Why Exchanging DV with a IV Won't Change the P Value</title>
+   <link href="http://mindonmind.github.io/2013/06/22/why-exchanging-dv-and-a-iv-has-no-effect-on-p"/>
+   <updated>2013-06-22T01:27:00+08:00</updated>
+   <id>hhttp://mindonmind.github.io/2013/06/22/why-exchanging-dv-and-a-iv-has-no-effect-on-p</id>
+   <content type="html">&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;
+&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;
+&lt;head&gt;
+  &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot; /&gt;
+  &lt;meta http-equiv=&quot;Content-Style-Type&quot; content=&quot;text/css&quot; /&gt;
+  &lt;meta name=&quot;generator&quot; content=&quot;pandoc&quot; /&gt;
+  &lt;title&gt;&lt;/title&gt;
+  &lt;style type=&quot;text/css&quot;&gt;code{white-space: pre;}&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;iframe src=&quot;http://nbviewer.ipython.org/gist/mindonmind/8148821&quot; width=&quot;800&quot; height=&quot;10100&quot;&gt;&lt;/iframe&gt;
+
 &lt;/body&gt;
 &lt;/html&gt;
 </content>
@@ -452,7 +962,7 @@ code &gt; span.al { color: #ff0000; font-weight: bold; }
 code &gt; span.fu { color: #06287e; }
 code &gt; span.er { color: #ff0000; font-weight: bold; }
   &lt;/style&gt;
-  &lt;script src=&quot;http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+  &lt;script src=&quot;http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML,https://raw.github.com/mindonmind/MathJax/master/config/local/local.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
 &lt;/head&gt;
 &lt;body&gt;
 &lt;p&gt;在使用 Python/IPython, R, Matlab 等工具进行探索性数据分析时，你是否经常会遇到以下情景：&lt;/p&gt;
@@ -1251,7 +1761,7 @@ code &gt; span.er { color: #ff0000; font-weight: bold; }
   &lt;style type=&quot;text/css&quot;&gt;code{white-space: pre;}&lt;/style&gt;
 &lt;/head&gt;
 &lt;body&gt;
-&lt;p&gt;译自：&lt;a href=&quot;http://www.brainpickings.org/index.php/2012/02/27/purpose-work-love/&quot;&gt;How to Find Your Purpose and Do What You Love&lt;/a&gt;&lt;br /&gt;作者：&lt;a href=&quot;http://www.brainpickings.org/index.php/author/mpopova/&quot;&gt;Maria Popova&lt;/a&gt;&lt;br /&gt;译者：&lt;a href=&quot;http://yangzetian.github.com&quot;&gt;Zetian Yang&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;译自：&lt;a href=&quot;http://www.brainpickings.org/index.php/2012/02/27/purpose-work-love/&quot;&gt;How to Find Your Purpose and Do What You Love&lt;/a&gt;&lt;br /&gt;作者：&lt;a href=&quot;http://www.brainpickings.org/index.php/author/mpopova/&quot;&gt;Maria Popova&lt;/a&gt;&lt;br /&gt;译者：&lt;a href=&quot;http://mindonmind.github.io&quot;&gt;Prekop&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;为什么名声是激情的敌人，又或如何在设定界限与结交朋友之间掌控平衡。&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;『找一些比你自己更加重要的事情，』哲学家丹·丹尼特 (Dan Dennett)&lt;sup&gt;&lt;a href=&quot;#fn1&quot; class=&quot;footnoteRef&quot; id=&quot;fnref1&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; 曾在讨论&lt;a href=&quot;http://www.brainpickings.org/index.php/2010/12/01/tedify-happiness/&quot;&gt;幸福的秘密&lt;/a&gt;时说，『并且将你的生活奉献给它。』 但我们到底要如何找到它？当然，不是靠运气。我自己对于&lt;a href=&quot;http://www.brainpickings.org/index.php/2011/08/01/networked-knowledge-combinatorial-creativity/#curiosity&quot;&gt;好奇与选择&lt;/a&gt;乃是达成愿望之引擎这一观点具有坚定不移的信念，但怎样精确地找到自己人生真正的召唤又像是一段复杂且高度个性化的发现之舞。尽管如此，有些因素——某些选择——可以让这个过程简单一些。这里搜集的，便是从七个对于如何实现你人生召唤这一艺术与科学进行了深入思考的思想家那里得到的洞见。&lt;/p&gt;
 &lt;h2 id=&quot;保罗格雷厄姆论如何做你之所爱&quot;&gt;1. 保罗·格雷厄姆论如何做你之所爱&lt;/h2&gt;
@@ -1761,7 +2271,7 @@ code &gt; span.al { color: #ff0000; font-weight: bold; }
 code &gt; span.fu { color: #06287e; }
 code &gt; span.er { color: #ff0000; font-weight: bold; }
   &lt;/style&gt;
-  &lt;script src=&quot;http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+  &lt;script src=&quot;http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML,https://raw.github.com/mindonmind/MathJax/master/config/local/local.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
 &lt;/head&gt;
 &lt;body&gt;
 &lt;p&gt;Jekyll 原生支持 &lt;code&gt;maruku&lt;/code&gt;，&lt;code&gt;rdiscount&lt;/code&gt;，&lt;code&gt;kramdown&lt;/code&gt;，&lt;code&gt;redcarpet&lt;/code&gt; 等 markdwon 渲染器，它们各有利弊。个人认为 Maruku 虽然是 Jekyll 的默认选择，却是最不适合 中文博客的，因为它对中文列表的支持不好。Rdiscount 算是中归中举，但对于 &lt;a href=&quot;http://www.mathjax.org&quot;&gt;MathJax&lt;/a&gt; 的用户来说却比较头疼，容易出诡异的问题。Github 在后台则选用了 Redcarpet 作为其文本渲染器，因为它安全性高且性能卓越，同时它在基本 Markdown 语法的基础上增加了一些自己的特性。Kramdown 是这几个当中对基础 Markdown 语法拓展最多，也是最方便使用的，但跟这篇文章的主角 &lt;a href=&quot;http://johnmacfarlane.net/pandoc&quot;&gt;Pandoc&lt;/a&gt; 来比，它就相形见绌了。&lt;/p&gt;

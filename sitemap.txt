@@ -10,10 +10,23 @@ http://mindonmind.github.io/sitemap.txt
 http://mindonmind.github.io/categories.html
 http://mindonmind.github.io/blog.html
 
+http://mindonmind.github.io/2013/12/28/semi-awareness
+http://mindonmind.github.io/2013/11/12/notes-real-number-basic-definitions
+http://mindonmind.github.io/2013/11/10/notes-analysis-extrema-and-conditional-extrema
+http://mindonmind.github.io/2013/11/10/notes-analysis-high-order-derivative-and-taylor-theorem
+http://mindonmind.github.io/2013/11/09/notes-analysis-theorem-implicit
+http://mindonmind.github.io/2013/11/08/notes-analysis-chain-rule-and-mean-mean-value-theomrem
+http://mindonmind.github.io/2013/11/05/notes-analysis-multivariate-derivative-and-differential
+http://mindonmind.github.io/2013/11/04/notes-analysis-multivariate-funciton-limit-continuity
+http://mindonmind.github.io/2013/11/03/notes-analysis-theorems-of-continuity
+http://mindonmind.github.io/2013/11/02/notes-analysis-basic-topology-compact
+http://mindonmind.github.io/2013/11/01/notes-analysis-basic-topology-open-closed
+http://mindonmind.github.io/2013/10/31/notes-analysis-euclid-space
 http://mindonmind.github.io/2013/10/13/sin-and-punish
 http://mindonmind.github.io/2013/09/25/a-trajectory-on-the-lorenz-butterfly
 http://mindonmind.github.io/2013/09/06/from-a-to-b
 http://mindonmind.github.io/2013/07/21/change-as-you-like
+http://mindonmind.github.io/2013/06/22/why-exchanging-dv-and-a-iv-has-no-effect-on-p
 http://mindonmind.github.io/2013/05/05/a-vim-pythoners-survivor-book-plugins
 http://mindonmind.github.io/2013/04/10/bye-bye-bashrc
 http://mindonmind.github.io/2013/03/26/the-first-of-python-year
