@@ -1,14 +1,20 @@
 
 http://mindonmind.github.io/tags.html
 http://mindonmind.github.io/backup/index.html
+http://mindonmind.github.io/backup/cv_back.html
+http://mindonmind.github.io/backup/index.html
 http://mindonmind.github.io/links.html
 http://mindonmind.github.io/pages.html
 http://mindonmind.github.io/atom.xml
-http://mindonmind.github.io/index.html
 http://mindonmind.github.io/archive.html
 http://mindonmind.github.io/sitemap.txt
 http://mindonmind.github.io/categories.html
+http://mindonmind.github.io/index.html
+http://mindonmind.github.io/research.html
 http://mindonmind.github.io/blog.html
+http://mindonmind.github.io/gpa.html
+http://mindonmind.github.io/cv.html
+http://mindonmind.github.io/bio.html
 
 http://mindonmind.github.io/2013/12/28/semi-awareness
 http://mindonmind.github.io/2013/11/12/notes-real-number-basic-definitions
@@ -42,7 +48,6 @@ http://mindonmind.github.io/2012/09/23/forgive-this-world
 http://mindonmind.github.io/2012/09/21/arch-notes
 http://mindonmind.github.io/2012/09/20/blue-era
 http://mindonmind.github.io/2012/09/07/new-term-starts
-http://mindonmind.github.io/2012/08/23/love-to-be-moved
 http://mindonmind.github.io/2012/08/21/grow-old-or-up
 http://mindonmind.github.io/2012/08/09/purpose-and-love
 http://mindonmind.github.io/2012/07/28/the-last-summer-holiday
