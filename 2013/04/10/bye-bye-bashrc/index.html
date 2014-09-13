@@ -68,8 +68,8 @@ http://www.w3.org/TR/html4/strict.dtd">
 <body>
 <p>Bash，大多数 linux 用户接触到的第一个 linux 软件，那象征着财富的提示符早已将它的霸气侧漏无疑。被钦定为 linux 默认登陆 shell 程序的它，借助自身某些还不错的有点，一家独大地垄断着与 linux 用户交互的市场。</p>
 <p>不论是初尝 linux 没多久的欣欣菜鸟还是久经折腾的高端极客，相信不少人都和我一样对 bash 有着复杂的情感。多少次，你被一行行的陌生命令挡在门外，又多少次，你因配置成功欣喜若狂。这些苦痛与欢乐的背后，是 bash 默默地担起扫地僧角色，兢兢业业地跑过一句句命令行。因此，bash 绝对是名至实归，不愧于它在 shell 中头把交椅的地位。</p>
-<p>如果没有那一次误入歧途安装 arch，或许我永远不会离开 bash，毕竟我那时候还不曾知道它让我白白敲击了多少次 <code>cd</code> 和 <code>Tab</code> 。 可是 arch，这个安装时把 root 用户的 shell 都设为 zsh 的怪才，让我第一次见识了 z 宝宝超级补全的威力。 令人费解的是，arch 装好后 shell 竟然还是默认为 bash。 我对 arch 的这种做法很不满——谁都知道，在用过 zsh 后，bash 的用户体验几乎让人无法忍受。</p>
-<p>虽然我从此弃暗投明，但由于有很多配置写在了 <code>.bashrc</code> 中，在未认清 zsh 本真前不敢压上全部老本，所以想先坚守 <code>bashrc</code> 。 既然要继续使用之前的配置，就不能直接将登陆 shell 切换成 zsh。 我用了个折中的办法，即在 <code>bashrc</code> 文件的最后加入</p>
+<p>如果没有那一次误入歧途安装 arch，或许我永远不会离开 bash，毕竟我那时候还不曾知道它让我白白敲击了多少次 <code>cd</code> 和 <code>Tab</code> 。可是 arch，这个安装时把 root 用户的 shell 都设为 zsh 的怪才，让我第一次见识了 z 宝宝超级补全的威力。令人费解的是，arch 装好后 shell 竟然还是默认为 bash。我对 arch 的这种做法很不满——谁都知道，在用过 zsh 后，bash 的用户体验几乎让人无法忍受。</p>
+<p>虽然我从此弃暗投明，但由于有很多配置写在了 <code>.bashrc</code> 中，在未认清 zsh 本真前不敢压上全部老本，所以想先坚守 <code>bashrc</code> 。既然要继续使用之前的配置，就不能直接将登陆 shell 切换成 zsh。我用了个折中的办法，即在 <code>bashrc</code> 文件的最后加入</p>
 <pre><code>exec zsh</code></pre>
 <p>这句。</p>
 <p>这样原先的设置就可以直接再 zsh 中使用，美好 linux 生活从此开始。</p>
@@ -78,8 +78,8 @@ http://www.w3.org/TR/html4/strict.dtd">
 <li>在用服务器上 zsh 之后，竟然无法从本机 sftp, scp, rsync 到服务器上了！</li>
 <li>需要新增加某些配置的时候，有些还需写在原本的 <code>bashrc</code> 中，而有些又顺手写到了 <code>zsh</code> 中，十分混乱。</li>
 </ol>
-<p>上面这第一个问题曾困扰了我很久，因为在本地和服务器间传送文件是十分频繁的操作。查了很久，最后发现原来那句 <code>exec zsh</code> 是罪魁祸首，它貌似替换了登陆进来的远程连接。 今天再次需要传文件时，正值艳阳高照心情好，于是决定彻底跟 <code>bashrc</code> 告别。</p>
-<p>首先，删掉那句 <code>exec zsh</code>。 然后将 <code>.bash_profile</code>, <code>.bashrc</code> 中的内容分别移植到 <code>.zprofile</code>, <code>.zshrc</code> 中。 之后执行修改命令 <code>chsh</code>，期间需要输用户密码及希望设置的 shell 位置（记住这个位置必须事先就已记录在 <code>/etc/shells</code> 中）。 如果是在使用了 NIS 的服务器上，首先需要在主控机上用 <code>chsh</code> 修改，之后再在任意客户机上用 <code>ypchsh</code> 修改。</p>
+<p>上面这第一个问题曾困扰了我很久，因为在本地和服务器间传送文件是十分频繁的操作。查了很久，最后发现原来那句 <code>exec zsh</code> 是罪魁祸首，它貌似替换了登陆进来的远程连接。今天再次需要传文件时，正值艳阳高照心情好，于是决定彻底跟 <code>bashrc</code> 告别。</p>
+<p>首先，删掉那句 <code>exec zsh</code>。然后将 <code>.bash_profile</code>, <code>.bashrc</code> 中的内容分别移植到 <code>.zprofile</code>, <code>.zshrc</code> 中。之后执行修改命令 <code>chsh</code>，期间需要输用户密码及希望设置的 shell 位置（记住这个位置必须事先就已记录在 <code>/etc/shells</code> 中）。如果是在使用了 NIS 的服务器上，首先需要在主控机上用 <code>chsh</code> 修改，之后再在任意客户机上用 <code>ypchsh</code> 修改。</p>
 <p>这样， bash 就被彻底收拾到抽屉里去了。</p>
 </body>
 </html>
@@ -146,7 +146,7 @@ http://www.w3.org/TR/html4/strict.dtd">
 
   <div id="disqus_thread"></div>
 <script type="text/javascript">
-    
+    var disqus_developer = 1;
     var disqus_shortname = 'yangzetian'; // required: replace example with your forum shortname
     
     /* * * DON'T EDIT BELOW THIS LINE * * */
