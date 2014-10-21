@@ -25,7 +25,7 @@ http://www.w3.org/TR/html4/strict.dtd">
 					<ul>
 						<li class="research"><a href="/research.html">research</a></li>
 						<li class="cv"><a href="/cv.html">cv</a></li>
-						<li class="bio"><a href="/bio.html">bio</a></li>
+            <!--		<li class="bio"><a href="/bio.html">bio</a></li>           -->
                         <li class="notes"><a href="/notes">Tech</a></li>
 						<li class="blog"><a href="/blog.html">blog</a></li>
             <!--		<li class="category"><a href="/categories.html">cats</a></li> -->
@@ -77,17 +77,17 @@ http://www.w3.org/TR/html4/strict.dtd">
 <li>Heine-Borel （有限覆盖）定理：从有界闭区间的开覆盖中能找出有限个开区间仍构成该闭区间的开覆盖。</li>
 </ol>
 <p>上述六个定理中从任意一个出发，都可以证明其他所有定理。它们一起构成了整个微积分的基础，在一元微积分中，所有涉及到连续性的证明，追根溯源都要回到这几个定理当中。</p>
-<p>但到了 <span class="math">\(\boldsymbol{R}^n\)</span>，情况有所不同。首先由于无法在 <span class="math">\(\boldsymbol{R}^n\)</span> 上定义点与点之间的大小次序，故不存在单调、上下确界的概念，因此定理1和5不再成立。对于剩下的几个定理，我们则都可以在 <span class="math">\(\boldsymbol{R}^n\)</span> 中找到它们的对应如下：</p>
+<p>但到了 <span class="math">\({\boldsymbol{R}}^n\)</span>，情况有所不同。首先由于无法在 <span class="math">\({\boldsymbol{R}}^n\)</span> 上定义点与点之间的大小次序，故不存在单调、上下确界的概念，因此定理1和5不再成立。对于剩下的几个定理，我们则都可以在 <span class="math">\({\boldsymbol{R}}^n\)</span> 中找到它们的对应如下：</p>
 <ol start="2" style="list-style-type: decimal">
 <li>闭集套定理：闭集套中有且只有唯一一点。</li>
 <li>Bolzano-Weierstrass 定理：任何有界点列中必能选出一收敛子列。</li>
-<li>Cauchy 收敛原理：<span class="math">\(\boldsymbol{R}^n\)</span> 中收敛点列的充分必要条件是它为基本点列。</li>
+<li>Cauchy 收敛原理：<span class="math">\({\boldsymbol{R}}^n\)</span> 中收敛点列的充分必要条件是它为基本点列。</li>
 <li>紧致集的充分必要条件是它为有界闭集（有界闭区间）。</li>
 </ol>
-<p>下面我们来看看这些定理在 <span class="math">\(R\)</span> 和 <span class="math">\(\boldsymbol{R}^n\)</span> 上的证明思路，来具体考察它们的异同。首先是 Cauchy 收敛原理，一个收敛数列/点列显然满足基本列的条件，但相反一个基本列必定收敛却不是那么显然，其实这是集合的另一个拓扑性质，被称为<strong>完备性 (Completness)</strong>。由于在 <span class="math">\(\boldsymbol{R}^n\)</span> 中，点列收敛等价于点列按分量收敛，而基本点列的每一分量都是基本数列，因此利用 <span class="math">\(R\)</span> 上的 Cauchy 原理，我们可以证明 <span class="math">\(\boldsymbol{R}^n\)</span> 上的该原理。</p>
-<p>与之类似的是 <span class="math">\(\boldsymbol{R}^n\)</span> 上 Bolzano-Weierastrass 定理的证明，同样由于有界点列的每一分量均是有界数列，故 <span class="math">\(R\)</span> 中的 Bolzano-Weierstrass 再次为 <span class="math">\(\boldsymbol{R}^n\)</span> 上的拓展提供了方便。</p>
-<p>然后是闭区间套和闭集套定理，这两个定理的证明思路都是希望找到一个收敛的数/点列，它的极限属于所有闭区间/集套。在 <span class="math">\(R\)</span> 上，我们可以利用定理1轻易地找到这样的数列，而在<span class="math">\(\boldsymbol{R}^n\)</span> 中，我们则可以利用 Cauchy 收敛原理加上闭集的性质进行证明。</p>
-<p>最后是有限覆盖原理，在 <span class="math">\(\boldsymbol{R}^n\)</span> 中，有界覆盖成了紧致集的定义，而紧致集与有界闭集等价又说明有界闭集也具有有限覆盖的性质。而有界闭区间/集所具有的紧致性则都是通过反证法构造一个闭区间/集套来证明。</p>
+<p>下面我们来看看这些定理在 <span class="math">\(R\)</span> 和 <span class="math">\({\boldsymbol{R}}^n\)</span> 上的证明思路，来具体考察它们的异同。首先是 Cauchy 收敛原理，一个收敛数列/点列显然满足基本列的条件，但相反一个基本列必定收敛却不是那么显然，其实这是集合的另一个拓扑性质，被称为<strong>完备性 (Completness)</strong>。由于在 <span class="math">\({\boldsymbol{R}}^n\)</span> 中，点列收敛等价于点列按分量收敛，而基本点列的每一分量都是基本数列，因此利用 <span class="math">\(R\)</span> 上的 Cauchy 原理，我们可以证明 <span class="math">\({\boldsymbol{R}}^n\)</span> 上的该原理。</p>
+<p>与之类似的是 <span class="math">\({\boldsymbol{R}}^n\)</span> 上 Bolzano-Weierastrass 定理的证明，同样由于有界点列的每一分量均是有界数列，故 <span class="math">\(R\)</span> 中的 Bolzano-Weierstrass 再次为 <span class="math">\({\boldsymbol{R}}^n\)</span> 上的拓展提供了方便。</p>
+<p>然后是闭区间套和闭集套定理，这两个定理的证明思路都是希望找到一个收敛的数/点列，它的极限属于所有闭区间/集套。在 <span class="math">\(R\)</span> 上，我们可以利用定理1轻易地找到这样的数列，而在<span class="math">\({\boldsymbol{R}}^n\)</span> 中，我们则可以利用 Cauchy 收敛原理加上闭集的性质进行证明。</p>
+<p>最后是有限覆盖原理，在 <span class="math">\({\boldsymbol{R}}^n\)</span> 中，有界覆盖成了紧致集的定义，而紧致集与有界闭集等价又说明有界闭集也具有有限覆盖的性质。而有界闭区间/集所具有的紧致性则都是通过反证法构造一个闭区间/集套来证明。</p>
 </body>
 </html>
 

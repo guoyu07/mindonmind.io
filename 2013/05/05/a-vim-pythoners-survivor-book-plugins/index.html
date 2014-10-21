@@ -25,7 +25,7 @@ http://www.w3.org/TR/html4/strict.dtd">
 					<ul>
 						<li class="research"><a href="/research.html">research</a></li>
 						<li class="cv"><a href="/cv.html">cv</a></li>
-						<li class="bio"><a href="/bio.html">bio</a></li>
+            <!--		<li class="bio"><a href="/bio.html">bio</a></li>           -->
                         <li class="notes"><a href="/notes">Tech</a></li>
 						<li class="blog"><a href="/blog.html">blog</a></li>
             <!--		<li class="category"><a href="/categories.html">cats</a></li> -->
@@ -69,7 +69,7 @@ http://www.w3.org/TR/html4/strict.dtd">
 <p>Vim, 一个编辑器；Python, 一种程序设计语言。它们是我平常使用最频繁的两个工具。能否熟练高效地使用它们不仅影响到我的工作效率，更影响到工作的心情。</p>
 <p>为了追求一个淡定高效的编程氛围，我花了许多时间与精力，来打造一个基于 Vim 的 Python 数据分析工作平台。现在，它已经能满足我近乎完美的标准，在此系列作一总结。</p>
 <p>需要说明的是，零零总总的插件是提升 Vim 效率和体验的一个主要手段，本系列将以介绍我喜爱的插件及它们的常用方法为主，辅以我自己的一些习惯性键映射介绍我的 Vim 工具集。本篇先来介绍或许是 Vim 使用中最频繁的操作 —— 移动。</p>
-<div class=toc>
+<div class="toc">
 <ul>
 <li>
 <a href="#vim-中的移动">Vim 中的移动</a>
@@ -88,7 +88,6 @@ http://www.w3.org/TR/html4/strict.dtd">
 </li>
 </ul>
 </div>
-
 <h2 id="vim-中的移动">Vim 中的移动</h2>
 <p>移动或许是使用 Vim 的过程中最让人愉快又抓狂的一项操作了。无论是文件内部的位置移动，quickfix 或 location 列表跳转，还是不同文件、缓冲、标签页的切换等等，都可以归位这一种操作。不要说各种复杂的移动命令与位置标记，光是文件、缓冲、窗口、标签页这些概念就让人头大。</p>
 <p>但是不用害怕，因为本文下面就将从与移动相关的一些基本概念讲起，再分情形介绍各种高效移动的妙招。</p>
@@ -177,9 +176,11 @@ map &lt;A-C&gt; :tabclose&lt;CR&gt;</code></pre>
 <h2 id="缓存文件间移动">缓存/文件间移动</h2>
 <p>缓存保存了文件的内容，标记，设置等属性，它是 Vim 中一个十分重要的概念，可按如下三类对其进行划分：</p>
 <table>
+<colgroup>
 <col width="16%" />
 <col width="43%" />
 <col width="11%" />
+</colgroup>
 <thead>
 <tr class="header">
 <th align="left">类别</th>

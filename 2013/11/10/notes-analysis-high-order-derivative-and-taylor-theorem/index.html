@@ -25,7 +25,7 @@ http://www.w3.org/TR/html4/strict.dtd">
 					<ul>
 						<li class="research"><a href="/research.html">research</a></li>
 						<li class="cv"><a href="/cv.html">cv</a></li>
-						<li class="bio"><a href="/bio.html">bio</a></li>
+            <!--		<li class="bio"><a href="/bio.html">bio</a></li>           -->
                         <li class="notes"><a href="/notes">Tech</a></li>
 						<li class="blog"><a href="/blog.html">blog</a></li>
             <!--		<li class="category"><a href="/categories.html">cats</a></li> -->
@@ -72,15 +72,15 @@ http://www.w3.org/TR/html4/strict.dtd">
 <p>对于一个多元函数，它的任意一个偏导数 <span class="math">\(\frac{\partial f}{\partial x_i}\)</span> 仍是一个多元函数，因此假设对这个多元函数继续求偏，便可以得到二阶的偏导数。对于一个 <span class="math">\(n\)</span> 元函数，它有 <span class="math">\(n^k\)</span> 个 <span class="math">\(k\)</span> 阶偏导，对于这些同阶的偏导，如果它们求导的各变元次数相同，且这些偏导都在 <span class="math">\(x_0\)</span> 处存在并连续，那么这些偏导便全部相等。</p>
 <h2 id="泰勒定理">泰勒定理</h2>
 <p>为了介绍泰勒定理在多元函数上的推广，首先有： <span class="math">\[(x_1 + \dots + x_n)^k = \sum_{a_1+\dots+a_n=k} \frac{k!}{a_1!\cdots a_n!} x_1^{a_1}\cdots x_n^{a_n}\]</span></p>
-<p>而多元函数的泰勒定理讲得是，在凸域 <span class="math">\(D \subset \boldsymbol{R}^n\)</span> 上的 <span class="math">\(m+1\)</span> 阶连续可微函数 <span class="math">\(f: D\to R\)</span>， <span class="math">\(\boldsymbol{a} = (a_1, a_2, \dots, a_n)\)</span> 和 <span class="math">\(\boldsymbol{a}+\boldsymbol{h}\)</span>，那么存在 <span class="math">\(\theta \in (0,1)\)</span>，使得： <span class="math">\[f(\boldsymbol{a}+\boldsymbol{h}) = f(\boldsymbol{a}) + \sum_{k=1}^{m}\sum_{|a|=k}\frac{D^\alpha f(\boldsymbol{a})}{\alpha !}\boldsymbol{h}^\alpha + R_m \\
-R_m = \sum_{|\alpha| = m+1} \frac{D^{\alpha}f(\boldsymbol{a} + \theta \boldsymbol{h})}{\alpha !}\boldsymbol{h}^\alpha\]</span></p>
-<p>或者写成： <span class="math">\[f(\boldsymbol{a}+\boldsymbol{h}) = f(\boldsymbol{a}) + \frac{1}{k!}\sum_{k=1}^{m} (\frac{\partial f}{\partial x_1}h_1+ \frac{\partial f}{\partial x_2}h_2+ \dots+ \frac{\partial f}{\partial x_n}h_n)^k(\boldsymbol{a}) + R_m \\
-R_m = \frac{1}{(k+1)!}(\frac{\partial f}{\partial x_1}h_1+ \frac{\partial f}{\partial x_2}h_2+ \dots+\frac{\partial f}{\partial x_n}h_n)^{k+1}(\boldsymbol{a}+\theta \boldsymbol{h})\]</span></p>
-<p>上面这个式子用算子运算的形式来表达泰勒公式。在应用中我们最常用到的其实是多元函数的一阶或二阶泰勒展开，记： <span class="math">\[\boldsymbol{H} = \begin{pmatrix}
+<p>而多元函数的泰勒定理讲得是，在凸域 <span class="math">\(D \subset {\boldsymbol{R}}^n\)</span> 上的 <span class="math">\(m+1\)</span> 阶连续可微函数 <span class="math">\(f: D\to R\)</span>， <span class="math">\({\boldsymbol{a}} = (a_1, a_2, \dots, a_n)\)</span> 和 <span class="math">\({\boldsymbol{a}}+{\boldsymbol{h}}\)</span>，那么存在 <span class="math">\(\theta \in (0,1)\)</span>，使得： <span class="math">\[f({\boldsymbol{a}}+{\boldsymbol{h}}) = f({\boldsymbol{a}}) + \sum_{k=1}^{m}\sum_{|a|=k}\frac{D^\alpha f({\boldsymbol{a}})}{\alpha !}{\boldsymbol{h}}^\alpha + R_m \\
+R_m = \sum_{|\alpha| = m+1} \frac{D^{\alpha}f({\boldsymbol{a}} + \theta {\boldsymbol{h}})}{\alpha !}{\boldsymbol{h}}^\alpha\]</span></p>
+<p>或者写成： <span class="math">\[f({\boldsymbol{a}}+{\boldsymbol{h}}) = f({\boldsymbol{a}}) + \frac{1}{k!}\sum_{k=1}^{m} (\frac{\partial f}{\partial x_1}h_1+ \frac{\partial f}{\partial x_2}h_2+ \dots+ \frac{\partial f}{\partial x_n}h_n)^k({\boldsymbol{a}}) + R_m \\
+R_m = \frac{1}{(k+1)!}(\frac{\partial f}{\partial x_1}h_1+ \frac{\partial f}{\partial x_2}h_2+ \dots+\frac{\partial f}{\partial x_n}h_n)^{k+1}({\boldsymbol{a}}+\theta {\boldsymbol{h}})\]</span></p>
+<p>上面这个式子用算子运算的形式来表达泰勒公式。在应用中我们最常用到的其实是多元函数的一阶或二阶泰勒展开，记： <span class="math">\[{\boldsymbol{H}} = \begin{pmatrix}
 \frac{\partial^2 f}{\partial x_1^2}  &amp; \frac{\partial^2 f}{\partial x_1x_2}  &amp; \cdots  &amp; \frac{\partial^2 f}{\partial x_1x_n}\\
 \vdots &amp; \vdots &amp; \vdots &amp;\vdots \\
 \frac{\partial^2 f}{\partial x_nx_1} &amp; \frac{\partial^2 f}{\partial x_nx_2} &amp; \cdots &amp; \frac{\partial^2 f}{\partial x_n^2}\end{pmatrix}\]</span></p>
-<p>称为 <span class="math">\(f\)</span> 的<strong>Heissen 阵</strong>，那么如果将泰勒公式展开到二阶项，便有： <span class="math">\[f(\boldsymbol{a}+\boldsymbol{h}) = f(\boldsymbol{a}) + \sum_{i=1}^{n}\frac{\partial f}{\partial x_i}(\boldsymbol{a}) + \frac{1}{2} \boldsymbol{h}^{T} \boldsymbol{H}(\boldsymbol{a}) \boldsymbol{h} + \frac{1}{3!}(\frac{\partial f}{\partial x_1}h_1+\dots+\frac{\partial f}{\partial x_n}h_n)^3(\boldsymbol{a}+ \theta \boldsymbol{h})\]</span></p>
+<p>称为 <span class="math">\(f\)</span> 的<strong>Heissen 阵</strong>，那么如果将泰勒公式展开到二阶项，便有： <span class="math">\[f({\boldsymbol{a}}+{\boldsymbol{h}}) = f({\boldsymbol{a}}) + \sum_{i=1}^{n}\frac{\partial f}{\partial x_i}({\boldsymbol{a}}) + \frac{1}{2} {\boldsymbol{h}}^{T} {\boldsymbol{H}}({\boldsymbol{a}}) {\boldsymbol{h}} + \frac{1}{3!}(\frac{\partial f}{\partial x_1}h_1+\dots+\frac{\partial f}{\partial x_n}h_n)^3({\boldsymbol{a}}+ \theta {\boldsymbol{h}})\]</span></p>
 <p>其中 <span class="math">\(\theta \in (0,1)\)</span>。</p>
 </body>
 </html>

@@ -25,7 +25,7 @@ http://www.w3.org/TR/html4/strict.dtd">
 					<ul>
 						<li class="research"><a href="/research.html">research</a></li>
 						<li class="cv"><a href="/cv.html">cv</a></li>
-						<li class="bio"><a href="/bio.html">bio</a></li>
+            <!--		<li class="bio"><a href="/bio.html">bio</a></li>           -->
                         <li class="notes"><a href="/notes">Tech</a></li>
 						<li class="blog"><a href="/blog.html">blog</a></li>
             <!--		<li class="category"><a href="/categories.html">cats</a></li> -->
@@ -68,36 +68,36 @@ http://www.w3.org/TR/html4/strict.dtd">
 </head>
 <body>
 <p><a href="http://book.douban.com/subject/1237679/"><em>数学分析教程 下</em></a> p.69 - p74.</p>
-<p>首先，定义在多元分析中最基本的集合： <span class="math">\(\boldsymbol{R}^n = \{(x_1, x_2,\dots, x_n): x_i \in \boldsymbol{R}, i=1,2,\dots,n\}\)</span> 。 <span class="math">\(\boldsymbol{R}^n\)</span> 中的元素 <span class="math">\(\boldsymbol{x} = (x_1, x_2, \dots, x_i) \)</span> 称为一个向量，或一个点，其中<span class="math">\(\boldsymbol{0} = (0, 0, \dots, 0)\)</span> 称为零向量。可以定义向量的加法与数乘两种运算： <span class="math">\[x + y = (x_1+y_1, x_2+y_2, \dots, x_n+y_n) \\ \lambda \mathbf(x) = (\lambda x_1, \lambda x_2, \dots, \lambda x_n)\]</span> 定义 <span class="math">\(- \boldsymbol{x} = (-x_1, -x_2, \dots, -x_n)\)</span>，那么对于任意 <span class="math">\(\boldsymbol{x}, \boldsymbol{y}, \boldsymbol{z}\)</span> 都有 <span class="math">\[\boldsymbol{0} + \boldsymbol{x} = \boldsymbol{x} + \boldsymbol{0} \\ 
-- \boldsymbol{x} + \boldsymbol{x} = \boldsymbol{0} \\
-\boldsymbol{x}+\boldsymbol{y} = \boldsymbol{y}+\boldsymbol{x} \\
-\boldsymbol{x} + (\boldsymbol{y} + \boldsymbol{z}) = (\boldsymbol{x}+\boldsymbol{y}) + \boldsymbol{z} \\
-\lambda (\boldsymbol{x} + \boldsymbol{y} ) = \lambda \boldsymbol{x} + \lambda \boldsymbol{y} \\ 
-( \lambda + \mu) \boldsymbol{x} = \lambda \boldsymbol{x} + \mu \boldsymbol{y} \\
-\lambda(\mu \boldsymbol{x} )=( \lambda\mu) \boldsymbol{x} \\
-1 \cdot \boldsymbol{x} = \boldsymbol{x} 
-\]</span> 由此可见，定义了这些运算的 <span class="math">\(\boldsymbol{R}^n\)</span> 是数域 <span class="math">\(\boldsymbol{R}\)</span> 上的线性空间，也称 <span class="math">\(\boldsymbol{R}^n\)</span> 为 <span class="math">\(\boldsymbol{n}\)</span> 维向量空间。</p>
-<p>在 <span class="math">\(\boldsymbol{R}^n\)</span> 中引入<strong>内积</strong>运算 <span class="math">\(\langle\boldsymbol{x} , \boldsymbol{y}\rangle = \sum x_iy_i\)</span>， 该运算满足： <span class="math">\[\begin{aligned}
-&amp; \langle\boldsymbol{x}, \boldsymbol{x} \rangle \geq 0 &amp; \text{(正定性)}\\
-&amp; \langle\boldsymbol{x} , \boldsymbol{y} \rangle = \langle\boldsymbol{y} , \boldsymbol{x} \rangle &amp; \text{(对称性)})\\ 
-&amp; \langle\boldsymbol{x} , \boldsymbol{y} +\boldsymbol{z} \rangle = \langle\boldsymbol{x} ,\boldsymbol{y} \rangle + \langle\boldsymbol{x} , \boldsymbol{z} \rangle &amp; \text{(线性1)}\\
-&amp; \forall \lambda \in \boldsymbol{R}, \; \langle\lambda \boldsymbol{x} , \boldsymbol{y} \rangle = \lambda\langle\boldsymbol{x} ,\boldsymbol{y} \rangle &amp; \text{(线性2)}\end{aligned}\]</span> 故该种定义方式符合线性代数中对于内积运算的要求。此外，根据上述性质可知 <span class="math">\[ \langle\lambda\boldsymbol{x} + \mu\boldsymbol{y} , \boldsymbol{z} \rangle = \lambda\langle\boldsymbol{x} , \boldsymbol{z} \rangle + \mu\langle\boldsymbol{y}, \boldsymbol{z}\rangle \]</span></p>
+<p>首先，定义在多元分析中最基本的集合： <span class="math">\({\boldsymbol{R}}^n = \{(x_1, x_2,\dots, x_n): x_i \in {\boldsymbol{R}}, i=1,2,\dots,n\}\)</span> 。 <span class="math">\({\boldsymbol{R}}^n\)</span> 中的元素 $ = (x_1, x_2, , x_i) $ 称为一个向量，或一个点，其中<span class="math">\({\boldsymbol{0}} = (0, 0, \dots, 0)\)</span> 称为零向量。可以定义向量的加法与数乘两种运算： <span class="math">\[x + y = (x_1+y_1, x_2+y_2, \dots, x_n+y_n) \\ \lambda \mathbf(x) = (\lambda x_1, \lambda x_2, \dots, \lambda x_n)\]</span> 定义 <span class="math">\(- {\boldsymbol{x}} = (-x_1, -x_2, \dots, -x_n)\)</span>，那么对于任意 <span class="math">\({\boldsymbol{x}}, {\boldsymbol{y}}, {\boldsymbol{z}}\)</span> 都有 <span class="math">\[{\boldsymbol{0}} + {\boldsymbol{x}} = {\boldsymbol{x}} + {\boldsymbol{0}} \\ 
+- {\boldsymbol{x}} + {\boldsymbol{x}} = {\boldsymbol{0}} \\
+{\boldsymbol{x}}+{\boldsymbol{y}} = {\boldsymbol{y}}+{\boldsymbol{x}} \\
+{\boldsymbol{x}} + ({\boldsymbol{y}} + {\boldsymbol{z}}) = ({\boldsymbol{x}}+{\boldsymbol{y}}) + {\boldsymbol{z}} \\
+\lambda ({\boldsymbol{x}} + {\boldsymbol{y}} ) = \lambda {\boldsymbol{x}} + \lambda {\boldsymbol{y}} \\ 
+( \lambda + \mu) {\boldsymbol{x}} = \lambda {\boldsymbol{x}} + \mu {\boldsymbol{y}} \\
+\lambda(\mu {\boldsymbol{x}} )=( \lambda\mu) {\boldsymbol{x}} \\
+1 \cdot {\boldsymbol{x}} = {\boldsymbol{x}} 
+\]</span> 由此可见，定义了这些运算的 <span class="math">\({\boldsymbol{R}}^n\)</span> 是数域 <span class="math">\({\boldsymbol{R}}\)</span> 上的线性空间，也称 <span class="math">\({\boldsymbol{R}}^n\)</span> 为 <span class="math">\({\boldsymbol{n}}\)</span> 维向量空间。</p>
+<p>在 <span class="math">\({\boldsymbol{R}}^n\)</span> 中引入<strong>内积</strong>运算 <span class="math">\(\langle{\boldsymbol{x}} , {\boldsymbol{y}}\rangle = \sum x_iy_i\)</span>， 该运算满足： <span class="math">\[\begin{aligned}
+&amp; \langle{\boldsymbol{x}}, {\boldsymbol{x}} \rangle \geq 0 &amp; \text{(正定性)}\\
+&amp; \langle{\boldsymbol{x}} , {\boldsymbol{y}} \rangle = \langle{\boldsymbol{y}} , {\boldsymbol{x}} \rangle &amp; \text{(对称性)})\\ 
+&amp; \langle{\boldsymbol{x}} , {\boldsymbol{y}} +{\boldsymbol{z}} \rangle = \langle{\boldsymbol{x}} ,{\boldsymbol{y}} \rangle + \langle{\boldsymbol{x}} , {\boldsymbol{z}} \rangle &amp; \text{(线性1)}\\
+&amp; \forall \lambda \in {\boldsymbol{R}}, \; \langle\lambda {\boldsymbol{x}} , {\boldsymbol{y}} \rangle = \lambda\langle{\boldsymbol{x}} ,{\boldsymbol{y}} \rangle &amp; \text{(线性2)}\end{aligned}\]</span> 故该种定义方式符合线性代数中对于内积运算的要求。此外，根据上述性质可知 <span class="math">\[ \langle\lambda{\boldsymbol{x}} + \mu{\boldsymbol{y}} , {\boldsymbol{z}} \rangle = \lambda\langle{\boldsymbol{x}} , {\boldsymbol{z}} \rangle + \mu\langle{\boldsymbol{y}}, {\boldsymbol{z}}\rangle \]</span></p>
 <p>对于内积，有一个非常重要的定理：</p>
-<p><strong>定理 2.1.1 (Cauchy-Schwarz)</strong> <span class="math">\[\langle \boldsymbol{x},\boldsymbol{x} \rangle ^2 \leq \langle \boldsymbol{x},\boldsymbol{x} \rangle \langle \boldsymbol{y},\boldsymbol{y} \rangle \]</span> <em>证明</em> 使用 <span class="math">\(\langle \boldsymbol{x}-t\boldsymbol{y}, \boldsymbol{x}-t\boldsymbol{y} \rangle \geq 0\)</span></p>
-<p>在定义内积之后的 <span class="math">\(\boldsymbol{R}^n\)</span> 称为 <strong> 维 Euclid 空间</strong>，或简称<strong>欧式空间</strong>。在内积的基础之上，可以定义向量的<strong>范数</strong>，此处定义 <span class="math">\(\|\boldsymbol{x}  \|=\sqrt{\langle \boldsymbol{x} , \boldsymbol{x} \rangle}\)</span>，它满足范数所要求的三条性质： <span class="math">\[\begin{aligned}
-&amp;\|\boldsymbol{x} \| \geq \boldsymbol{0} \\
-&amp;\forall \lambda \in \boldsymbol{R},\;  \|\lambda\boldsymbol{x} \| = |\lambda|\|\boldsymbol{x} \|\\
-&amp;\|\boldsymbol{x} + \boldsymbol{y} \| \leq \|x\| + \|y\| \quad \text{(三角形不等式)}
+<p><strong>定理 2.1.1 (Cauchy-Schwarz)</strong> <span class="math">\[\langle {\boldsymbol{x}},{\boldsymbol{x}} \rangle ^2 \leq \langle {\boldsymbol{x}},{\boldsymbol{x}} \rangle \langle {\boldsymbol{y}},{\boldsymbol{y}} \rangle \]</span> <em>证明</em> 使用 <span class="math">\(\langle {\boldsymbol{x}}-t{\boldsymbol{y}}, {\boldsymbol{x}}-t{\boldsymbol{y}} \rangle \geq 0\)</span></p>
+<p>在定义内积之后的 <span class="math">\({\boldsymbol{R}}^n\)</span> 称为 <strong> 维 Euclid 空间</strong>，或简称<strong>欧式空间</strong>。在内积的基础之上，可以定义向量的<strong>范数</strong>，此处定义 <span class="math">\(\|{\boldsymbol{x}} \|=\sqrt{\langle {\boldsymbol{x}} , {\boldsymbol{x}} \rangle}\)</span>，它满足范数所要求的三条性质： <span class="math">\[\begin{aligned}
+&amp;\|{\boldsymbol{x}} \| \geq {\boldsymbol{0}} \\
+&amp;\forall \lambda \in {\boldsymbol{R}},\;  \|\lambda{\boldsymbol{x}} \| = |\lambda|\|{\boldsymbol{x}} \|\\
+&amp;\|{\boldsymbol{x}} + {\boldsymbol{y}} \| \leq \|x\| + \|y\| \quad \text{(三角形不等式)}
 \end{aligned}\]</span></p>
 <p>上述三条性质中，第三条常常会被使用到，它的证明可以通过内积运算及定理2.1.1求得。此外其在一维空间上的形式即为 <span class="math">\(|x+y| \leq |x| + |y|\)</span>　。</p>
-<p>通过几何运算，我们可以在二维空间中得到两个向量之间夹角与其内积的关系： <span class="math">\[\text{cos}\theta = \frac{\langle \boldsymbol{x}, \boldsymbol{y} \rangle }{\|\boldsymbol{x}\|\|\boldsymbol{y}\|}\]</span> 由定理2.2.1知上式右侧分子的绝对值总小于分母，故可以在 <span class="math">\(R^n\)</span> 上定义两个向量的夹角:<span class="math">\[\text{cos}\theta = \frac{|\langle \boldsymbol{x}, \boldsymbol{y} \rangle|}{\|\boldsymbol{x}\|\|\boldsymbol{y}\|}\]</span> 只要 <span class="math">\(\boldsymbol{x}, \boldsymbol{y}\)</span> 不同时为 <span class="math">\(\boldsymbol{0}\)</span> 上式就总是有定义的。</p>
-<p><span class="math">\(R^n\)</span> 中两个点的距离定义为: <span class="math">\(\|\boldsymbol{x}-\boldsymbol{y}\|\)</span>，根据范数的三角形不等式，有<strong>距离的三角不等式</strong>: <span class="math">\(\|\boldsymbol{x}-\boldsymbol{y}\| \leq \|\boldsymbol{x}-\boldsymbol{z}\| + \|\boldsymbol{y}-\boldsymbol{z}\|\)</span>。</p>
-<p>对任意 <span class="math">\(\boldsymbol{a}\in \boldsymbol{R}\)</span> 记 <span class="math">\[B_r(a) = \{\boldsymbol{x} \in \boldsymbol{R}^n: \|\boldsymbol{x}-\boldsymbol{a}\| &lt; r\}\\
-\overline{B_r}(a) = \{\boldsymbol{x} \in \boldsymbol{R}^n: \|\boldsymbol{x}-\boldsymbol{a}\| \leq r\}\]</span> 分别成为以 <span class="math">\(\boldsymbol{a}\)</span> 为中心， <span class="math">\(r\)</span> 为半径的<strong>球</strong>与<strong>半球</strong>。</p>
-<p>对 <span class="math">\(E \in \boldsymbol{R}^n\)</span> 如果存在 <span class="math">\(r&gt;0\)</span> ，使得 <span class="math">\(E \subset B_r(\boldsymbol{0})\)</span> ，那么称 <span class="math">\(E\)</span> 为<strong>有界集</strong>。</p>
-<p>定义<strong>矩阵范数</strong>: <span class="math">\(\|\boldsymbol{A}_{mn}\| = (\sum{\sum{a_{ij}^2}})^ {1/2}\)</span> 。该定义将矩阵看作一个拉直的向量，它具有如下性质： <span class="math">\[\|\lambda\boldsymbol{A}\| = \lambda\|\boldsymbol{A}\|\\
-\|\boldsymbol{A}+\boldsymbol{B}\| \leq \|\boldsymbol{A}\| + \|\boldsymbol{B}\|\\
-\|\boldsymbol{A}\boldsymbol{B}\| \leq \|\boldsymbol{A}\|\|\boldsymbol{B}\|\]</span></p>
+<p>通过几何运算，我们可以在二维空间中得到两个向量之间夹角与其内积的关系： <span class="math">\[\text{cos}\theta = \frac{\langle {\boldsymbol{x}}, {\boldsymbol{y}} \rangle }{\|{\boldsymbol{x}}\|\|{\boldsymbol{y}}\|}\]</span> 由定理2.2.1知上式右侧分子的绝对值总小于分母，故可以在 <span class="math">\(R^n\)</span> 上定义两个向量的夹角:<span class="math">\[\text{cos}\theta = \frac{|\langle {\boldsymbol{x}}, {\boldsymbol{y}} \rangle|}{\|{\boldsymbol{x}}\|\|{\boldsymbol{y}}\|}\]</span> 只要 <span class="math">\({\boldsymbol{x}}, {\boldsymbol{y}}\)</span> 不同时为 <span class="math">\({\boldsymbol{0}}\)</span> 上式就总是有定义的。</p>
+<p><span class="math">\(R^n\)</span> 中两个点的距离定义为: <span class="math">\(\|{\boldsymbol{x}}-{\boldsymbol{y}}\|\)</span>，根据范数的三角形不等式，有<strong>距离的三角不等式</strong>: <span class="math">\(\|{\boldsymbol{x}}-{\boldsymbol{y}}\| \leq \|{\boldsymbol{x}}-{\boldsymbol{z}}\| + \|{\boldsymbol{y}}-{\boldsymbol{z}}\|\)</span>。</p>
+<p>对任意 <span class="math">\({\boldsymbol{a}}\in {\boldsymbol{R}}\)</span> 记 <span class="math">\[B_r(a) = \{{\boldsymbol{x}} \in {\boldsymbol{R}}^n: \|{\boldsymbol{x}}-{\boldsymbol{a}}\| &lt; r\}\\
+\overline{B_r}(a) = \{{\boldsymbol{x}} \in {\boldsymbol{R}}^n: \|{\boldsymbol{x}}-{\boldsymbol{a}}\| \leq r\}\]</span> 分别成为以 <span class="math">\({\boldsymbol{a}}\)</span> 为中心， <span class="math">\(r\)</span> 为半径的<strong>球</strong>与<strong>半球</strong>。</p>
+<p>对 <span class="math">\(E \in {\boldsymbol{R}}^n\)</span> 如果存在 <span class="math">\(r&gt;0\)</span> ，使得 <span class="math">\(E \subset B_r({\boldsymbol{0}})\)</span> ，那么称 <span class="math">\(E\)</span> 为<strong>有界集</strong>。</p>
+<p>定义<strong>矩阵范数</strong>: <span class="math">\(\|{\boldsymbol{A}}_{mn}\| = (\sum{\sum{a_{ij}^2}})^ {1/2}\)</span> 。该定义将矩阵看作一个拉直的向量，它具有如下性质： <span class="math">\[\|\lambda{\boldsymbol{A}}\| = \lambda\|{\boldsymbol{A}}\|\\
+\|{\boldsymbol{A}}+{\boldsymbol{B}}\| \leq \|{\boldsymbol{A}}\| + \|{\boldsymbol{B}}\|\\
+\|{\boldsymbol{A}}{\boldsymbol{B}}\| \leq \|{\boldsymbol{A}}\|\|{\boldsymbol{B}}\|\]</span></p>
 </body>
 </html>
 

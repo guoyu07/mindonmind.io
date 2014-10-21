@@ -25,7 +25,7 @@ http://www.w3.org/TR/html4/strict.dtd">
 					<ul>
 						<li class="research"><a href="/research.html">research</a></li>
 						<li class="cv"><a href="/cv.html">cv</a></li>
-						<li class="bio"><a href="/bio.html">bio</a></li>
+            <!--		<li class="bio"><a href="/bio.html">bio</a></li>           -->
                         <li class="notes"><a href="/notes">Tech</a></li>
 						<li class="blog"><a href="/blog.html">blog</a></li>
             <!--		<li class="category"><a href="/categories.html">cats</a></li> -->
@@ -95,7 +95,7 @@ code > span.er { color: #ff0000; font-weight: bold; }
 </ul>
 <p>传统的交互计算平台一般都以命令行的方式与数据分析者交互，即用户每输入一条语句，计算平台返回相应的结果。虽然它们在用户体验方面做了许多努力，诸如自动命令补全，弹出帮助文档，命令历史记录等，但在上文提到的这些情景下，它们就显得有些力不从心。 <a href="http://ipython.org/ipython-doc/dev/interactive/htmlnotebook.html">IPython Notebook</a> 的出世，正弥补了传统计算平台的不足，为上述情景提供了快捷直观的解决方案。</p>
 <p>IPython Notebook 是一种新兴的交互式数据分析与记录工具，它定义了一种全新的计算文件格式，其中包含了代码，代码说明以及每一步的计算输出(数值或图片等)，也就是说这一个文件完整记录了计算过程中的所有相关信息。此外，该文件还可以嵌入网络视频，图片，<span class="math">\(LaTeX\)</span> 公式等众多副文本格式，实为交互计算，记录思维，传播思想的好帮手。</p>
-<div class=toc>
+<div class="toc">
 <ul>
 <li>
 <a href="#简介">简介</a>
@@ -112,7 +112,8 @@ code > span.er { color: #ff0000; font-weight: bold; }
 <li>
 <a href="#远程运行">远程运行</a>
 </li>
-</ul></li>
+</ul>
+</li>
 <li>
 <a href="#共享与应用">共享与应用</a>
 <ul>
@@ -122,7 +123,8 @@ code > span.er { color: #ff0000; font-weight: bold; }
 <li>
 <a href="#在教学科研中的应用">在教学科研中的应用</a>
 </li>
-</ul></li>
+</ul>
+</li>
 <li>
 <a href="#总结">总结</a>
 </li>
@@ -131,8 +133,6 @@ code > span.er { color: #ff0000; font-weight: bold; }
 </li>
 </ul>
 </div>
-
-
 <h2 id="简介">简介</h2>
 <p>IPython Notebook 既是一个交互计算平台，又是一个记录计算过程的「笔记本」。它由服务端和客户端两部分组成，其中服务端负责代码的解释与计算，而客户端负责与用户进行交互。服务端可以运行在本机也可以运行在远程服务器，包含负责运算的 IPython kernel (与 <a href="http://ipython.org/ipython-doc/dev/interactive/qtconsole.html">QT Console</a> 的 kernel 相同) 以及一个 HTTP/S 服务器 (<a href="http://www.tornadoweb.org/">Tornado</a>)。而客户端则是一个指向服务端地址的浏览器页面，负责接受用户的输入并负责渲染输出。</p>
 <p>千万不要小看了这个页面，首先，它几乎涵括了 QT Console 具有的全部交互式功能，如代码高亮，自动补全，实时帮助，内嵌显示绘图结果等；其次，计算过程及结果可以方便地保存为多种格式，如默认的 JSON 格式，Python 脚本以及 PDF 等；此外，借助 <a href="http://wowubuntu.com/markdown/basic.html">Markdown</a> 及 <a href="http://www.mathjax.org">MathJax</a>，用户可以在计算过程中插入详尽细致的描述，甚至以描述为主，计算为辅，从而将它当作科技类文章写作的工具。</p>
@@ -145,7 +145,7 @@ code > span.er { color: #ff0000; font-weight: bold; }
 <li>从源代码编译安装。</li>
 </ul>
 <p>推荐选用某个 Python 发行套件，比如 <a href="https://www.enthought.com/">Enthough Python Distribution (EPD)</a> 或 <a href="https://code.google.com/p/pythonxy/">Python(x,y)</a>。这些发行套件中都包含了常用的 Python 科学计算库，如 Numpy，Scipy，IPython，Matplotlib，Pandas 等，而且都是一键安装，非常方便快捷，省去了从源码安装的众多烦恼。下面介绍在 Linux 下安装 EPD。</p>
-<p>从 EPD <a href="http://www.enthought.com/products/getepd.php">网站</a>下载免费版或学术版<sup><a href="#fn1" class="footnoteRef" id="fnref1">1</a></sup>，之后运行下载好的文件：</p>
+<p>从 EPD <a href="http://www.enthought.com/products/getepd.php">网站</a>下载免费版或学术版<a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a>，之后运行下载好的文件：</p>
 <pre><code>bash ped-7.3.2-rh5-x86_64.sh -p /path/to/your/install_dir</code></pre>
 <p>一路回车即可。</p>
 <p>安装完成后，须将 EPD 的 bin 目录添加至环境变量 PATH 中：</p>
@@ -153,7 +153,7 @@ code > span.er { color: #ff0000; font-weight: bold; }
 export PATH</code></pre>
 <p>如果不想安装套件，可以用系统自带的管理程序单独安装 IPython，比如在 Arch 下：</p>
 <pre><code>pacman -S ipython</code></pre>
-<p>除以上两种方法，还可以选择从源代码安装，但此方案比较复杂，需要考虑 IPython 的复杂依赖关系，如 Numpy，Scipy，Qt 等。这条方案需慎重选择，因为光是 Numpy，Scipy 的安装就会让人焦头烂额<sup><a href="#fn2" class="footnoteRef" id="fnref2">2</a></sup>。</p>
+<p>除以上两种方法，还可以选择从源代码安装，但此方案比较复杂，需要考虑 IPython 的复杂依赖关系，如 Numpy，Scipy，Qt 等。这条方案需慎重选择，因为光是 Numpy，Scipy 的安装就会让人焦头烂额<a href="#fn2" class="footnoteRef" id="fnref2"><sup>2</sup></a>。</p>
 <h2 id="使用-notebook">使用 Notebook</h2>
 <p>根据 IPython Notebook 服务端所在位置，可分为本地运行和远程运行两种情景。</p>
 <h3 id="本地运行">本地运行</h3>
@@ -176,7 +176,7 @@ export PATH</code></pre>
 <h3 id="远程运行">远程运行</h3>
 <p>上文已提到多次可以将服务端放置远程服务器运行，这样有多个好处：一是可以不受物理空间的限制，在任何可以连接到服务器的场所办公，二是在客户端无需安装任何计算相关的软件，只需一个浏览器即可，三是可以利用服务器高效庞大的计算资源，实现高性能计算。</p>
 <p>IPython Notebook 可以方便地部署在似有服务器或流行的云计算平台 (如 <a href="http://aws.amazon.com/ec2/">Amazon EC2</a>, <a href="http://www.windowsazure.com/en-us/">Windowns Azure</a>) 上，下面以私有服务器为例，介绍如何与远程服务器实现交互计算。</p>
-<p>首先创建一个名为 <code>nbserver</code> 的配置文件 <sup><a href="#fn3" class="footnoteRef" id="fnref3">3</a></sup>：</p>
+<p>首先创建一个名为 <code>nbserver</code> 的配置文件 <a href="#fn3" class="footnoteRef" id="fnref3"><sup>3</sup></a>：</p>
 <pre><code>ipython profile create nbserver</code></pre>
 <p>设置登陆密码：</p>
 <pre class="sourceCode python"><code class="sourceCode python">IN [<span class="dv">1</span>]: <span class="ch">from</span> IPython.lib <span class="ch">import</span> passwd
@@ -186,7 +186,7 @@ Verify password:
 Out[<span class="dv">2</span>]: <span class="st">&#39;sha1:xxxxxxxxxxxxxxxxxxxxxxxxx&#39;</span></code></pre>
 <p>创建私人证书：</p>
 <pre><code>openssl req -x509 -nodes -days 10000 -newkey rsa:1024 -keyout mycert.pem -out mycert.pem</code></pre>
-<p>进入 <code>nbserver</code> 配置文件所在目录 <sup><a href="#fn4" class="footnoteRef" id="fnref4">4</a></sup> 并打开 <code>ipython_notebook_config.py</code>，设置以下属性：</p>
+<p>进入 <code>nbserver</code> 配置文件所在目录 <a href="#fn4" class="footnoteRef" id="fnref4"><sup>4</sup></a> 并打开 <code>ipython_notebook_config.py</code>，设置以下属性：</p>
 <pre class="sourceCode python"><code class="sourceCode python">c = get_config()
 
 c.IPKernerlApp.pylab = <span class="st">&#39;inline&#39;</span>
@@ -208,9 +208,9 @@ c.Notebook.App.port = <span class="dv">9999</span>   <span class="co">#可设为
 <h3 id="用-ipython-notebook-写博客">用 IPython Notebook 写博客</h3>
 <p>借助于 Ipython Notebook Viewer 提供的服务，只需下面一行代码，即可在博客中嵌入显示 Notebook：</p>
 <pre><code>&lt;iframe src=&quot;http://nbviewer.ipython.org/gist number/&quot; width=&quot;700&quot; height=&quot;400&quot;&gt;&lt;/iframe&gt;</code></pre>
-<p>不足之处是需要手工设置宽度与高度以符合页面大小。下面是我编写的有关 Numpy 数组维度操作的一个 Notebook <sup><a href="#fn5" class="footnoteRef" id="fnref5">5</a></sup>：</p>
-<iframe src="http://nbviewer.ipython.org/4640808/" width="700" height="400"></iframe>
-
+<p>不足之处是需要手工设置宽度与高度以符合页面大小。下面是我编写的有关 Numpy 数组维度操作的一个 Notebook <a href="#fn5" class="footnoteRef" id="fnref5"><sup>5</sup></a>：</p>
+<iframe src="http://nbviewer.ipython.org/4640808/" width="700" height="400">
+</iframe>
 <p>如果对嵌入式的显示方法不满，可以利用 <a href="https://github.com/ipython/nbconvert">nbconvert</a> 工具将 .ipynb 文件转换成 html 或 Markdown 格式，再放入网页中，详细过程请参考<a href="#相关链接">相关链接6</a>。</p>
 <h3 id="在教学科研中的应用">在教学科研中的应用</h3>
 <p>由于 IPython Notebook 的友好易用，已有<a href="http://software-carpentry.org/blog/2012/10/transitioning-to-the-ipython-notebook.html">公司</a>将其作为教授 Python 编程的新平台，更有<a href="http://ivory.idyll.org">教授</a>将其作为数据分析课程的课程平台，用它分发，收取作业，取得了不错的效果 (见<a href="#相关链接">相关链接7</a>)。</p>
