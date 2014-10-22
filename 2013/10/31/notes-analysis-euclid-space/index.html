@@ -1,0 +1,257 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "
+http://www.w3.org/TR/html4/strict.dtd">
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7 ie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8 ie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9 ie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>[Notes: Analysis 2.1] 欧几里得空间 | Mind on Mind</title>
+	<meta name="author" content="mindonmind">
+	<link href='/assets/themes/the-minimum/css/style.css' rel="stylesheet" media="all">
+	<link href="http://feeds.feedburner.com/github/VDUi" rel="alternate" title="[Notes: Analysis 2.1] 欧几里得空间" type="application/atom+xml">
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.0.6/modernizr.min.js"></script>
+</head>
+<body>
+
+<div id="page" class="hentry">
+	<header class="the-header">
+		<div class="unit-head">
+			<div class="unit-inner unit-head-inner">
+				<p class="logo"><a href="/">Mind on Mind</a></p>
+				<nav class="nav-global">
+					<ul>
+						<li class="research"><a href="/research.html">research</a></li>
+						<li class="cv"><a href="/assets/other/ZTYang_CV.pdf">cv</a></li>
+            <!--		<li class="bio"><a href="/bio.html">bio</a></li>           -->
+                        <li class="notes"><a href="/notes">Tech</a></li>
+						<li class="blog"><a href="/blog.html">blog</a></li>
+            <!--		<li class="category"><a href="/categories.html">cats</a></li> -->
+			<!--			<li class="tag"><a href="/tags.html">tags</a></li>  -->
+            <!--            <li class="links"><a href="/links.html">links</a></li> -->
+            <!--			<li class="feed"><a href="http://feeds.feedburner.com/wheresmind">feed</a></li>   -->
+                      <!--  <li class="about"><a href="/intro.html">intro</a></li> -->
+					</ul>
+				</nav>
+			</div><!-- unit-inner -->
+		</div><!-- unit-head -->
+	</header>
+	<div class="body" role="main">
+		<div class="unit-body">
+			<div class="unit-inner unit-body-inner">
+				<div class="entry-content">
+					
+<article class="unit-article layout-post">
+	<div class="unit-inner unit-article-inner">
+		<div class="content">
+			<header>
+				<div class="unit-head">
+					<div class="unit-inner unit-head-inner">
+						<h1 class="h2 entry-title">[Notes: Analysis 2.1] 欧几里得空间</h1>
+					</div><!-- unit-inner -->
+				</div><!-- unit-head -->
+			</header>
+
+			<div class="bd">
+				<div class="entry-content">
+					<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML,https://raw.github.com/mindonmind/MathJax/master/config/local/local.js" type="text/javascript"></script>
+</head>
+<body>
+<p><a href="http://book.douban.com/subject/1237679/"><em>数学分析教程 下</em></a> p.69 - p74.</p>
+<p>首先，定义在多元分析中最基本的集合： <span class="math">\({\boldsymbol{R}}^n = \{(x_1, x_2,\dots, x_n): x_i \in {\boldsymbol{R}}, i=1,2,\dots,n\}\)</span> 。 <span class="math">\({\boldsymbol{R}}^n\)</span> 中的元素 $ = (x_1, x_2, , x_i) $ 称为一个向量，或一个点，其中<span class="math">\({\boldsymbol{0}} = (0, 0, \dots, 0)\)</span> 称为零向量。可以定义向量的加法与数乘两种运算： <span class="math">\[x + y = (x_1+y_1, x_2+y_2, \dots, x_n+y_n) \\ \lambda \mathbf(x) = (\lambda x_1, \lambda x_2, \dots, \lambda x_n)\]</span> 定义 <span class="math">\(- {\boldsymbol{x}} = (-x_1, -x_2, \dots, -x_n)\)</span>，那么对于任意 <span class="math">\({\boldsymbol{x}}, {\boldsymbol{y}}, {\boldsymbol{z}}\)</span> 都有 <span class="math">\[{\boldsymbol{0}} + {\boldsymbol{x}} = {\boldsymbol{x}} + {\boldsymbol{0}} \\ 
+- {\boldsymbol{x}} + {\boldsymbol{x}} = {\boldsymbol{0}} \\
+{\boldsymbol{x}}+{\boldsymbol{y}} = {\boldsymbol{y}}+{\boldsymbol{x}} \\
+{\boldsymbol{x}} + ({\boldsymbol{y}} + {\boldsymbol{z}}) = ({\boldsymbol{x}}+{\boldsymbol{y}}) + {\boldsymbol{z}} \\
+\lambda ({\boldsymbol{x}} + {\boldsymbol{y}} ) = \lambda {\boldsymbol{x}} + \lambda {\boldsymbol{y}} \\ 
+( \lambda + \mu) {\boldsymbol{x}} = \lambda {\boldsymbol{x}} + \mu {\boldsymbol{y}} \\
+\lambda(\mu {\boldsymbol{x}} )=( \lambda\mu) {\boldsymbol{x}} \\
+1 \cdot {\boldsymbol{x}} = {\boldsymbol{x}} 
+\]</span> 由此可见，定义了这些运算的 <span class="math">\({\boldsymbol{R}}^n\)</span> 是数域 <span class="math">\({\boldsymbol{R}}\)</span> 上的线性空间，也称 <span class="math">\({\boldsymbol{R}}^n\)</span> 为 <span class="math">\({\boldsymbol{n}}\)</span> 维向量空间。</p>
+<p>在 <span class="math">\({\boldsymbol{R}}^n\)</span> 中引入<strong>内积</strong>运算 <span class="math">\(\langle{\boldsymbol{x}} , {\boldsymbol{y}}\rangle = \sum x_iy_i\)</span>， 该运算满足： <span class="math">\[\begin{aligned}
+&amp; \langle{\boldsymbol{x}}, {\boldsymbol{x}} \rangle \geq 0 &amp; \text{(正定性)}\\
+&amp; \langle{\boldsymbol{x}} , {\boldsymbol{y}} \rangle = \langle{\boldsymbol{y}} , {\boldsymbol{x}} \rangle &amp; \text{(对称性)})\\ 
+&amp; \langle{\boldsymbol{x}} , {\boldsymbol{y}} +{\boldsymbol{z}} \rangle = \langle{\boldsymbol{x}} ,{\boldsymbol{y}} \rangle + \langle{\boldsymbol{x}} , {\boldsymbol{z}} \rangle &amp; \text{(线性1)}\\
+&amp; \forall \lambda \in {\boldsymbol{R}}, \; \langle\lambda {\boldsymbol{x}} , {\boldsymbol{y}} \rangle = \lambda\langle{\boldsymbol{x}} ,{\boldsymbol{y}} \rangle &amp; \text{(线性2)}\end{aligned}\]</span> 故该种定义方式符合线性代数中对于内积运算的要求。此外，根据上述性质可知 <span class="math">\[ \langle\lambda{\boldsymbol{x}} + \mu{\boldsymbol{y}} , {\boldsymbol{z}} \rangle = \lambda\langle{\boldsymbol{x}} , {\boldsymbol{z}} \rangle + \mu\langle{\boldsymbol{y}}, {\boldsymbol{z}}\rangle \]</span></p>
+<p>对于内积，有一个非常重要的定理：</p>
+<p><strong>定理 2.1.1 (Cauchy-Schwarz)</strong> <span class="math">\[\langle {\boldsymbol{x}},{\boldsymbol{x}} \rangle ^2 \leq \langle {\boldsymbol{x}},{\boldsymbol{x}} \rangle \langle {\boldsymbol{y}},{\boldsymbol{y}} \rangle \]</span> <em>证明</em> 使用 <span class="math">\(\langle {\boldsymbol{x}}-t{\boldsymbol{y}}, {\boldsymbol{x}}-t{\boldsymbol{y}} \rangle \geq 0\)</span></p>
+<p>在定义内积之后的 <span class="math">\({\boldsymbol{R}}^n\)</span> 称为 <strong> 维 Euclid 空间</strong>，或简称<strong>欧式空间</strong>。在内积的基础之上，可以定义向量的<strong>范数</strong>，此处定义 <span class="math">\(\|{\boldsymbol{x}} \|=\sqrt{\langle {\boldsymbol{x}} , {\boldsymbol{x}} \rangle}\)</span>，它满足范数所要求的三条性质： <span class="math">\[\begin{aligned}
+&amp;\|{\boldsymbol{x}} \| \geq {\boldsymbol{0}} \\
+&amp;\forall \lambda \in {\boldsymbol{R}},\;  \|\lambda{\boldsymbol{x}} \| = |\lambda|\|{\boldsymbol{x}} \|\\
+&amp;\|{\boldsymbol{x}} + {\boldsymbol{y}} \| \leq \|x\| + \|y\| \quad \text{(三角形不等式)}
+\end{aligned}\]</span></p>
+<p>上述三条性质中，第三条常常会被使用到，它的证明可以通过内积运算及定理2.1.1求得。此外其在一维空间上的形式即为 <span class="math">\(|x+y| \leq |x| + |y|\)</span>　。</p>
+<p>通过几何运算，我们可以在二维空间中得到两个向量之间夹角与其内积的关系： <span class="math">\[\text{cos}\theta = \frac{\langle {\boldsymbol{x}}, {\boldsymbol{y}} \rangle }{\|{\boldsymbol{x}}\|\|{\boldsymbol{y}}\|}\]</span> 由定理2.2.1知上式右侧分子的绝对值总小于分母，故可以在 <span class="math">\(R^n\)</span> 上定义两个向量的夹角:<span class="math">\[\text{cos}\theta = \frac{|\langle {\boldsymbol{x}}, {\boldsymbol{y}} \rangle|}{\|{\boldsymbol{x}}\|\|{\boldsymbol{y}}\|}\]</span> 只要 <span class="math">\({\boldsymbol{x}}, {\boldsymbol{y}}\)</span> 不同时为 <span class="math">\({\boldsymbol{0}}\)</span> 上式就总是有定义的。</p>
+<p><span class="math">\(R^n\)</span> 中两个点的距离定义为: <span class="math">\(\|{\boldsymbol{x}}-{\boldsymbol{y}}\|\)</span>，根据范数的三角形不等式，有<strong>距离的三角不等式</strong>: <span class="math">\(\|{\boldsymbol{x}}-{\boldsymbol{y}}\| \leq \|{\boldsymbol{x}}-{\boldsymbol{z}}\| + \|{\boldsymbol{y}}-{\boldsymbol{z}}\|\)</span>。</p>
+<p>对任意 <span class="math">\({\boldsymbol{a}}\in {\boldsymbol{R}}\)</span> 记 <span class="math">\[B_r(a) = \{{\boldsymbol{x}} \in {\boldsymbol{R}}^n: \|{\boldsymbol{x}}-{\boldsymbol{a}}\| &lt; r\}\\
+\overline{B_r}(a) = \{{\boldsymbol{x}} \in {\boldsymbol{R}}^n: \|{\boldsymbol{x}}-{\boldsymbol{a}}\| \leq r\}\]</span> 分别成为以 <span class="math">\({\boldsymbol{a}}\)</span> 为中心， <span class="math">\(r\)</span> 为半径的<strong>球</strong>与<strong>半球</strong>。</p>
+<p>对 <span class="math">\(E \in {\boldsymbol{R}}^n\)</span> 如果存在 <span class="math">\(r&gt;0\)</span> ，使得 <span class="math">\(E \subset B_r({\boldsymbol{0}})\)</span> ，那么称 <span class="math">\(E\)</span> 为<strong>有界集</strong>。</p>
+<p>定义<strong>矩阵范数</strong>: <span class="math">\(\|{\boldsymbol{A}}_{mn}\| = (\sum{\sum{a_{ij}^2}})^ {1/2}\)</span> 。该定义将矩阵看作一个拉直的向量，它具有如下性质： <span class="math">\[\|\lambda{\boldsymbol{A}}\| = \lambda\|{\boldsymbol{A}}\|\\
+\|{\boldsymbol{A}}+{\boldsymbol{B}}\| \leq \|{\boldsymbol{A}}\| + \|{\boldsymbol{B}}\|\\
+\|{\boldsymbol{A}}{\boldsymbol{B}}\| \leq \|{\boldsymbol{A}}\|\|{\boldsymbol{B}}\|\]</span></p>
+</body>
+</html>
+
+					<div class="meta">
+						<p class="date-publish">
+							Published: 
+							<date class="date-pub" title="2013-10-31T02:03:00+08:00" datetime="2013-10-31T02:03:00+08:00" pubdate>
+							<span class="month"><abbr>October</abbr></span>
+							<span class="day">31</span>
+							<span class="year">2013 @ </span>
+                            <span class="time">02:03 </span>
+							</date>
+						</p>
+						<ul class="list-category list-linear">
+							<li class="list-head">category: </li>
+							
+							
+
+
+  
+     
+    	<li><a href="/categories.html#Thinking in Mathematics-ref">
+    		Thinking in Mathematics <span>12</span>
+    	</a></li>
+    
+  
+
+
+						</ul>
+						<ul class="list-tag list-linear">
+							<li class="list-head">tags: </li>
+							
+							
+
+
+  
+     
+    	<li><a href="/tags.html#notes-ref">notes <span>12</span></a></li>
+     
+    	<li><a href="/tags.html#analysis-ref">analysis <span>10</span></a></li>
+    
+  
+
+
+
+						</ul>
+					</div><!-- meta -->
+				</div><!-- entry-content -->
+				<div class="misc-content">
+					<div class="social">
+						<ul class="list-linear">
+							<li><div class="twitter-tweet"><a href="https://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="" data-lang="en">Tweet</a></div></li>
+							<li><div class="twitter-follow"><a href="https://twitter.com/" class="twitter-follow-button" data-show-count="false" data-lang="en"></a></div></li>
+						</ul>
+					</div>
+					
+					
+
+
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_developer = 1;
+    var disqus_shortname = 'yangzetian'; // required: replace example with your forum shortname
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+
+				</div><!-- misc-content -->
+				
+			</div><!-- bd -->
+			<footer class="unit-foot">
+				<div class="unit-inner unit-foot-inner">
+					<nav class="pagination">
+						<ul>
+							
+							<li class="prev"><a class="internal" rel="prev"  href="/2013/10/13/sin-and-punish" title="View 罪与罚">&laquo; 罪与罚</a></li>
+							
+							
+							<li class="pipe"> | </li>
+							
+							
+							<li class="next"><a class="internal" rel="next"  href="/2013/11/01/notes-analysis-basic-topology-open-closed" title="View [Notes: Analysis 2.2] 基础拓扑：点列极限与开集闭集">[Notes: Analysis 2.2] 基础拓扑：点列极限与开集闭集 &raquo;</a></li>
+							
+						</ul>
+					</nav>
+					<p class="gotop">
+						<a href="#page">Back to Top</a>
+					</p>
+				</div>
+			</footer>
+
+		</div><!-- content -->
+	</div><!-- unit-inner -->
+</article>
+
+
+				</div>
+			</div><!-- unit-inner -->
+		</div><!-- unit-body -->
+
+	</div><!-- body -->
+	<footer class="the-footer">
+		<div class="unit-foot">
+			<div class="unit-inner unit-foot-inner">
+				<div class="misc vcard">
+					<h4>about</h4>
+					<ul>
+			<!--			<li class="contact"><address><span class="author fn n">mindonmind</span></address></li> -->
+                        <li class="about"><a href="/index.html">Zetian Yang</a></li>
+                        <li class="about"><a href="mailto:zetian.yang@gmail.com">Email</a></li>
+						<li class="about"><a href="http://feeds.feedburner.com/wheresmind" rel="me">RSS</a></li>
+					</ul>
+				</div><!-- misc -->
+				<p class="licence">
+                Powered by <a href="http://jekyllrb.com">Jekyll</a> and <a href="http://johnmacfarlane.net/pandoc">Pandoc</a> <br/>
+                <!--     Theme: <a href="http://themes.jekyllbootstrap.com/preview/the-minimum/pages.html#page">The Minimum</a>. -->
+				</p>
+			</div><!-- unit-foot-inner -->
+		</div><!-- unit-foot -->
+	</footer>
+</div><!-- page -->
+<script>
+/*! A fix for the iOS orientationchange zoom bug.Script by @scottjehl, rebound by @wilto. MIT License.*/
+(function(j){var i=j.document;if(!i.querySelectorAll){return}var l=i.querySelectorAll("meta[name=viewport]")[0],a=l&&l.getAttribute("content"),h=a+", maximum-scale=1.0",d=a+", maximum-scale=10.0",g=true,c=j.orientation,k=0;if(!l){return}function f(){l.setAttribute("content",d);g=true}function b(){l.setAttribute("content",h);g=false}function e(m){c=Math.abs(j.orientation);k=Math.abs(m.gamma);if(k>8&&c===0){if(g){b()}}else{if(!g){f()}}}j.addEventListener("orientationchange",f,false);j.addEventListener("deviceorientation",e,false)})(this);
+</script>
+
+  
+
+
+  <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-30928812-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+
+
+</body>
+</html>
+

@@ -1,0 +1,255 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "
+http://www.w3.org/TR/html4/strict.dtd">
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7 ie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8 ie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9 ie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>[Notes: Analysis 2.7] 复合求导与拟微分平均值定理 | Mind on Mind</title>
+	<meta name="author" content="mindonmind">
+	<link href='/assets/themes/the-minimum/css/style.css' rel="stylesheet" media="all">
+	<link href="http://feeds.feedburner.com/github/VDUi" rel="alternate" title="[Notes: Analysis 2.7] 复合求导与拟微分平均值定理" type="application/atom+xml">
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.0.6/modernizr.min.js"></script>
+</head>
+<body>
+
+<div id="page" class="hentry">
+	<header class="the-header">
+		<div class="unit-head">
+			<div class="unit-inner unit-head-inner">
+				<p class="logo"><a href="/">Mind on Mind</a></p>
+				<nav class="nav-global">
+					<ul>
+						<li class="research"><a href="/research.html">research</a></li>
+						<li class="cv"><a href="/assets/other/ZTYang_CV.pdf">cv</a></li>
+            <!--		<li class="bio"><a href="/bio.html">bio</a></li>           -->
+                        <li class="notes"><a href="/notes">Tech</a></li>
+						<li class="blog"><a href="/blog.html">blog</a></li>
+            <!--		<li class="category"><a href="/categories.html">cats</a></li> -->
+			<!--			<li class="tag"><a href="/tags.html">tags</a></li>  -->
+            <!--            <li class="links"><a href="/links.html">links</a></li> -->
+            <!--			<li class="feed"><a href="http://feeds.feedburner.com/wheresmind">feed</a></li>   -->
+                      <!--  <li class="about"><a href="/intro.html">intro</a></li> -->
+					</ul>
+				</nav>
+			</div><!-- unit-inner -->
+		</div><!-- unit-head -->
+	</header>
+	<div class="body" role="main">
+		<div class="unit-body">
+			<div class="unit-inner unit-body-inner">
+				<div class="entry-content">
+					
+<article class="unit-article layout-post">
+	<div class="unit-inner unit-article-inner">
+		<div class="content">
+			<header>
+				<div class="unit-head">
+					<div class="unit-inner unit-head-inner">
+						<h1 class="h2 entry-title">[Notes: Analysis 2.7] 复合求导与拟微分平均值定理</h1>
+					</div><!-- unit-inner -->
+				</div><!-- unit-head -->
+			</header>
+
+			<div class="bd">
+				<div class="entry-content">
+					<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML,https://raw.github.com/mindonmind/MathJax/master/config/local/local.js" type="text/javascript"></script>
+</head>
+<body>
+<h2 id="复合求导">复合求导</h2>
+<p>与一元函数类似，多元映射也存在这复合求导法则，即设 <span class="math">\({\boldsymbol{f}}:D\to {\boldsymbol{R}}^m\)</span>，<span class="math">\({\boldsymbol{f}}\)</span> 在 <span class="math">\({\boldsymbol{x}}_0\)</span> 上可微，再设 <span class="math">\({\boldsymbol{g}}: {\boldsymbol{R}}^m \to {\boldsymbol{R}}^l\)</span> 且 <span class="math">\({\boldsymbol{g}}\)</span> 在 <span class="math">\({\boldsymbol{f}}({\boldsymbol{x}}_0)\)</span> 处可微，那么 <span class="math">\(J({\boldsymbol{g}} \circ {\boldsymbol{f}})({\boldsymbol{x}}_0) = J{\boldsymbol{g}}({\boldsymbol{f}}({\boldsymbol{x}}_0))J{\boldsymbol{f}}({\boldsymbol{x}}_0)\)</span> 。下面我们来证明这个定理，首先，记 <span class="math">\({\boldsymbol{y}}_0 = {\boldsymbol{f}}({\boldsymbol{x}}_0), {\boldsymbol{A}}_{m, n} = {\boldsymbol{J}}{\boldsymbol{f}}({\boldsymbol{x}}_0), {\boldsymbol{B}}_{l,m} = {\boldsymbol{J}}{\boldsymbol{g}}({\boldsymbol{y}}_0) = {\boldsymbol{J}}{\boldsymbol{g}}({\boldsymbol{f}}({\boldsymbol{x}}_0))\)</span>，那么我们有： <span class="math">\[ {\boldsymbol{f}}({\boldsymbol{x}}_0 + {\boldsymbol{h}}) - f({\boldsymbol{x}}_0) = {\boldsymbol{A}}{\boldsymbol{h}} + {\boldsymbol{r}}({\boldsymbol{h}}) \\
+{\boldsymbol{g}}({\boldsymbol{y}}_0 + {\boldsymbol{k}}) - g({\boldsymbol{y}}_0 + {\boldsymbol{k}}) = {\boldsymbol{B}}{\boldsymbol{k}} + {\boldsymbol{v}}({\boldsymbol{k}})\]</span> 故: <span class="math">\[\begin{align*}
+{\boldsymbol{g}}({\boldsymbol{f}}({\boldsymbol{x}}_0 + {\boldsymbol{h}})) - {\boldsymbol{g}}({\boldsymbol{f}}({\boldsymbol{x}}_0)) - {\boldsymbol{B}}{\boldsymbol{A}}{\boldsymbol{h}} &amp;= {\boldsymbol{g}}({\boldsymbol{y}}_0 + {\boldsymbol{k}}) - {\boldsymbol{g}}({\boldsymbol{y}}_0) - {\boldsymbol{B}}{\boldsymbol{A}}{\boldsymbol{h}}\\
+&amp;= {\boldsymbol{B}}{\boldsymbol{k}} + {\boldsymbol{v}}({\boldsymbol{k}}) - {\boldsymbol{B}} {\boldsymbol{A}}{\boldsymbol{h}}\\
+&amp;= {\boldsymbol{B}}({\boldsymbol{f}}({\boldsymbol{x}}_0+{\boldsymbol{h}}) - {\boldsymbol{f}}({\boldsymbol{x}}_0)) +{\boldsymbol{v}}({\boldsymbol{k}}) - {\boldsymbol{B}} {\boldsymbol{A}}{\boldsymbol{h}}\\
+&amp;= {\boldsymbol{B}}({\boldsymbol{A}}{\boldsymbol{h}}+{\boldsymbol{r}}({\boldsymbol{h}})) +{\boldsymbol{v}}({\boldsymbol{k}}) - {\boldsymbol{B}}{\boldsymbol{A}}{\boldsymbol{h}}\\
+&amp;= {\boldsymbol{B}}{\boldsymbol{A}}{\boldsymbol{h}} + {\boldsymbol{B}}{\boldsymbol{r}}({\boldsymbol{h}}) +{\boldsymbol{v}}({\boldsymbol{k}}) - {\boldsymbol{B}}{\boldsymbol{A}}{\boldsymbol{h}}\\
+\end{align*}\]</span> 而： <span class="math">\[\begin{align*}
+{\boldsymbol{v}}({\boldsymbol{k}}) &amp;= \varepsilon({\boldsymbol{k}}){\boldsymbol{k}} \\
+&amp;= \varepsilon({\boldsymbol{k}})({\boldsymbol{A}}{\boldsymbol{h}} + {\boldsymbol{r}}({\boldsymbol{h}})) \\
+&amp;= \varepsilon({\boldsymbol{k}})({\boldsymbol{A}}{\boldsymbol{h}} + \varepsilon({\boldsymbol{h}}){\boldsymbol{h}}) \\
+&amp;= \varepsilon({\boldsymbol{k}})({\boldsymbol{A}}+\varepsilon({\boldsymbol{h}})){\boldsymbol{h}}
+\end{align*}\]</span> 所以： <span class="math">\[\begin{align*}
+\|{\boldsymbol{g}}({\boldsymbol{f}}({\boldsymbol{x}}_0 + {\boldsymbol{h}})) - {\boldsymbol{g}}({\boldsymbol{f}}({\boldsymbol{x}}_0)) - {\boldsymbol{B}}{\boldsymbol{A}}{\boldsymbol{h}}\| &amp;= {\boldsymbol{B}}{\boldsymbol{r}}({\boldsymbol{h}}) + {\boldsymbol{v}}{\boldsymbol{(}}k) \\
+&amp;=\|{\boldsymbol{B}}(\varepsilon({\boldsymbol{h}}) {\boldsymbol{h}}) + \varepsilon({\boldsymbol{k}})({\boldsymbol{A}}{\boldsymbol{h}}+\varepsilon({\boldsymbol{h}}){\boldsymbol{h}})\| \\
+&amp;\leq \|{\boldsymbol{B}}\|\varepsilon({\boldsymbol{h}})\|{\boldsymbol{h}}\| + \varepsilon({\boldsymbol{k}})(\|{\boldsymbol{A}}\|\|{\boldsymbol{h}}\| + \varepsilon({\boldsymbol{h}})\|{\boldsymbol{h}}\|)\end{align*}\]</span> 即 <span class="math">\(\|{\boldsymbol{g}}({\boldsymbol{f}}({\boldsymbol{x}}_0 + {\boldsymbol{h}})) - {\boldsymbol{g}}({\boldsymbol{f}}({\boldsymbol{x}}_0)) - {\boldsymbol{B}}{\boldsymbol{A}}{\boldsymbol{h}}\|\)</span> 的范数是 <span class="math">\(\|{\boldsymbol{h}}\|\)</span> 的高阶无穷小，因此 <span class="math">\({\boldsymbol{g}}\circ{\boldsymbol{f}}\)</span> 在 <span class="math">\({\boldsymbol{x}}_0\)</span> 处可微。</p>
+<p>由这个公式，我们可以很容易地得到下面一个非常有用的结论：设 <span class="math">\(f(x_1,x_2,\dots,x_n)\)</span> 连续可微，其中每个 $x_i(t) $ 是 <span class="math">\(t\)</span> 的连续可导函数，那么便有： <span class="math">\[\frac{\mathrm{d}f}{\rm d t} = (\frac{\partial f}{\partial x_1}, \frac{\partial f}{\partial x_2}, \dots, \frac{\partial f}{\partial x_n})
+\begin{pmatrix}
+\frac{\mathrm{d} x_1}{\mathrm{d} t}\\
+\frac{\mathrm{d} x_2}{\mathrm{d} t} \\
+\vdots\\
+\frac{\mathrm{d} x_n}{\mathrm{d} t}
+\end{pmatrix}\]</span></p>
+<p>由此，我们可以得到上一个笔记中关于方向导数与偏导数关系的公式。在三维空间中，任意一个方向可以用方向余弦 <span class="math">\((\cos \alpha, \cos \beta, \cos \gamma)\)</span> 来表示，其中 $^2 + ^2 + ^2 = 1 $，那么这个方向的方向导数即为： <span class="math">\[\frac{\partial f}{\partial {\boldsymbol{u}}} = \frac{\partial f}{\partial x_1}\cos \alpha + \frac{\partial f}{\partial x_2}\cos \beta + \frac{\partial f}{\partial x_3}\cos \gamma\]</span></p>
+<p>而通过 Cauchy-Schwarz 不等式可以证明，上式的范数当且仅当<span class="math">\((\cos \alpha \cos \beta \cos \gamma) = \lambda(\frac{\partial f}{\partial x_1}, \frac{\partial f}{\partial x_2}, \frac{\partial f}{\partial x_3})\)</span> 时取到最大值，也就是说梯度指向的方向是函数方向导数范数最大，或者说，函数变化最为剧烈的方向。</p>
+<h2 id="拟微分平均值定理">拟微分平均值定理</h2>
+<p>对应一元函数的微分中值定理，多元函数一样有类似的定理，即 <span class="math">\(f:D\to {\boldsymbol{R}}^n\)</span> 可微，如果 <span class="math">\({\boldsymbol{a}}, {\boldsymbol{b}} \in D\)</span>，那么在 <span class="math">\({\boldsymbol{a}}\)</span> 与 <span class="math">\({\boldsymbol{b}}\)</span> 之间的线段上必存在一点 <span class="math">\({\boldsymbol{\xi}}\)</span>，使得 <span class="math">\(f({\boldsymbol{b}}) - f({\boldsymbol{a}}) = {\boldsymbol{J}}{\boldsymbol{f}}({\boldsymbol{\xi}})({\boldsymbol{b}} - {\boldsymbol{a}})\)</span>。由于涉及两点间线段，这里要求 <span class="math">\(D\)</span> 必须是<strong>凸域</strong>。证明思路是构造一元函数，并利用一元函数的微分中值定理以及复合求导法则。</p>
+<p>而对于多元映射，存在拟微分平均值定理，它主要是将函数值差的范数限定在线段上某点的 Jaccobian 范数同自变量变化差范数的乘积之内，即在 <span class="math">\({\boldsymbol{a}}\)</span> 与 <span class="math">\({\boldsymbol{b}}\)</span> 之间的线段上存在一点 <span class="math">\({\boldsymbol{\xi}}\)</span>，使得 <span class="math">\(\|{\boldsymbol{f}}({\boldsymbol{b}}) - {\boldsymbol{f}}({\boldsymbol{a}})\| = \|{\boldsymbol{J}}{\boldsymbol{f}}({\boldsymbol{\xi}})\|\|({\boldsymbol{b}} - {\boldsymbol{a}})\|\)</span>。证明思路仍是转化为一元映射问题。</p>
+</body>
+</html>
+
+					<div class="meta">
+						<p class="date-publish">
+							Published: 
+							<date class="date-pub" title="2013-11-08T00:05:00+08:00" datetime="2013-11-08T00:05:00+08:00" pubdate>
+							<span class="month"><abbr>November</abbr></span>
+							<span class="day">08</span>
+							<span class="year">2013 @ </span>
+                            <span class="time">00:05 </span>
+							</date>
+						</p>
+						<ul class="list-category list-linear">
+							<li class="list-head">category: </li>
+							
+							
+
+
+  
+     
+    	<li><a href="/categories.html#Thinking in Mathematics-ref">
+    		Thinking in Mathematics <span>12</span>
+    	</a></li>
+    
+  
+
+
+						</ul>
+						<ul class="list-tag list-linear">
+							<li class="list-head">tags: </li>
+							
+							
+
+
+  
+     
+    	<li><a href="/tags.html#notes-ref">notes <span>12</span></a></li>
+     
+    	<li><a href="/tags.html#analysis-ref">analysis <span>10</span></a></li>
+    
+  
+
+
+
+						</ul>
+					</div><!-- meta -->
+				</div><!-- entry-content -->
+				<div class="misc-content">
+					<div class="social">
+						<ul class="list-linear">
+							<li><div class="twitter-tweet"><a href="https://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="" data-lang="en">Tweet</a></div></li>
+							<li><div class="twitter-follow"><a href="https://twitter.com/" class="twitter-follow-button" data-show-count="false" data-lang="en"></a></div></li>
+						</ul>
+					</div>
+					
+					
+
+
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_developer = 1;
+    var disqus_shortname = 'yangzetian'; // required: replace example with your forum shortname
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+
+				</div><!-- misc-content -->
+				
+			</div><!-- bd -->
+			<footer class="unit-foot">
+				<div class="unit-inner unit-foot-inner">
+					<nav class="pagination">
+						<ul>
+							
+							<li class="prev"><a class="internal" rel="prev"  href="/2013/11/05/notes-analysis-multivariate-derivative-and-differential" title="View [Notes: Analysis 2.6] 多元导数与微分">&laquo; [Notes: Analysis 2.6] 多元导数与微分</a></li>
+							
+							
+							<li class="pipe"> | </li>
+							
+							
+							<li class="next"><a class="internal" rel="next"  href="/2013/11/09/notes-analysis-theorem-implicit" title="View [Notes: Analysis 2.8] 隐映射与逆映射定理">[Notes: Analysis 2.8] 隐映射与逆映射定理 &raquo;</a></li>
+							
+						</ul>
+					</nav>
+					<p class="gotop">
+						<a href="#page">Back to Top</a>
+					</p>
+				</div>
+			</footer>
+
+		</div><!-- content -->
+	</div><!-- unit-inner -->
+</article>
+
+
+				</div>
+			</div><!-- unit-inner -->
+		</div><!-- unit-body -->
+
+	</div><!-- body -->
+	<footer class="the-footer">
+		<div class="unit-foot">
+			<div class="unit-inner unit-foot-inner">
+				<div class="misc vcard">
+					<h4>about</h4>
+					<ul>
+			<!--			<li class="contact"><address><span class="author fn n">mindonmind</span></address></li> -->
+                        <li class="about"><a href="/index.html">Zetian Yang</a></li>
+                        <li class="about"><a href="mailto:zetian.yang@gmail.com">Email</a></li>
+						<li class="about"><a href="http://feeds.feedburner.com/wheresmind" rel="me">RSS</a></li>
+					</ul>
+				</div><!-- misc -->
+				<p class="licence">
+                Powered by <a href="http://jekyllrb.com">Jekyll</a> and <a href="http://johnmacfarlane.net/pandoc">Pandoc</a> <br/>
+                <!--     Theme: <a href="http://themes.jekyllbootstrap.com/preview/the-minimum/pages.html#page">The Minimum</a>. -->
+				</p>
+			</div><!-- unit-foot-inner -->
+		</div><!-- unit-foot -->
+	</footer>
+</div><!-- page -->
+<script>
+/*! A fix for the iOS orientationchange zoom bug.Script by @scottjehl, rebound by @wilto. MIT License.*/
+(function(j){var i=j.document;if(!i.querySelectorAll){return}var l=i.querySelectorAll("meta[name=viewport]")[0],a=l&&l.getAttribute("content"),h=a+", maximum-scale=1.0",d=a+", maximum-scale=10.0",g=true,c=j.orientation,k=0;if(!l){return}function f(){l.setAttribute("content",d);g=true}function b(){l.setAttribute("content",h);g=false}function e(m){c=Math.abs(j.orientation);k=Math.abs(m.gamma);if(k>8&&c===0){if(g){b()}}else{if(!g){f()}}}j.addEventListener("orientationchange",f,false);j.addEventListener("deviceorientation",e,false)})(this);
+</script>
+
+  
+
+
+  <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-30928812-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+
+
+</body>
+</html>
+

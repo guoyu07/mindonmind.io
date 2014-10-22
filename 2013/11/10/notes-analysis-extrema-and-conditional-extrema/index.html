@@ -1,0 +1,239 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "
+http://www.w3.org/TR/html4/strict.dtd">
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7 ie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8 ie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9 ie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>[Notes: Analysis 2.10] 极值与条件极值 | Mind on Mind</title>
+	<meta name="author" content="mindonmind">
+	<link href='/assets/themes/the-minimum/css/style.css' rel="stylesheet" media="all">
+	<link href="http://feeds.feedburner.com/github/VDUi" rel="alternate" title="[Notes: Analysis 2.10] 极值与条件极值" type="application/atom+xml">
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.0.6/modernizr.min.js"></script>
+</head>
+<body>
+
+<div id="page" class="hentry">
+	<header class="the-header">
+		<div class="unit-head">
+			<div class="unit-inner unit-head-inner">
+				<p class="logo"><a href="/">Mind on Mind</a></p>
+				<nav class="nav-global">
+					<ul>
+						<li class="research"><a href="/research.html">research</a></li>
+						<li class="cv"><a href="/assets/other/ZTYang_CV.pdf">cv</a></li>
+            <!--		<li class="bio"><a href="/bio.html">bio</a></li>           -->
+                        <li class="notes"><a href="/notes">Tech</a></li>
+						<li class="blog"><a href="/blog.html">blog</a></li>
+            <!--		<li class="category"><a href="/categories.html">cats</a></li> -->
+			<!--			<li class="tag"><a href="/tags.html">tags</a></li>  -->
+            <!--            <li class="links"><a href="/links.html">links</a></li> -->
+            <!--			<li class="feed"><a href="http://feeds.feedburner.com/wheresmind">feed</a></li>   -->
+                      <!--  <li class="about"><a href="/intro.html">intro</a></li> -->
+					</ul>
+				</nav>
+			</div><!-- unit-inner -->
+		</div><!-- unit-head -->
+	</header>
+	<div class="body" role="main">
+		<div class="unit-body">
+			<div class="unit-inner unit-body-inner">
+				<div class="entry-content">
+					
+<article class="unit-article layout-post">
+	<div class="unit-inner unit-article-inner">
+		<div class="content">
+			<header>
+				<div class="unit-head">
+					<div class="unit-inner unit-head-inner">
+						<h1 class="h2 entry-title">[Notes: Analysis 2.10] 极值与条件极值</h1>
+					</div><!-- unit-inner -->
+				</div><!-- unit-head -->
+			</header>
+
+			<div class="bd">
+				<div class="entry-content">
+					<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML,https://raw.github.com/mindonmind/MathJax/master/config/local/local.js" type="text/javascript"></script>
+</head>
+<body>
+<p><a href="http://book.douban.com/subject/1237679/"><em>数学分析教程 下</em></a> p.158 - p.175</p>
+<p><strong>极值</strong>点和<strong>绝对极值</strong>点分别指函数在某点邻域内大于（小于）等于或严格大于（小于）等于其周围点值的点。关于任意极值，如果 <span class="math">\(Jf({\boldsymbol{p}}_0)\)</span> 存在，那么 <span class="math">\(Jf({\boldsymbol{p}}_0) = {\boldsymbol{0}}\)</span>，反之则不一定成立。所有 <span class="math">\(Jf({\boldsymbol{p}})=0\)</span> 的点称为<strong>驻点</strong>。判断驻点是否为极值点，有如下定理：设 <span class="math">\({\boldsymbol{x}}_0\)</span> 是函数 <span class="math">\(f\)</span> 的一个驻点，函数 <span class="math">\(f\)</span> 在 <span class="math">\({\boldsymbol{x}}_0\)</span> 的某一邻域有连续的二阶偏导数，那么如果 <span class="math">\(Hf({\boldsymbol{x}}_0)\)</span> 正（负）定，那么 <span class="math">\({\boldsymbol{x}}_0\)</span> 是 <span class="math">\(f\)</span> 的一个严格极小（大）值点；如果 <span class="math">\(Hf({\boldsymbol{x}}_0)\)</span> 不定，那么 <span class="math">\(x_0\)</span> 不是 <span class="math">\(f\)</span> 的极值点；如果 <span class="math">\(Hf({\boldsymbol{x}}_0)\)</span> 半正（负）定，那么不能确定 <span class="math">\(x_0\)</span> 是否是 <span class="math">\(f\)</span> 的一个极值点。</p>
+<p>如果在求解极值的同时要求变量之间满足一定的关系，比如 <span class="math">\(f(x_1, \dots, x_n, y_1, \dots, y_m)\)</span> 是一个多元函数，且变量 <span class="math">\(x_1, \dots, x_n, y_1, \dots, y_m\)</span> 间满足下面的约束： <span class="math">\[\begin{equation}
+\begin{array}{rl}
+        &amp;\Phi_1(x1,\dots,x_n, y_1,\dots,y_n) =0,\\
+        &amp;\Phi_2(x_1,\dots,x_n, y_1, \dots, y_n) = 0,\\
+        &amp;\ldots \\
+        &amp;\Phi_n(x_1, \dots, x_n, y_1, \dots, y_n) = 0
+    \end{array}
+\end{equation}\]</span></p>
+<p>那么这样求得的极值便称为<strong>条件极值</strong>。如果把上式中的约束看作 <span class="math">\(R^{n+m}\)</span> 维空间中的某个曲面（曲线），那么条件极值便是在这个曲面（曲线）上求 <span class="math">\(f\)</span> 的极值点。</p>
+<p>关于条件极值，有如下定理，它是 <strong>Lagrange 数乘法</strong> 的理论基础。设 <span class="math">\(D\subset {\boldsymbol{R}}^{n+m}\)</span>，函数 <span class="math">\(f: D\to {\boldsymbol{R}}\)</span>，映射 <span class="math">\({\boldsymbol{\Phi}} D\to {\boldsymbol{R}}^m\)</span>，它们满足如下条件：<br/> 1) <span class="math">\(f, {\boldsymbol{\Phi}}\)</span> 在 <span class="math">\(D\)</span> 上连续可微<br/> 2) 存在 <span class="math">\({\boldsymbol{z}} \in D\)</span> 使得 <span class="math">\({\boldsymbol{\Phi}}({\boldsymbol{z}})={\boldsymbol{0}}\)</span><br/> 3) <span class="math">\(\mathrm{det} J_y\Phi(z_0) \neq 0\)</span><br/> 那么如果 <span class="math">\({\boldsymbol{z}}_0\)</span> 是满足 <span class="math">\({\boldsymbol{\Phi}}(z) = 0\)</span> 条件下的极值点，那么存在 <span class="math">\({\boldsymbol{\lambda}} \in {\boldsymbol{R}}^{1\times m}\)</span>，使得： <span class="math">\[Jf({\boldsymbol{z}}_0) + {\boldsymbol{\lambda}} J{\boldsymbol{\Phi}}({\boldsymbol{z}}_0) = {\boldsymbol{0}}\]</span></p>
+<p>此外还有判断条件极值的充分条件：如果 <span class="math">\(z_0\)</span> 是辅助函数： <span class="math">\[F({\boldsymbol{z}}) = f({\boldsymbol{z}}) + \sum_{i=1}^{m}\lambda_i\Phi_i({\boldsymbol{z}})\]</span> 的驻点，<span class="math">\({\boldsymbol{z}} = (x_1, \dots, x_n, y_1, \dots, y_m)\)</span>，记： <span class="math">\[HF({\boldsymbol{z}}_0) = \bigg(\frac{\partial^2 F}{\partial z_j \partial z_k}({\boldsymbol{z}}_0)\bigg)_{1 \leq j,k \leq m+n}\]</span> 那么，如果 <span class="math">\(HF({\boldsymbol{z}}_0)\)</span> 正定，那么 <span class="math">\(f\)</span> 在 <span class="math">\({\boldsymbol{z}}_0\)</span> 取严格的条件极小值，如果<span class="math">\(HF({\boldsymbol{z}}_0)\)</span> 负定，那么 <span class="math">\(f\)</span> 在 <span class="math">\({\boldsymbol{z}}_0\)</span> 取严格的条件极大值，如果<span class="math">\(HF({\boldsymbol{z}}_0)\)</span> 不定或者半定，均无法确定 <span class="math">\({\boldsymbol{z}}_0\)</span> 是否为条件极值。</p>
+</body>
+</html>
+
+					<div class="meta">
+						<p class="date-publish">
+							Published: 
+							<date class="date-pub" title="2013-11-10T22:47:00+08:00" datetime="2013-11-10T22:47:00+08:00" pubdate>
+							<span class="month"><abbr>November</abbr></span>
+							<span class="day">10</span>
+							<span class="year">2013 @ </span>
+                            <span class="time">22:47 </span>
+							</date>
+						</p>
+						<ul class="list-category list-linear">
+							<li class="list-head">category: </li>
+							
+							
+
+
+  
+     
+    	<li><a href="/categories.html#Thinking in Mathematics-ref">
+    		Thinking in Mathematics <span>12</span>
+    	</a></li>
+    
+  
+
+
+						</ul>
+						<ul class="list-tag list-linear">
+							<li class="list-head">tags: </li>
+							
+							
+
+
+  
+     
+    	<li><a href="/tags.html#notes-ref">notes <span>12</span></a></li>
+     
+    	<li><a href="/tags.html#analysis-ref">analysis <span>10</span></a></li>
+    
+  
+
+
+
+						</ul>
+					</div><!-- meta -->
+				</div><!-- entry-content -->
+				<div class="misc-content">
+					<div class="social">
+						<ul class="list-linear">
+							<li><div class="twitter-tweet"><a href="https://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="" data-lang="en">Tweet</a></div></li>
+							<li><div class="twitter-follow"><a href="https://twitter.com/" class="twitter-follow-button" data-show-count="false" data-lang="en"></a></div></li>
+						</ul>
+					</div>
+					
+					
+
+
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_developer = 1;
+    var disqus_shortname = 'yangzetian'; // required: replace example with your forum shortname
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+
+				</div><!-- misc-content -->
+				
+			</div><!-- bd -->
+			<footer class="unit-foot">
+				<div class="unit-inner unit-foot-inner">
+					<nav class="pagination">
+						<ul>
+							
+							<li class="prev"><a class="internal" rel="prev"  href="/2013/11/10/notes-analysis-high-order-derivative-and-taylor-theorem" title="View [Notes Analysis 2.9] 高阶偏导数与泰勒定理">&laquo; [Notes Analysis 2.9] 高阶偏导数与泰勒定理</a></li>
+							
+							
+							<li class="pipe"> | </li>
+							
+							
+							<li class="next"><a class="internal" rel="next"  href="/2013/11/12/notes-real-number-basic-definitions" title="View [Notes: Real Number 1.1] Basic Definitions: Set, Group, Ring and Field">[Notes: Real Number 1.1] Basic Definitions: Set, Group, Ring and Field &raquo;</a></li>
+							
+						</ul>
+					</nav>
+					<p class="gotop">
+						<a href="#page">Back to Top</a>
+					</p>
+				</div>
+			</footer>
+
+		</div><!-- content -->
+	</div><!-- unit-inner -->
+</article>
+
+
+				</div>
+			</div><!-- unit-inner -->
+		</div><!-- unit-body -->
+
+	</div><!-- body -->
+	<footer class="the-footer">
+		<div class="unit-foot">
+			<div class="unit-inner unit-foot-inner">
+				<div class="misc vcard">
+					<h4>about</h4>
+					<ul>
+			<!--			<li class="contact"><address><span class="author fn n">mindonmind</span></address></li> -->
+                        <li class="about"><a href="/index.html">Zetian Yang</a></li>
+                        <li class="about"><a href="mailto:zetian.yang@gmail.com">Email</a></li>
+						<li class="about"><a href="http://feeds.feedburner.com/wheresmind" rel="me">RSS</a></li>
+					</ul>
+				</div><!-- misc -->
+				<p class="licence">
+                Powered by <a href="http://jekyllrb.com">Jekyll</a> and <a href="http://johnmacfarlane.net/pandoc">Pandoc</a> <br/>
+                <!--     Theme: <a href="http://themes.jekyllbootstrap.com/preview/the-minimum/pages.html#page">The Minimum</a>. -->
+				</p>
+			</div><!-- unit-foot-inner -->
+		</div><!-- unit-foot -->
+	</footer>
+</div><!-- page -->
+<script>
+/*! A fix for the iOS orientationchange zoom bug.Script by @scottjehl, rebound by @wilto. MIT License.*/
+(function(j){var i=j.document;if(!i.querySelectorAll){return}var l=i.querySelectorAll("meta[name=viewport]")[0],a=l&&l.getAttribute("content"),h=a+", maximum-scale=1.0",d=a+", maximum-scale=10.0",g=true,c=j.orientation,k=0;if(!l){return}function f(){l.setAttribute("content",d);g=true}function b(){l.setAttribute("content",h);g=false}function e(m){c=Math.abs(j.orientation);k=Math.abs(m.gamma);if(k>8&&c===0){if(g){b()}}else{if(!g){f()}}}j.addEventListener("orientationchange",f,false);j.addEventListener("deviceorientation",e,false)})(this);
+</script>
+
+  
+
+
+  <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-30928812-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+
+
+</body>
+</html>
+

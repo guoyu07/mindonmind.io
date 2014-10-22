@@ -1,0 +1,256 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "
+http://www.w3.org/TR/html4/strict.dtd">
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7 ie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8 ie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9 ie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>[Notes: Analysis 2.2] 基础拓扑：点列极限与开集闭集 | Mind on Mind</title>
+	<meta name="author" content="mindonmind">
+	<link href='/assets/themes/the-minimum/css/style.css' rel="stylesheet" media="all">
+	<link href="http://feeds.feedburner.com/github/VDUi" rel="alternate" title="[Notes: Analysis 2.2] 基础拓扑：点列极限与开集闭集" type="application/atom+xml">
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.0.6/modernizr.min.js"></script>
+</head>
+<body>
+
+<div id="page" class="hentry">
+	<header class="the-header">
+		<div class="unit-head">
+			<div class="unit-inner unit-head-inner">
+				<p class="logo"><a href="/">Mind on Mind</a></p>
+				<nav class="nav-global">
+					<ul>
+						<li class="research"><a href="/research.html">research</a></li>
+						<li class="cv"><a href="/assets/other/ZTYang_CV.pdf">cv</a></li>
+            <!--		<li class="bio"><a href="/bio.html">bio</a></li>           -->
+                        <li class="notes"><a href="/notes">Tech</a></li>
+						<li class="blog"><a href="/blog.html">blog</a></li>
+            <!--		<li class="category"><a href="/categories.html">cats</a></li> -->
+			<!--			<li class="tag"><a href="/tags.html">tags</a></li>  -->
+            <!--            <li class="links"><a href="/links.html">links</a></li> -->
+            <!--			<li class="feed"><a href="http://feeds.feedburner.com/wheresmind">feed</a></li>   -->
+                      <!--  <li class="about"><a href="/intro.html">intro</a></li> -->
+					</ul>
+				</nav>
+			</div><!-- unit-inner -->
+		</div><!-- unit-head -->
+	</header>
+	<div class="body" role="main">
+		<div class="unit-body">
+			<div class="unit-inner unit-body-inner">
+				<div class="entry-content">
+					
+<article class="unit-article layout-post">
+	<div class="unit-inner unit-article-inner">
+		<div class="content">
+			<header>
+				<div class="unit-head">
+					<div class="unit-inner unit-head-inner">
+						<h1 class="h2 entry-title">[Notes: Analysis 2.2] 基础拓扑：点列极限与开集闭集</h1>
+					</div><!-- unit-inner -->
+				</div><!-- unit-head -->
+			</header>
+
+			<div class="bd">
+				<div class="entry-content">
+					<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML,https://raw.github.com/mindonmind/MathJax/master/config/local/local.js" type="text/javascript"></script>
+</head>
+<body>
+<p><a href="http://book.douban.com/subject/1237679/"><em>数学分析教程 下</em></a> p.74 - p.83</p>
+<p>如果 <span class="math">\({\boldsymbol{x}}_i \in {\boldsymbol{R}}^n, i=1,2,3,\dots\)</span> ，称 <span class="math">\(\{{\boldsymbol{x}}_i\}\)</span> 为 <span class="math">\({\boldsymbol{R}}^n\)</span> 中的<strong>点列</strong>。</p>
+<p><strong>定义 2.2.1</strong> <span class="math">\(\{{\boldsymbol{x}}_i\}\)</span> 是点列，<span class="math">\(a\in {\boldsymbol{R}}^n\)</span> ，如果对 <span class="math">\(\forall \epsilon &gt; 0, \exists N \in {\boldsymbol{N}}_+\)</span>, 使得 <span class="math">\(\forall i &gt; N, \|{\boldsymbol{x}}_i - {\boldsymbol{a}}\| &lt; \epsilon\)</span>, 那么称 <span class="math">\({\boldsymbol{a}}\)</span> 为 <span class="math">\(\{{\boldsymbol{x}}_i\}\)</span> 的<strong>极限</strong>。记作: <span class="math">\[\lim_{i \to \infty} {\boldsymbol{x}}_i = {\boldsymbol{a}}\]</span></p>
+<p><strong>定理 2.2.1</strong> <span class="math">\(\lim\limits_{i \to \infty}{\boldsymbol{x}}_i = {\boldsymbol{a}}, \lim\limits_{i \to \infty}{\boldsymbol{y}}_i = {\boldsymbol{b}}\)</span> ，那么: <span class="math">\[\lim_{i\to\infty}{\boldsymbol{x}}_i \pm {\boldsymbol{y}}_i = {\boldsymbol{a}}\pm{\boldsymbol{b}}\\
+\forall \lambda \in {\boldsymbol{R}}, \lim_{i\to\infty}\lambda {\boldsymbol{x}}_i = \lambda {\boldsymbol{a}}\\\]</span> <br/> <em>证明</em> 利用距离的性质。</p>
+<p><strong>定义 2.2.2</strong> <span class="math">\({\boldsymbol{x}}_i = (x_1^{i}, x_2^{i}, \dots, x_n^{i})\)</span> ，如果 <span class="math">\(\lim\limits_{i\to\infty}x_k^{i} = a_k\)</span> 对 <span class="math">\(k=1,2,\dots,n\)</span> 成立，称 <span class="math">\({{\boldsymbol{x}}_i}\)</span> <strong>按分量收敛</strong> 至 <span class="math">\({\boldsymbol{a}}=(a_1,a_2,\dots,a_n)\)</span></p>
+<p><strong>定理 2.2.2</strong> <span class="math">\(\lim\limits_{i\to\infty}{\boldsymbol{x}}_i = {\boldsymbol{a}}\)</span> 当且仅当 <span class="math">\(\{{\boldsymbol{x}}_i\}\)</span> 按分量收敛至 <span class="math">\({\boldsymbol{a}}\)</span> 。<br/> <em>证明</em> 利用 <span class="math">\(|x_k| \leq \|{\boldsymbol{x}}\| \leq |x_1|+|x_2|+\dots+|x_n|\)</span> 。</p>
+<p><strong>定义 2.2.3</strong> 如果对 <span class="math">\(\forall \epsilon &gt; 0, \exists N \in {\boldsymbol{N}}_+\)</span>，使得 <span class="math">\(\forall i,j &gt; N, \|{\boldsymbol{x}}_i - {\boldsymbol{x}}_j\|&lt;\epsilon\)</span> ，称 <span class="math">\(\{{\boldsymbol{x}}_i\}\)</span> 为<strong>基本列</strong>。</p>
+<p><strong>定理 2.2.3</strong> <span class="math">\(\{{\boldsymbol{x}}_i\}\)</span> 收敛的充分必要条件是 <span class="math">\(\{{\boldsymbol{x}}_i\}\)</span> 为基本列。<br/> <em>证明</em> 必要性：距离性质。充分性：每个分量都是基本数列，从而每个分量收敛，因此 <span class="math">\(\{{\boldsymbol{x}}_i\}\)</span> 收敛。</p>
+<p><strong>定理 2.2.4 (Bolzano-Weierstrass)</strong> 从任一有界点列中可以选取出收敛的子列。<br/> <em>证明</em> 分量数列有界，从第一个分量中取出一个收敛子列，接着从该收敛子列所对应的点列中抽取第二个分量上的收敛子列，以此直至最后一个分量。</p>
+<p><strong>定义 2.2.4</strong> <span class="math">\(E \subset {\boldsymbol{R}}^n\)</span>，<span class="math">\(a \in E\)</span>，如果存在 <span class="math">\(r &gt; 0\)</span> 使 <span class="math">\(B_r(a) \subset E\)</span> ，称 <span class="math">\({\boldsymbol{a}}\)</span> 为 <span class="math">\(E\)</span> 的<strong>内点</strong>。<span class="math">\(E\)</span> 的全体内点集合记为 <span class="math">\(E^\circ\)</span>，称为 <span class="math">\(E\)</span> 的<strong>内部</strong> 。如果 <span class="math">\(E = E^\circ\)</span> ，称 <span class="math">\(E\)</span> 为<strong>开集</strong>。</p>
+<p>空集与 <span class="math">\({\boldsymbol{R}}^n\)</span> 均是开集，此外如果 <span class="math">\(r&gt;0\)</span> 那么 <span class="math">\(B_r({\boldsymbol{a}})\)</span> 也是开集。</p>
+<p><strong>定理 2.2.5</strong> 任意集合 <span class="math">\(E\)</span> 的内部 <span class="math">\(E^\circ\)</span> 是开集。<br/> <em>证明</em> 只讨论 <span class="math">\(E\)</span> 是非空集的情形，<span class="math">\(E^\circ\)</span> 中任一点 <span class="math">\({\boldsymbol{a}}\)</span> 有 <span class="math">\(B_r({\boldsymbol{a}}) \subset E\)</span>，<span class="math">\(r&gt;0\)</span>。<span class="math">\(B_r({\boldsymbol{a}})\)</span> 中任一点是 <span class="math">\(B_r({\boldsymbol{a}})\)</span> 的内点，所以也是 <span class="math">\(E\)</span> 的内点，故 <span class="math">\(B_r({\boldsymbol{a}}) \subset E^\circ\)</span>。</p>
+<p><strong>定理 2.2.6</strong> 在空间 <span class="math">\({\boldsymbol{R}}^n\)</span> 内，有<br />1). <span class="math">\({\boldsymbol{R}}^n\)</span>，<span class="math">\(\varnothing\)</span> 均是开集。<br />2). <span class="math">\(\{E_a\}\)</span>，<span class="math">\(a \in I\)</span> 是一个开集族，<span class="math">\(\bigcup\limits_{a\in I} E\)</span> 也是开集。<br />3). <span class="math">\(E_1\)</span>，<span class="math">\(E_2\)</span>，<span class="math">\(\dots\)</span>，<span class="math">\(E_n\)</span> 是有限个开集，则 <span class="math">\(\bigcap\limits_{i=1}^m E_i\)</span> 也是开集。</p>
+<p>上述定理是说，任意个开集的并是开集，有限个开集的交是开集，而由于无限个开集的交有可能只是一点，故可以不是开集。</p>
+<p><strong>定义 2.2.5</strong> 称 <span class="math">\(E^c={\boldsymbol{R}}^n \setminus E\)</span> 为 <span class="math">\(E\)</span> 的<strong>补集</strong>。如果 <span class="math">\(E^c\)</span> 是开集，称 <span class="math">\(E\)</span> 为<strong>闭集</strong>。</p>
+<p>注意，存在即是开集也是闭集的集合，也存在既不是开集也不是闭集的集合。</p>
+<p><strong>定理 2.2.7 (de Morgan)</strong> <span class="math">\[(\bigcup \limits_{a} E_a)^c = \bigcap \limits_{a} E_a^c \\
+(\bigcap \limits_{a} E_a)^c = \bigcup \limits_{a} E_a^c\]</span></p>
+<p><strong>定理 2.2.8</strong> 在空间 <span class="math">\({\boldsymbol{R}}^n\)</span> 中，有<br />1). <span class="math">\({\boldsymbol{R}}^n\)</span>，<span class="math">\(\varnothing\)</span> 是闭集。<br />2). <span class="math">\(\{E_a\}\)</span>，<span class="math">\(a \in I\)</span> 是一个闭集族，<span class="math">\(\bigcap \limits_{a \in I}E_a\)</span> 是闭集。<br />3). <span class="math">\(E_1\)</span>，<span class="math">\(E_2\)</span>，<span class="math">\(\dots\)</span>，<span class="math">\(E_n\)</span> 是开集，则 <span class="math">\(\bigcup \limits_{i} E_i\)</span> 是闭集。</p>
+<p>记 <span class="math">\(B_r(\check{{\boldsymbol{a}}})= \{{\boldsymbol{x}} \in {\boldsymbol{R}}^n: 0&lt;\|{\boldsymbol{x}}-{\boldsymbol{a}}\|&lt;r\}\)</span>，称为 <span class="math">\({\boldsymbol{R}}^n\)</span> 中的空心球。</p>
+<p><strong>定义 2.2.6</strong> <span class="math">\({\boldsymbol{a}} \in {\boldsymbol{R}}^n\)</span>，<span class="math">\(E \subset {\boldsymbol{R}}^n\)</span>，如果对任意 <span class="math">\(r&gt;0\)</span>，<span class="math">\(B_r(\check{{\boldsymbol{a}}})\)</span> 中均有 <span class="math">\(E\)</span> 中的点，则称 <span class="math">\({\boldsymbol{a}}\)</span> 为 <span class="math">\(E\)</span> 的<strong>凝聚点</strong>。<span class="math">\(E\)</span> 中除凝聚点之外的点称为<strong>孤立点</strong>。</p>
+<p><strong>定理 2.2.9</strong> <span class="math">\({\boldsymbol{a}}\)</span> 是 <span class="math">\(E\)</span> 的凝聚点，有下面两种充分必要条件：<br />1) 以 <span class="math">\({\boldsymbol{a}}\)</span> 为球心的任意球中都包含 <span class="math">\(E\)</span> 中的无限多个点。<br />2) <span class="math">\(E\)</span> 中可以找出一个互不相同的收敛点列 <span class="math">\(\{{\boldsymbol{x}}_i\}\)</span> 收敛于 <span class="math">\({\boldsymbol{a}}\)</span>。</p>
+<p><strong>定义 2.2.7</strong> <span class="math">\(E\)</span> 的全体凝聚点称为 <span class="math">\(E\)</span> 的<strong>导集</strong>，记作 <span class="math">\(E&#39;\)</span> 。<span class="math">\(\overline E = E\cup E&#39;\)</span> 称为 <span class="math">\(E\)</span> 的<strong>闭包</strong>。</p>
+<p><strong>定理 2.2.10</strong> <span class="math">\(E\)</span> 是闭集的充分必要条件是 <span class="math">\(E&#39; \subset E\)</span>。<br/> <em>证明</em> 必要性：<span class="math">\(E^c\)</span> 是开集，故 <span class="math">\(E^c\)</span> 中的点均不可能是 <span class="math">\(E\)</span> 的凝聚点。充分性：由<span class="math">\(E^c\)</span> 的点均不是凝聚点，<span class="math">\(E^c\)</span> 是开集。</p>
+<p><strong>推论</strong> <span class="math">\(E\)</span> 是闭集的充分必要条件是 <span class="math">\(E\)</span> 中任何收敛点列的极限均在 <span class="math">\(E\)</span> 中。<br/> <em>证明</em> 定理2.2.9 定理2.2.10。</p>
+<p><strong>定理 2.2.11</strong> <span class="math">\(E&#39;\)</span> 和 <span class="math">\(\overline E\)</span> 均是闭集。<br/> <em>证明</em> 1). <span class="math">\((E&#39;)^c\)</span> 是开集。2). 考察 <span class="math">\(E\cup E&#39;\)</span> 中的收敛点列，如果点列中有有限个点，那么其极限 <span class="math">\({\boldsymbol{a}}\)</span> 必 <span class="math">\(\in \overline E\)</span>。否则，如果点列中有一个子列由 <span class="math">\(E\)</span> 中的点构成，则 <span class="math">\({\boldsymbol{a}} \in E&#39; \subset \overline E\)</span>；如果点列中有一个子列由 <span class="math">\(E&#39;\)</span> 中点构成，由 <span class="math">\(E&#39;\)</span> 是闭集知 <span class="math">\({\boldsymbol{a}} \in E&#39;\)</span>。</p>
+<p><strong>定理 2.2.12</strong> <span class="math">\(E^\circ\)</span> 是含于 <span class="math">\(E\)</span> 内的最大开集，<span class="math">\(\overline E\)</span> 是包含着 <span class="math">\(E\)</span> 的最小闭集。<br/> <em>证明</em> 开集略，闭集只需证明 <span class="math">\(E&#39;\subset F\)</span>，<span class="math">\(F\)</span> 是包含 <span class="math">\(E\)</span> 的任意闭集，利用定理2.2.10的推论可证。</p>
+<p><strong>定义 2.2.8</strong> <span class="math">\((E^c)^\circ\)</span> 称为 <span class="math">\(E\)</span> 的<strong>外部</strong>，其中的点称为 <span class="math">\(E\)</span> 的<strong>外点</strong>。既非 <span class="math">\(E\)</span> 外点也非 <span class="math">\(E\)</span> 内点的点称为 <span class="math">\(E\)</span> 的<strong>边界点</strong>，全体边界点称为 <span class="math">\(E\)</span> 的<strong>边界</strong>，记为 <span class="math">\(\partial E\)</span>。</p>
+<p><strong>定理 2.2.13 (闭集套定理)</strong> <span class="math">\({F_i}\)</span> 是闭集列，<span class="math">\(F_i \neq \varnothing\)</span>，且 <span class="math">\(F_1 \subset F_2 \subset F_3 \subset \cdots\)</span>，此外还有 <span class="math">\(\lim\limits_{i\to\infty}\rm{diam}(F_i) = 0\)</span>，那么 <span class="math">\(\bigcap \limits_{i=1}^\infty F_i\)</span> 只含唯一的点。</p>
+</body>
+</html>
+
+					<div class="meta">
+						<p class="date-publish">
+							Published: 
+							<date class="date-pub" title="2013-11-01T23:31:00+08:00" datetime="2013-11-01T23:31:00+08:00" pubdate>
+							<span class="month"><abbr>November</abbr></span>
+							<span class="day">01</span>
+							<span class="year">2013 @ </span>
+                            <span class="time">23:31 </span>
+							</date>
+						</p>
+						<ul class="list-category list-linear">
+							<li class="list-head">category: </li>
+							
+							
+
+
+  
+     
+    	<li><a href="/categories.html#Thinking in Mathematics-ref">
+    		Thinking in Mathematics <span>12</span>
+    	</a></li>
+    
+  
+
+
+						</ul>
+						<ul class="list-tag list-linear">
+							<li class="list-head">tags: </li>
+							
+							
+
+
+  
+     
+    	<li><a href="/tags.html#notes-ref">notes <span>12</span></a></li>
+     
+    	<li><a href="/tags.html#analysis-ref">analysis <span>10</span></a></li>
+    
+  
+
+
+
+						</ul>
+					</div><!-- meta -->
+				</div><!-- entry-content -->
+				<div class="misc-content">
+					<div class="social">
+						<ul class="list-linear">
+							<li><div class="twitter-tweet"><a href="https://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="" data-lang="en">Tweet</a></div></li>
+							<li><div class="twitter-follow"><a href="https://twitter.com/" class="twitter-follow-button" data-show-count="false" data-lang="en"></a></div></li>
+						</ul>
+					</div>
+					
+					
+
+
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_developer = 1;
+    var disqus_shortname = 'yangzetian'; // required: replace example with your forum shortname
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+
+				</div><!-- misc-content -->
+				
+			</div><!-- bd -->
+			<footer class="unit-foot">
+				<div class="unit-inner unit-foot-inner">
+					<nav class="pagination">
+						<ul>
+							
+							<li class="prev"><a class="internal" rel="prev"  href="/2013/10/31/notes-analysis-euclid-space" title="View [Notes: Analysis 2.1] 欧几里得空间">&laquo; [Notes: Analysis 2.1] 欧几里得空间</a></li>
+							
+							
+							<li class="pipe"> | </li>
+							
+							
+							<li class="next"><a class="internal" rel="next"  href="/2013/11/02/notes-analysis-basic-topology-compact" title="View [Notes: Analysis 2.3] 基础拓扑：列紧、紧致与连通性">[Notes: Analysis 2.3] 基础拓扑：列紧、紧致与连通性 &raquo;</a></li>
+							
+						</ul>
+					</nav>
+					<p class="gotop">
+						<a href="#page">Back to Top</a>
+					</p>
+				</div>
+			</footer>
+
+		</div><!-- content -->
+	</div><!-- unit-inner -->
+</article>
+
+
+				</div>
+			</div><!-- unit-inner -->
+		</div><!-- unit-body -->
+
+	</div><!-- body -->
+	<footer class="the-footer">
+		<div class="unit-foot">
+			<div class="unit-inner unit-foot-inner">
+				<div class="misc vcard">
+					<h4>about</h4>
+					<ul>
+			<!--			<li class="contact"><address><span class="author fn n">mindonmind</span></address></li> -->
+                        <li class="about"><a href="/index.html">Zetian Yang</a></li>
+                        <li class="about"><a href="mailto:zetian.yang@gmail.com">Email</a></li>
+						<li class="about"><a href="http://feeds.feedburner.com/wheresmind" rel="me">RSS</a></li>
+					</ul>
+				</div><!-- misc -->
+				<p class="licence">
+                Powered by <a href="http://jekyllrb.com">Jekyll</a> and <a href="http://johnmacfarlane.net/pandoc">Pandoc</a> <br/>
+                <!--     Theme: <a href="http://themes.jekyllbootstrap.com/preview/the-minimum/pages.html#page">The Minimum</a>. -->
+				</p>
+			</div><!-- unit-foot-inner -->
+		</div><!-- unit-foot -->
+	</footer>
+</div><!-- page -->
+<script>
+/*! A fix for the iOS orientationchange zoom bug.Script by @scottjehl, rebound by @wilto. MIT License.*/
+(function(j){var i=j.document;if(!i.querySelectorAll){return}var l=i.querySelectorAll("meta[name=viewport]")[0],a=l&&l.getAttribute("content"),h=a+", maximum-scale=1.0",d=a+", maximum-scale=10.0",g=true,c=j.orientation,k=0;if(!l){return}function f(){l.setAttribute("content",d);g=true}function b(){l.setAttribute("content",h);g=false}function e(m){c=Math.abs(j.orientation);k=Math.abs(m.gamma);if(k>8&&c===0){if(g){b()}}else{if(!g){f()}}}j.addEventListener("orientationchange",f,false);j.addEventListener("deviceorientation",e,false)})(this);
+</script>
+
+  
+
+
+  <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-30928812-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+
+
+</body>
+</html>
+
