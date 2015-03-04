@@ -1,6 +1,9 @@
 
 http://mindonmind.github.io/tags.html
 http://mindonmind.github.io/backup/index.html
+http://mindonmind.github.io/backup/grad_application/index.html
+http://mindonmind.github.io/backup/grad_application/research.html
+http://mindonmind.github.io/backup/grad_application/gpa.html
 http://mindonmind.github.io/backup/cv_back.html
 http://mindonmind.github.io/backup/index.html
 http://mindonmind.github.io/backup/cv.html
@@ -8,13 +11,10 @@ http://mindonmind.github.io/backup/bio.html
 http://mindonmind.github.io/links.html
 http://mindonmind.github.io/pages.html
 http://mindonmind.github.io/atom.xml
+http://mindonmind.github.io/index.html
 http://mindonmind.github.io/archive.html
 http://mindonmind.github.io/sitemap.txt
 http://mindonmind.github.io/categories.html
-http://mindonmind.github.io/index.html
-http://mindonmind.github.io/research.html
-http://mindonmind.github.io/blog.html
-http://mindonmind.github.io/gpa.html
 
 http://mindonmind.github.io/2014/10/21/personal-and-other-essays
 http://mindonmind.github.io/2013/12/28/semi-awareness
