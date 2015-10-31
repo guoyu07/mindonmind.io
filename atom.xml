@@ -4,13 +4,39 @@
  <title>Mind on Mind</title>
  <link href="http://mindonmind.github.io/atom.xml" rel="self"/>
  <link href="http://mindonmind.github.io"/>
- <updated>2015-10-31T02:34:44-04:00</updated>
+ <updated>2015-10-31T03:34:36-04:00</updated>
  <id>http://mindonmind.github.io</id>
  <author>
    <name>mindonmind</name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>新生</title>
+   <link href="http://mindonmind.github.io/2015/10/31/stay-tuned"/>
+   <updated>2015-10-31T03:30:00-04:00</updated>
+   <id>hhttp://mindonmind.github.io/2015/10/31/stay-tuned</id>
+   <content type="html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot;&gt;
+  &lt;meta name=&quot;generator&quot; content=&quot;pandoc&quot;&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0, user-scalable=yes&quot;&gt;
+  &lt;title&gt;&lt;/title&gt;
+  &lt;style type=&quot;text/css&quot;&gt;code{white-space: pre;}&lt;/style&gt;
+  &lt;!--[if lt IE 9]&gt;
+    &lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js&quot;&gt;&lt;/script&gt;
+  &lt;![endif]--&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;p&gt;这个 blog 还活着，近期会有大动作。&lt;/p&gt;
+&lt;p&gt;Stay tuned!&lt;/p&gt;
+&lt;p&gt;p.s. 重新写字的感觉真好。&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</content>
+ </entry>
  
  <entry>
    <title>从写好文章说起</title>
