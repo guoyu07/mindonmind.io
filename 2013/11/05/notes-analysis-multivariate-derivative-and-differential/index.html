@@ -1,0 +1,252 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "
+http://www.w3.org/TR/html4/strict.dtd">
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7 ie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8 ie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9 ie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>[Notes: Analysis 2.6] 多元导数与微分 | Mind on Mind</title>
+	<meta name="author" content="mindonmind">
+	<link href='/assets/themes/the-minimum/css/style.css' rel="stylesheet" media="all">
+	<link href="http://feeds.feedburner.com/github/VDUi" rel="alternate" title="[Notes: Analysis 2.6] 多元导数与微分" type="application/atom+xml">
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.0.6/modernizr.min.js"></script>
+</head>
+<body>
+
+<div id="page" class="hentry">
+	<header class="the-header">
+		<div class="unit-head">
+			<div class="unit-inner unit-head-inner">
+				<p class="logo"><a href="/">Mind on Mind</a></p>
+				<nav class="nav-global">
+					<ul>
+						<!--<li class="research"><a href="/research.html">research</a></li>-->
+						<!--<li class="cv"><a href="/assets/other/ZTYang_CV.pdf">cv</a></li>-->
+            <!--		<li class="bio"><a href="/bio.html">bio</a></li>           -->
+						<li class="blog"><a href="/blog.html">blog</a></li>
+                        <li class="notes"><a href="/notes">notes</a></li>
+            <!--		<li class="category"><a href="/categories.html">cats</a></li> -->
+			<!--			<li class="tag"><a href="/tags.html">tags</a></li>  -->
+            <!--            <li class="links"><a href="/links.html">links</a></li> -->
+            <!--			<li class="feed"><a href="http://feeds.feedburner.com/wheresmind">feed</a></li>   -->
+                      <!--  <li class="about"><a href="/intro.html">intro</a></li> -->
+					</ul>
+				</nav>
+			</div><!-- unit-inner -->
+		</div><!-- unit-head -->
+	</header>
+	<div class="body" role="main">
+		<div class="unit-body">
+			<div class="unit-inner unit-body-inner">
+				<div class="entry-content">
+					
+<article class="unit-article layout-post">
+	<div class="unit-inner unit-article-inner">
+		<div class="content">
+			<header>
+				<div class="unit-head">
+					<div class="unit-inner unit-head-inner">
+						<h1 class="h2 entry-title">[Notes: Analysis 2.6] 多元导数与微分</h1>
+					</div><!-- unit-inner -->
+				</div><!-- unit-head -->
+			</header>
+
+			<div class="bd">
+				<div class="entry-content">
+					<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<p><a href="http://book.douban.com/subject/1237679/"><em>数学分析教程 下</em></a> p.107 - p.119</p>
+<p>在引入多元函数的导数时会遇到几个概念，分别为方向导数，偏导数与微分。它们之间有所区别但也相互存在着内在的联系。</p>
+<h2 id="方向导数与偏导数">方向导数与偏导数</h2>
+<p>首先多元函数的<strong>方向导数</strong>是指，函数按着某个方向趋向与某一点时的变化率，定义为 <span class="math inline">\(\lim\limits_{t\to 0} \frac{f({\boldsymbol{x}}_0 +t {\boldsymbol{u}}) - f({\boldsymbol{x}}_0)}{t}\)</span>，其中 <span class="math inline">\({\boldsymbol{u}}\)</span> 是一个单位向量，它代表了函数趋向于某点的方向。称这个极限为 <span class="math inline">\(f\)</span> 在 <span class="math inline">\({\boldsymbol{x}}_0\)</span> 处沿方向 <span class="math inline">\({\boldsymbol{u}}\)</span> 的方向导数，记为 <span class="math inline">\(\frac{\partial f}{\partial {\boldsymbol{u}}}({\boldsymbol{x}}_0)\)</span>。这其实是一个一元导数，如果我们定义 <span class="math inline">\(\varphi(t) = f({\boldsymbol{x}}_0+ t{\boldsymbol{u}})\)</span>，那么有 <span class="math inline">\(\frac{\partial f}{\partial {\boldsymbol{u}}}({\boldsymbol{x}}_0) = \varphi^{&#39;}(0)\)</span></p>
+<p>在方向导数中如果我们取单位坐标向量 <span class="math inline">\({\boldsymbol{e}}_i = (0,\dots, 1,\dots,0)\)</span>，那么称 <span class="math inline">\(\frac{\partial f}{\partial {\boldsymbol{e}}_i}\)</span> 为 <span class="math inline">\(f\)</span> 的一个<strong>偏导数 (partial derivative)</strong>，记为 <span class="math inline">\(\frac{\partial f}{\partial x_i}({\boldsymbol{x}}_0)\)</span> 或 <span class="math inline">\(D_i f({\boldsymbol{x}}_0)\)</span>。根据方向导数的公式我们可以发现，每一个方向上的偏导数其实都是将其他变量看作常量后所得到的一元函数导数。从几何上讲，每个方向上的偏导数都可以看成函数图像平面上将所有其他变量值固定后所得到的一条曲线在某点处的切线斜率。</p>
+<p>直接计算偏导数十分容易，方向导数却有困难，但我们有如下定理： <span class="math display">\[\frac{\partial f}{\partial {\boldsymbol{u}}}({\boldsymbol{x}}) = \frac{\mathrm{d} f({\boldsymbol{x}}+t{\boldsymbol{u}})}{\mathrm{d} t} = \frac{\partial f}{\partial x_1}({\boldsymbol{x}})u_1 + \cdots + \frac{\partial f}{\partial x_n}({\boldsymbol{x}})u_n\]</span> 这其实是复合映射微分的一个应用。</p>
+<h2 id="多元函数微分">多元函数微分</h2>
+<p>下一个重要的概念是多元函数<strong>微分 (differential)</strong>，与一元函数一样，多元函数微分仍是自变量变化量的一个线性函数。函数可微的意思便是说 <span class="math inline">\(f\)</span> 在某点 <span class="math inline">\({\boldsymbol{x}}_0\)</span> 附近的变化量可以写成它的微分 <span class="math inline">\(\mathrm{d}f({\boldsymbol{x}}_0)\)</span> 加上一个自变量变化量范数的一阶无穷小。即: <span class="math display">\[f({\boldsymbol{x}}_0+{\boldsymbol{h}}) - f({\boldsymbol{x}}_0) = {\mathrm{d}}f({\boldsymbol{x}}_0) + o(\|{\boldsymbol{h}}\|)\]</span> 其中 <span class="math inline">\({\mathrm{d}}f({\boldsymbol{x}}_0) = \sum\limits_{i=1}^{n}\lambda_i h_i\)</span>，<span class="math inline">\(\lambda_i\)</span> 为与 <span class="math inline">\({\boldsymbol{h}}\)</span> 无关的常数。</p>
+<p>如果函数可微，那么由偏导数的定义便可以得到 <span class="math display">\[\begin{align*}\frac{\partial f}{\partial x_i}({\boldsymbol{x}}_0) &amp; = \lim\limits_{h_i\to 0} \frac{f(x_1, \dots, x_i+h_i, \dots, x_n) - f(x_1,\dots,x_i, \dots, x_n)}{h_i} \\
+&amp; = \lim\limits_{h_i\to 0} \lambda_i + o(1) \\
+&amp; = \lambda_i\end{align*}\]</span> 因此如果函数可微，那么有 <span class="math inline">\(\mathrm{d}f({\boldsymbol{x}}_0) = \sum\limits_{i=1}^{n} \frac{\partial f}{\partial x_i}({\boldsymbol{x}}_0)h_i = {\boldsymbol{J}}f({\boldsymbol{x}}_0){\boldsymbol{h}}\)</span>，其中 <span class="math inline">\({\boldsymbol{J}}f({\boldsymbol{x}}_0) = (\frac{\partial f}{\partial x_1}({\boldsymbol{x}}_0), \frac{\partial f}{\partial x_2}({\boldsymbol{x}}_0),\dots,\frac{\partial f}{\partial x_n}({\boldsymbol{x}}_0))\)</span> 称为 <span class="math inline">\(f\)</span> 在 <span class="math inline">\({\boldsymbol{x}}_0\)</span> 处的<strong>Jacobian</strong>，或称 <span class="math inline">\(f\)</span> 在 <span class="math inline">\({\boldsymbol{x}}_0\)</span> 处的梯度 <span class="math inline">\(\mathrm{grad} f\)</span> 或 <span class="math inline">\(\bigtriangledown f\)</span>。</p>
+<p>如果函数可微，那么它必连续，因为 <span class="math inline">\(\mathrm{d}f\)</span> 和 <span class="math inline">\(o(\|{\boldsymbol{h}}\|)\)</span> 都可以随着 <span class="math inline">\({\boldsymbol{h}}\)</span> 的变小而任意趋向 <span class="math inline">\(0\)</span>。此外，我们也知道函数可微说明它的各偏导数存在，相反，各偏导数的存在并不说明函数可微。但是如果各偏导数连续，那么函数必可微。具体来说，设包含 <span class="math inline">\({\boldsymbol{x}}_0\)</span> 的任意开集为 <span class="math inline">\(x_0\)</span> 的一个<strong>邻域</strong>。如果 <span class="math inline">\(\frac{\partial f}{\partial x_i}({\boldsymbol{x}}_0)\)</span> 在 <span class="math inline">\({\boldsymbol{x}}_0\)</span> 的某个邻域内连续，那么 <span class="math inline">\(f\)</span> 在 <span class="math inline">\({\boldsymbol{x}}_0\)</span> 处可微。该定理证明的思路是固定所有其他变量而只变动一个变量，并利用一元函数的微分中值定理，计算这一变量上变化所引起的函数值变化，根据偏导数连续，可以确定这个函数值的变化和多元微分项中对应分量的变化之间误差可以任意小，故证明函数可微。</p>
+<p>综上，我们有如下关系，函数可微说明它各个偏导数存在，因而各方向导数存在，并且函数连续，但是函数各偏（方向）导存在不能说明函数可微，甚至不能说明函数连续，当函数各方向偏导连续时，函数可微。</p>
+<p>最后，记 <span class="math inline">\(D\)</span> 为 <span class="math inline">\({\boldsymbol{R}}^n\)</span> 中的区域（连通开集），如果 <span class="math inline">\(f\)</span> 在 <span class="math inline">\(D\)</span> 上各偏导数连续，那么称 <span class="math inline">\(f\)</span> <strong>连续可微</strong>，记 <span class="math inline">\(f\in C^1(D)\)</span>，如果 <span class="math inline">\(f\)</span> 在 <span class="math inline">\(D\)</span> 上连续，记 <span class="math inline">\(f \in C^0(D)\)</span>。</p>
+<h2 id="映射的微分">映射的微分</h2>
+<p>映射可微的定义与函数可微类似，不过 <span class="math inline">\(d{\boldsymbol{f}}(x_0) = {\boldsymbol{A}}{\boldsymbol{h}}\)</span>，其中 <span class="math inline">\(A_{m,n}\)</span> 是一个与 <span class="math inline">\({\boldsymbol{h}}\)</span> 无关的常数矩阵。也就是说，映射可微表示映射向量的变化量等于自变量变化量的线性映射加上一个向量余量，且该余量的范数是自变量变化量范数的高阶无穷小，即: <span class="math display">\[{\boldsymbol{f}}({\boldsymbol{x}}_0+{\boldsymbol{h}}) - {\boldsymbol{f}}({\boldsymbol{x}}_0) = \mathrm{d}{\boldsymbol{f}}({\boldsymbol{x}}_0) + {\boldsymbol{r}}({\boldsymbol{h}})\]</span> 其中，<span class="math inline">\(\lim\limits_{{\boldsymbol{h}} \to {\boldsymbol{0}}} \frac{\|{\boldsymbol{r}}({\boldsymbol{h}})\|}{\|{\boldsymbol{h}}\|} = 0\)</span>。</p>
+<p>我们可以通过简单的运算得知，映射可微当且仅当它的各分量函数可微，且有 <span class="math display">\[ {\boldsymbol{A}} =  \begin{pmatrix}
+  \frac{\partial f_1}{\partial x_1}({\boldsymbol{x}}_0) &amp; \cdots &amp; \frac{\partial f_1}{\partial x_n}({\boldsymbol{x}}_0) \\
+  \vdots  &amp; \ddots &amp; \vdots  \\
+  \frac{\partial f_m}{\partial x_1}({\boldsymbol{x}}_0) &amp; \cdots &amp; \frac{\partial f_m}{\partial x_n}({\boldsymbol{x}}_0)
+ \end{pmatrix} 
+\]</span></p>
+<p>记 <span class="math inline">\({\boldsymbol{J}}{\boldsymbol{f}}({\boldsymbol{x}}_0) = A\)</span>，称为 <span class="math inline">\({\boldsymbol{f}}\)</span> 在 <span class="math inline">\({\boldsymbol{x}}_0\)</span> 处的<strong>Jacobian</strong>。而 <span class="math inline">\(\mathrm(d){\boldsymbol{f}}({\boldsymbol{x}}_0) = {\boldsymbol{J}}{\boldsymbol{f}}(x_0){\boldsymbol{h}}\)</span> 是改变量 <span class="math inline">\({\boldsymbol{h}}\)</span> 的一个线性映射。</p>
+<p>与函数可微一样，映射可微也有一个充分条件，及 <span class="math inline">\({\boldsymbol{J}}{\boldsymbol{f}}\)</span> 的各元素在 <span class="math inline">\({\boldsymbol{x}}_0\)</span> 处连续。</p>
+</body>
+</html>
+
+					<div class="meta">
+						<p class="date-publish">
+							Published: 
+							<date class="date-pub" title="2013-11-05T23:50:00-05:00" datetime="2013-11-05T23:50:00-05:00" pubdate>
+							<span class="month"><abbr>November</abbr></span>
+							<span class="day">05</span>
+							<span class="year">2013 @ </span>
+                            <span class="time">23:50 </span>
+							</date>
+						</p>
+						<ul class="list-category list-linear">
+							<li class="list-head">category: </li>
+							
+							
+
+
+  
+     
+    	<li><a href="/categories.html#thinking in mathematics-ref">
+    		thinking in mathematics <span>12</span>
+    	</a></li>
+    
+  
+
+
+						</ul>
+						<ul class="list-tag list-linear">
+							<li class="list-head">tags: </li>
+							
+							
+
+
+  
+     
+    	<li><a href="/tags.html#notes-ref">notes <span>12</span></a></li>
+     
+    	<li><a href="/tags.html#analysis-ref">analysis <span>10</span></a></li>
+    
+  
+
+
+
+						</ul>
+					</div><!-- meta -->
+				</div><!-- entry-content -->
+				<div class="misc-content">
+					<div class="social">
+						<ul class="list-linear">
+							<li><div class="twitter-tweet"><a href="https://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="" data-lang="en">Tweet</a></div></li>
+							<li><div class="twitter-follow"><a href="https://twitter.com/" class="twitter-follow-button" data-show-count="false" data-lang="en"></a></div></li>
+						</ul>
+					</div>
+					
+					
+
+
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_developer = 1;
+    var disqus_shortname = ''; // required: replace example with your forum shortname
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+
+				</div><!-- misc-content -->
+				
+			</div><!-- bd -->
+			<footer class="unit-foot">
+				<div class="unit-inner unit-foot-inner">
+					<nav class="pagination">
+						<ul>
+							
+							<li class="prev"><a class="internal" rel="prev"  href="/2013/11/04/notes-analysis-multivariate-funciton-limit-continuity" title="View [Notes: Analysis 2.5] 多元函数极限与连续性">&laquo; [Notes: Analysis 2.5] 多元函数极限与连续性</a></li>
+							
+							
+							<li class="pipe"> | </li>
+							
+							
+							<li class="next"><a class="internal" rel="next"  href="/2013/11/08/notes-analysis-chain-rule-and-mean-mean-value-theomrem" title="View [Notes: Analysis 2.7] 复合求导与拟微分平均值定理">[Notes: Analysis 2.7] 复合求导与拟微分平均值定理 &raquo;</a></li>
+							
+						</ul>
+					</nav>
+					<p class="gotop">
+						<a href="#page">Back to Top</a>
+					</p>
+				</div>
+			</footer>
+
+		</div><!-- content -->
+	</div><!-- unit-inner -->
+</article>
+
+
+				</div>
+			</div><!-- unit-inner -->
+		</div><!-- unit-body -->
+
+	</div><!-- body -->
+	<footer class="the-footer">
+		<div class="unit-foot">
+			<div class="unit-inner unit-foot-inner">
+				<div class="misc vcard">
+					<h4>about</h4>
+					<ul>
+			<!--			<li class="contact"><address><span class="author fn n">mindonmind</span></address></li> -->
+                        <li class="about"><a href="/index.html">Home</a></li>
+						<li class="about"><a href="http://feeds.feedburner.com/wheresmind" rel="me">RSS</a></li>
+					</ul>
+				</div><!-- misc -->
+				<p class="licence">
+                Powered by <a href="http://jekyllrb.com">Jekyll</a> and <a href="http://johnmacfarlane.net/pandoc">Pandoc</a> <br/>
+                <!--     Theme: <a href="http://themes.jekyllbootstrap.com/preview/the-minimum/pages.html#page">The Minimum</a>. -->
+				</p>
+			</div><!-- unit-foot-inner -->
+		</div><!-- unit-foot -->
+	</footer>
+</div><!-- page -->
+<script>
+/*! A fix for the iOS orientationchange zoom bug.Script by @scottjehl, rebound by @wilto. MIT License.*/
+(function(j){var i=j.document;if(!i.querySelectorAll){return}var l=i.querySelectorAll("meta[name=viewport]")[0],a=l&&l.getAttribute("content"),h=a+", maximum-scale=1.0",d=a+", maximum-scale=10.0",g=true,c=j.orientation,k=0;if(!l){return}function f(){l.setAttribute("content",d);g=true}function b(){l.setAttribute("content",h);g=false}function e(m){c=Math.abs(j.orientation);k=Math.abs(m.gamma);if(k>8&&c===0){if(g){b()}}else{if(!g){f()}}}j.addEventListener("orientationchange",f,false);j.addEventListener("deviceorientation",e,false)})(this);
+</script>
+
+  
+
+
+  <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-30928812-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+
+
+</body>
+</html>
+

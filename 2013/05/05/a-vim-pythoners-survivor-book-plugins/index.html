@@ -1,0 +1,411 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "
+http://www.w3.org/TR/html4/strict.dtd">
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7 ie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8 ie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9 ie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>一个 Python 程序员的 Vim 生存手册：移动篇 | Mind on Mind</title>
+	<meta name="author" content="mindonmind">
+	<link href='/assets/themes/the-minimum/css/style.css' rel="stylesheet" media="all">
+	<link href="http://feeds.feedburner.com/github/VDUi" rel="alternate" title="一个 Python 程序员的 Vim 生存手册：移动篇" type="application/atom+xml">
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.0.6/modernizr.min.js"></script>
+</head>
+<body>
+
+<div id="page" class="hentry">
+	<header class="the-header">
+		<div class="unit-head">
+			<div class="unit-inner unit-head-inner">
+				<p class="logo"><a href="/">Mind on Mind</a></p>
+				<nav class="nav-global">
+					<ul>
+						<!--<li class="research"><a href="/research.html">research</a></li>-->
+						<!--<li class="cv"><a href="/assets/other/ZTYang_CV.pdf">cv</a></li>-->
+            <!--		<li class="bio"><a href="/bio.html">bio</a></li>           -->
+						<li class="blog"><a href="/blog.html">blog</a></li>
+                        <li class="notes"><a href="/notes">notes</a></li>
+            <!--		<li class="category"><a href="/categories.html">cats</a></li> -->
+			<!--			<li class="tag"><a href="/tags.html">tags</a></li>  -->
+            <!--            <li class="links"><a href="/links.html">links</a></li> -->
+            <!--			<li class="feed"><a href="http://feeds.feedburner.com/wheresmind">feed</a></li>   -->
+                      <!--  <li class="about"><a href="/intro.html">intro</a></li> -->
+					</ul>
+				</nav>
+			</div><!-- unit-inner -->
+		</div><!-- unit-head -->
+	</header>
+	<div class="body" role="main">
+		<div class="unit-body">
+			<div class="unit-inner unit-body-inner">
+				<div class="entry-content">
+					
+<article class="unit-article layout-post">
+	<div class="unit-inner unit-article-inner">
+		<div class="content">
+			<header>
+				<div class="unit-head">
+					<div class="unit-inner unit-head-inner">
+						<h1 class="h2 entry-title">一个 Python 程序员的 Vim 生存手册：移动篇</h1>
+					</div><!-- unit-inner -->
+				</div><!-- unit-head -->
+			</header>
+
+			<div class="bd">
+				<div class="entry-content">
+					<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<p>Vim, 一个编辑器；Python, 一种程序设计语言。它们是我平常使用最频繁的两个工具。能否熟练高效地使用它们不仅影响到我的工作效率，更影响到工作的心情。</p>
+<p>为了追求一个淡定高效的编程氛围，我花了许多时间与精力，来打造一个基于 Vim 的 Python 数据分析工作平台。现在，它已经能满足我近乎完美的标准，在此系列作一总结。</p>
+<p>需要说明的是，零零总总的插件是提升 Vim 效率和体验的一个主要手段，本系列将以介绍我喜爱的插件及它们的常用方法为主，辅以我自己的一些习惯性键映射介绍我的 Vim 工具集。本篇先来介绍或许是 Vim 使用中最频繁的操作 —— 移动。</p>
+<div class="toc">
+<ul>
+<li>
+<a href="#vim-中的移动">Vim 中的移动</a>
+</li>
+<li>
+<a href="#窗口内移动">窗口内移动</a>
+</li>
+<li>
+<a href="#窗口间移动与窗口管理">窗口间移动与窗口管理</a>
+</li>
+<li>
+<a href="#标签页间移动">标签页间移动</a>
+</li>
+<li>
+<a href="#缓存文件间移动">缓存/文件间移动</a>
+</li>
+</ul>
+</div>
+<h2 id="vim-中的移动">Vim 中的移动</h2>
+<p>移动或许是使用 Vim 的过程中最让人愉快又抓狂的一项操作了。无论是文件内部的位置移动，quickfix 或 location 列表跳转，还是不同文件、缓冲、标签页的切换等等，都可以归位这一种操作。不要说各种复杂的移动命令与位置标记，光是文件、缓冲、窗口、标签页这些概念就让人头大。</p>
+<p>但是不用害怕，因为本文下面就将从与移动相关的一些基本概念讲起，再分情形介绍各种高效移动的妙招。</p>
+<p>为了掌握高效移动的奥义，首先需要掌握如下基本概念：</p>
+<ol type="1">
+<li>文件缓冲：即被载入内存的文件。</li>
+<li>窗口：缓冲的一个视图。</li>
+<li>标签页：窗口的集合。</li>
+</ol>
+<p>总结成一句话即为一个缓存对应一个文件，一个窗口对应一个缓存，多个窗口组成一个标签页。</p>
+<h2 id="窗口内移动">窗口内移动</h2>
+<p>下面这些命令是 Vim 自带的，也是最基本的移动命令，一定要熟记：</p>
+<pre><code>w|W|e|E|b|B|ge|gE                            # 字词移动
+0|^|$|f|F|t|T                                # 行内移动
+;|,                                          # 重复上一次的行内查找
+gg|G|H|M|L                                   # 行间移动
+[[|]]|{|}                                    # 块移动
+&lt;C-Y&gt;|&lt;C-E&gt;|&lt;C-F&gt;|&lt;C-B&gt;|&lt;C-U&gt;|&lt;C-D&gt;|zt|zz|zb # 滚屏
+/|?|#|*                                      # 查找
+``|&#39;&#39;|&lt;C-O&gt;|&lt;C-I&gt;                            # 跳转
+&lt;C-]&gt;|&lt;C-T&gt;                                  # 跳转标签</code></pre>
+<p>加速文件内移动，可使用 <a href="https://github.com/Lokaltog/vim-easymotion">EasyMotion</a>，它让你一键跳任意至目标位置：</p>
+<pre><code>&lt;leader&gt;&lt;leader&gt; plus
+f|F|t|T|w|W|b|B|e|E|ge|gE|j|k|n|N</code></pre>
+<p>由于这上面这几个命令会被经常用到，每次都要按两下 <code>&lt;leader&gt;</code> 非常不方便，因此我将 EasyMotion 的提示键重设为 <code>;</code> ：</p>
+<pre><code>let g:EasyMotion_leader_key = &#39;;&#39;</code></pre>
+<p>虽然这样会与行内重复查找的功能有点冲突，但其实只要在按下 <code>;</code> 后不做任何操作就可以继续使用 <code>;</code> 之前的行内查找功能。</p>
+<p>在编辑源码时，可以利用 <a href="https://github.com/majutsushi/tagbar">Tagbar</a> 插件，对源码对象进行快速定位:</p>
+<pre><code>map &lt;silent&gt;&lt;leader&gt;t :TagbarToggle&lt;CR&gt;
+map &lt;silent&gt;&lt;leader&gt;tf :TagbarTogglPause&lt;CR&gt;</code></pre>
+<p>上面两句的作用是分别用 <code>&lt;leader&gt;t</code>, <code>&lt;leader&gt;tf</code> 来打开／锁定右侧标记边栏。</p>
+<p>此外有时源码中的错误信息会被放至 Quickfix 或 Location 列表中，可以使用 <a href="https://github.com/Valloric/ListToggle">ListToggle</a> 打开／关闭这两栏从而快速对错误信息进行定位：</p>
+<pre><code>let g:lt_location_list_toggle_map = &#39;&lt;leader&gt;w&#39;
+let g:lt_quickfix_list_toggle_map = &#39;&lt;leader&gt;q&#39;</code></pre>
+<p>上面两句分别使用 ‘<leader>w’ 和 ‘<leader>q’ 对 Location/Quickfix 列表进行开关控制。此外在这些错误之间的跳转可以通过下面将要介绍的 Unimpaired 插件搞定。</p>
+<p>为 Python 增强的 <code>%</code> 匹配 <a href="https://github.com/vim-scripts/matchit.zip">Mathit</a> 和 <a href="https://github.com/vim-scripts/python_match.vim">python_match</a>，可以在 <code>if/else</code> 之间跳转：</p>
+<pre><code>%   # 前向跳转
+g%  # 后向跳转
+[%  # 跳至判断语句块首部
+]%  # 跳至判断语句块尾部</code></pre>
+<p>最后介绍一个小技巧给有移动强迫症的同学们，可以使用如下映射来加速上下左右的步进范围：</p>
+<pre><code>map &lt;A-j&gt;   6j
+map &lt;A-k&gt;   6k
+map &lt;A-h&gt;   6h
+map &lt;A-l&gt;   6l</code></pre>
+<h2 id="窗口间移动与窗口管理">窗口间移动与窗口管理</h2>
+<p>切分窗口是在编程时非常有用的功能，窗口间的移动和窗口管理也因此成为非常频繁的操作。</p>
+<p>窗口间的移动，使用 <code>Ctrl</code> 加 <code>hjkl</code> ：</p>
+<pre><code>map &lt;C-J&gt; &lt;C-W&gt;j
+map &lt;C-K&gt; &lt;C-W&gt;k
+map &lt;C-H&gt; &lt;C-W&gt;h
+map &lt;C-L&gt; &lt;C-W&gt;l</code></pre>
+<p>新建与移动窗口，可使用 Vim 自带的命令：</p>
+<pre><code>&lt;C-W&gt;S|V|N|^ # 新建窗口
+&lt;C-W&gt;J|K|L|H # 移动窗口
+&lt;C-W&gt;o       # 保留当前窗口</code></pre>
+<p>窗口大小调整：</p>
+<pre><code>&lt;C-W&gt;_|=|| # 窗口横向最大／均等／纵向最宽</code></pre>
+<p>由于 Vim 自带的窗口大小调整键过于复杂，我使用 <a href="https://github.com/kana/vim-submode">Submode</a> 插件来进行代替，添加如下设置：</p>
+<pre><code>let g:submode_keep_leaving_key = &#39;\&#39;
+call submode#enter_with(&#39;windows&#39;, &#39;n&#39;, &#39;&#39;, &#39;&lt;Leader&gt;h&#39;, &#39;:3wincmd &lt;&lt;CR&gt;&#39;)
+call submode#enter_with(&#39;windows&#39;, &#39;n&#39;, &#39;&#39;, &#39;&lt;Leader&gt;l&#39;, &#39;:3wincmd &gt;&lt;CR&gt;&#39;)
+call submode#enter_with(&#39;windows&#39;, &#39;n&#39;, &#39;&#39;, &#39;&lt;Leader&gt;j&#39;, &#39;:3wincmd +&lt;CR&gt;&#39;)
+call submode#enter_with(&#39;windows&#39;, &#39;n&#39;, &#39;&#39;, &#39;&lt;Leader&gt;k&#39;, &#39;:3wincmd -&lt;CR&gt;&#39;)
+call submode#leave_with(&#39;windows&#39;, &#39;n&#39;, &#39;&#39;, &#39;&lt;Esc&gt;&#39;)
+call submode#map(&#39;windows&#39;, &#39;n&#39;, &#39;&#39;, &#39;h&#39;, &#39;:3wincmd &lt;&lt;CR&gt;&#39;)
+call submode#map(&#39;windows&#39;, &#39;n&#39;, &#39;&#39;, &#39;l&#39;, &#39;:3wincmd &gt;&lt;CR&gt;&#39;)
+call submode#map(&#39;windows&#39;, &#39;n&#39;, &#39;&#39;, &#39;j&#39;, &#39;:3wincmd +&lt;CR&gt;&#39;)
+call submode#map(&#39;windows&#39;, &#39;n&#39;, &#39;&#39;, &#39;k&#39;, &#39;:3wincmd -&lt;CR&gt;&#39;)</code></pre>
+<p>以上配置的意思是使用 <code>&lt;leader&gt;</code> 键加 <code>hjkl</code> 调整窗口大小。除此之外，下面列出一些经常用到的窗口调整命令：</p>
+<p>最后，使用 <code>Alt-c</code> 关闭窗口：</p>
+<pre><code>map &lt;A-c&gt; &lt;C-W&gt;c</code></pre>
+<h2 id="标签页间移动">标签页间移动</h2>
+<p>曾看到有人建议不要使用标签页，只用缓存就够了。但是在尝试了一段时间这种方式后，我最后还是选择使用标签页，它有如下几个好处：</p>
+<ol type="1">
+<li>轻快。因为标签页打开的缓存始终处于激活状态，无需从硬盘中载入。加上即将介绍的快捷键，可以看到标签页管理和移动也是很方便的。</li>
+<li>直观。有多少文件被打开，一目了然。</li>
+</ol>
+<p>标签页可以很好的组织打开的文件，但也不宜滥用，建议没次最多不要打开超过三个标签页，最好是将其作为临时文件查看器所用，并及时关闭，以防造成主工作区混乱。</p>
+<p>我主要通过 <code>Alt</code> 间来实现标签页的管理和移动：</p>
+<pre><code>map &lt;A-L&gt; gt
+map &lt;A-H&gt; gT
+map &lt;A-N&gt; :tabnew&lt;Space&gt;&lt;CR&gt;
+map &lt;A-C&gt; :tabclose&lt;CR&gt;</code></pre>
+<p>以上映射分别使用 <code>Alt-L</code>, <code>Alt-H</code> 在标签页间移动，用 <code>Alt-N</code>, <code>Alt-C</code> 来新建关闭标签页。</p>
+<h2 id="缓存文件间移动">缓存/文件间移动</h2>
+<p>缓存保存了文件的内容，标记，设置等属性，它是 Vim 中一个十分重要的概念，可按如下三类对其进行划分：</p>
+<table>
+<colgroup>
+<col style="width: 16%" />
+<col style="width: 43%" />
+<col style="width: 11%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">类别</th>
+<th style="text-align: left;">特征</th>
+<th style="text-align: left;">标记</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><p>活动的</p></td>
+<td style="text-align: left;"><p>已载入内存且当前可见</p></td>
+<td style="text-align: left;"><p>‘a’</p></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><p>隐藏的</p></td>
+<td style="text-align: left;"><p>已载入内存但当前无窗口指向它</p></td>
+<td style="text-align: left;"><p>‘h’</p></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><p>非活动的</p></td>
+<td style="text-align: left;"><p>当前文件并未被载入内存</p></td>
+<td style="text-align: left;"><p>’’</p></td>
+</tr>
+</tbody>
+</table>
+<p><br /> 不缓存相关的命令有很多，但下面我们会看到，其实这些命令很少有用到的机会。下面列举一些，仅做备忘：</p>
+<pre><code>:buffers             # 显示所有缓存
+:ls                  # 同上
+:hide                # 隐藏缓存
+:buffer [n] or name  # 打开某缓存
+:sbuffer             # 水平分片打开缓存
+:bdelete [n] or name # 删除缓存</code></pre>
+<p>最后，在缓存列表中可能会出现一些标志，它们的含义如下:</p>
+<pre><code>u      未列举
+ %     当前缓存
+ #     切换缓存
+  a    激活缓存
+  h    隐藏缓存
+   =   只读
+   -   不可修改
+    +  已做修改</code></pre>
+<p>加速文件与缓存的跳转，可使用 <a href="https://github.com/tpope/vim-unimpaired">Unimpaired</a>，它为这些操作映射了一套方便记忆的快捷键。</p>
+<pre><code> [a   前一个文件
+ ]a   后一个文件
+ [b   前一个缓存
+ ]b   后一个缓存
+ [l   前一个地址位置 (location list)
+ ]l   后一个地址位置
+ [q   前一个错误位置 (quickfix list)
+ ]q   后一个错误位置
+ [t   前一个标签
+ ]t   后一个标签</code></pre>
+<p>它还有很多强大的功能，比如添加空行，切换「粘帖」、「检查拼写」，交换上下行等。</p>
+<p>为了加速已打开的不同文件间的移动，我使用 <a href="https://github.com/vim-scripts/bufexplorer.zip">BufExplorer</a>。这个插件的主要功能是显示和打开缓存：</p>
+<pre><code>&lt;leader&gt;be|bs|bv  # 打开缓存浏览器  </code></pre>
+<p>缓存浏览器内常用的命令如下：</p>
+<pre><code>o     打开
+t     标签打开
+q     退出
+d     将缓存添加至 unlisted 列表中
+s|S   切换缓存列表排序方式
+r     反转列表
+D     删除缓存
+p     是否分开显示文件名和路径
+T     是否只显示当前标签页的缓存
+u     是否现实 unlisted 缓存</code></pre>
+<p>在非隐藏缓冲区间的切换比较耗时，如果是需要频繁查询的文件，建议使用窗口或标签页使其一直处于激活状态。</p>
+</body>
+</html>
+
+					<div class="meta">
+						<p class="date-publish">
+							Published: 
+							<date class="date-pub" title="2013-05-05T14:31:00-04:00" datetime="2013-05-05T14:31:00-04:00" pubdate>
+							<span class="month"><abbr>May</abbr></span>
+							<span class="day">05</span>
+							<span class="year">2013 @ </span>
+                            <span class="time">14:31 </span>
+							</date>
+						</p>
+						<ul class="list-category list-linear">
+							<li class="list-head">category: </li>
+							
+							
+
+
+  
+     
+    	<li><a href="/categories.html#better work in linux-ref">
+    		better work in linux <span>11</span>
+    	</a></li>
+    
+  
+
+
+						</ul>
+						<ul class="list-tag list-linear">
+							<li class="list-head">tags: </li>
+							
+							
+
+
+  
+     
+    	<li><a href="/tags.html#vim-ref">vim <span>3</span></a></li>
+     
+    	<li><a href="/tags.html#pythoner-ref">pythoner <span>1</span></a></li>
+     
+    	<li><a href="/tags.html#plugins-ref">plugins <span>1</span></a></li>
+    
+  
+
+
+
+						</ul>
+					</div><!-- meta -->
+				</div><!-- entry-content -->
+				<div class="misc-content">
+					<div class="social">
+						<ul class="list-linear">
+							<li><div class="twitter-tweet"><a href="https://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="" data-lang="en">Tweet</a></div></li>
+							<li><div class="twitter-follow"><a href="https://twitter.com/" class="twitter-follow-button" data-show-count="false" data-lang="en"></a></div></li>
+						</ul>
+					</div>
+					
+					
+
+
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_developer = 1;
+    var disqus_shortname = ''; // required: replace example with your forum shortname
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+
+				</div><!-- misc-content -->
+				
+			</div><!-- bd -->
+			<footer class="unit-foot">
+				<div class="unit-inner unit-foot-inner">
+					<nav class="pagination">
+						<ul>
+							
+							<li class="prev"><a class="internal" rel="prev"  href="/2013/04/10/bye-bye-bashrc" title="View 收拾 Bashrc">&laquo; 收拾 Bashrc</a></li>
+							
+							
+							<li class="pipe"> | </li>
+							
+							
+							<li class="next"><a class="internal" rel="next"  href="/2013/06/22/why-exchanging-dv-and-a-iv-has-no-effect-on-p" title="View Multiple Regression: Why Exchanging DV with a IV Won't Change the P Value">Multiple Regression: Why Exchanging DV with a IV Won't Change the P Value &raquo;</a></li>
+							
+						</ul>
+					</nav>
+					<p class="gotop">
+						<a href="#page">Back to Top</a>
+					</p>
+				</div>
+			</footer>
+
+		</div><!-- content -->
+	</div><!-- unit-inner -->
+</article>
+
+
+				</div>
+			</div><!-- unit-inner -->
+		</div><!-- unit-body -->
+
+	</div><!-- body -->
+	<footer class="the-footer">
+		<div class="unit-foot">
+			<div class="unit-inner unit-foot-inner">
+				<div class="misc vcard">
+					<h4>about</h4>
+					<ul>
+			<!--			<li class="contact"><address><span class="author fn n">mindonmind</span></address></li> -->
+                        <li class="about"><a href="/index.html">Home</a></li>
+						<li class="about"><a href="http://feeds.feedburner.com/wheresmind" rel="me">RSS</a></li>
+					</ul>
+				</div><!-- misc -->
+				<p class="licence">
+                Powered by <a href="http://jekyllrb.com">Jekyll</a> and <a href="http://johnmacfarlane.net/pandoc">Pandoc</a> <br/>
+                <!--     Theme: <a href="http://themes.jekyllbootstrap.com/preview/the-minimum/pages.html#page">The Minimum</a>. -->
+				</p>
+			</div><!-- unit-foot-inner -->
+		</div><!-- unit-foot -->
+	</footer>
+</div><!-- page -->
+<script>
+/*! A fix for the iOS orientationchange zoom bug.Script by @scottjehl, rebound by @wilto. MIT License.*/
+(function(j){var i=j.document;if(!i.querySelectorAll){return}var l=i.querySelectorAll("meta[name=viewport]")[0],a=l&&l.getAttribute("content"),h=a+", maximum-scale=1.0",d=a+", maximum-scale=10.0",g=true,c=j.orientation,k=0;if(!l){return}function f(){l.setAttribute("content",d);g=true}function b(){l.setAttribute("content",h);g=false}function e(m){c=Math.abs(j.orientation);k=Math.abs(m.gamma);if(k>8&&c===0){if(g){b()}}else{if(!g){f()}}}j.addEventListener("orientationchange",f,false);j.addEventListener("deviceorientation",e,false)})(this);
+</script>
+
+  
+
+
+  <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-30928812-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+
+
+</body>
+</html>
+
