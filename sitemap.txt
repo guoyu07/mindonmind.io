@@ -9,6 +9,7 @@ http://mindonmind.github.io/pages.html
 http://mindonmind.github.io/sitemap.txt
 http://mindonmind.github.io/tags.html
 
+http://mindonmind.github.io/2016/01/03/distortion15
 http://mindonmind.github.io/2015/10/31/stay-tuned
 http://mindonmind.github.io/2014/10/21/personal-and-other-essays
 http://mindonmind.github.io/2013/12/28/semi-awareness
