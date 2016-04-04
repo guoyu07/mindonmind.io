@@ -4,13 +4,41 @@
  <title>Mind on Mind</title>
  <link href="http://mindonmind.github.io/atom.xml" rel="self"/>
  <link href="http://mindonmind.github.io"/>
- <updated>2016-03-07T00:29:48-05:00</updated>
+ <updated>2016-04-03T21:26:24-04:00</updated>
  <id>http://mindonmind.github.io</id>
  <author>
    <name>mindonmind</name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>全世界的春天都一样</title>
+   <link href="http://mindonmind.github.io/2016/04/03/all-the-same"/>
+   <updated>2016-04-03T21:22:00-04:00</updated>
+   <id>hhttp://mindonmind.github.io/2016/04/03/all-the-same</id>
+   <content type="html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot;&gt;
+  &lt;meta name=&quot;generator&quot; content=&quot;pandoc&quot;&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0, user-scalable=yes&quot;&gt;
+  &lt;title&gt;&lt;/title&gt;
+  &lt;style type=&quot;text/css&quot;&gt;code{white-space: pre;}&lt;/style&gt;
+  &lt;!--[if lt IE 9]&gt;
+    &lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js&quot;&gt;&lt;/script&gt;
+  &lt;![endif]--&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;p&gt;一片嘴唇&lt;br/&gt; 另一片嘴唇&lt;br/&gt; 像一朵云&lt;br/&gt; 遮挡清晨的阳光&lt;br/&gt;&lt;/p&gt;
+&lt;p&gt;把街道的声响&lt;br/&gt; 变得遥远&lt;br/&gt; 把梦的谜底&lt;br/&gt; 藏得更深&lt;br/&gt;&lt;/p&gt;
+&lt;p&gt;空气变得敏感&lt;br/&gt; 最轻的风&lt;br/&gt; 都带来温柔&lt;br/&gt; 最弱的呼吸&lt;br/&gt; 都无法遮躲&lt;br/&gt;&lt;/p&gt;
+&lt;p&gt;所有的树&lt;br/&gt; 散发一样的气味&lt;br/&gt; 所有的夜&lt;br/&gt; 在凌晨五点醒来&lt;br/&gt; 所有的日子&lt;br/&gt; 像身上的一件&lt;br/&gt; 白色衬衫&lt;br/&gt; 在飘摆&lt;br/&gt;&lt;/p&gt;
+&lt;p&gt;全世界的春天&lt;br/&gt; 都一样&lt;br/&gt;&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</content>
+ </entry>
  
  <entry>
    <title>女孩们没错</title>
